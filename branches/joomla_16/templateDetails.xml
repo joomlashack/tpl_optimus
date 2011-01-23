@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://dev.joomla.org/xml/1.5/template-install.dtd">
+<install version="1.5" type="template">
+	<name>js_optimus</name>
+	<version>1.3pro</version>
+	<creationDate>10/01/08</creationDate>
+	<author>Casey Lee</author>
+	<copyright>Joomlashack LLC</copyright>
+    <authorEmail>support@joomlashack.com</authorEmail>
+	<authorUrl>http://www.joomlashack.com</authorUrl>
+    <license>Commercial Template</license>
+	<description>Thank you for installing the Optimus template from Joomlashack</description>
+<files>
+	<filename>index.php</filename>
+	<filename>styleswitcher.php</filename>
+	<filename>themesaver.php</filename>
+	<filename>params.ini</filename>
+	<filename>templateDetails.xml</filename>
+	<filename>template_thumbnail.png</filename>
+	<filename>favicon.ico</filename>
+	<folder>css/</folder>
+	<folder>html/</folder>
+	<folder>js/</folder>
+	<folder>images/</folder>
+</files>
+<positions>
+	<position>top</position>
+	<position>newsflash</position>
+	<position>left</position>
+	<position>teaser</position>
+	<position>right</position>
+	<position>banner</position>
+	<position>footer</position>
+	<position>breadcrumb</position>
+	<position>user4</position>
+	<position>user5</position>
+	<position>user6</position>
+	<position>user7</position>
+	<position>user8</position>
+	<position>user9</position>
+</positions>
+<params>
+	<param name="logoHeight" type="text" default="44" label="Logo Height" description="Set this value to the height of your logo image"/>
+	<param name="logoWidth" type="text" default="250" label="Logo Width" description="Set this value to the width of your logo image"/>
+	<param name="typeFace" type="list" default="serif" label="Typeface" description="Select the default typeface (font) style">
+		<option value="serif">Serif</option>
+		<option value="sanserif">Sans Serif</option>
+	</param>
+	<param name="defaultWidth" type="list" default="Fixed" label="Default Page Width" description="Sets the default Page Width">
+		<option value="fixed800">Fixed 800px</option>
+		<option value="fixed1024">Fixed 1024px</option>
+		<option value="fluid">Fluid 90%</option>
+	</param>
+	<param name="headerstyle" type="list" default="graphic" label="Header Style" description="Select how the header should render - As a graphic or as styled text">
+		<option value="graphic">Graphic</option>
+		<option value="text">Text</option>
+	</param>
+	<param name="headline" type="text" default="Optimus Template" label="Header Headline" description="Sets your site headline for text header or for improved SEO"/>
+	<param name="slogan" type="text" default="Your Site Slogan" label="Header Slogan" description="Sets your site slogan for text header or for improved SEO"/>
+	
+	<param name="leftColWidth" type="text" default="180" label="Left Column Width" description="Set this value to define the width of your left column"/>
+	<param name="rightColWidth" type="text" default="180" label="Right Column Width" description="Set this value to define the width of your right column"/>
+	<param name="themecolor" type="list" default="style1" label="Theme Color" description="Template Style">
+		<option value="style1">Style 1</option>
+		<option value="style2">Style 2</option>
+		<option value="style3">Style 3</option>
+		<option value="style4">Style 4</option>
+		<option value="style5">Style 5</option>
+	</param>
+</params>
+</install>

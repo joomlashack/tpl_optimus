@@ -1,0 +1,674 @@
+
+/*
+----------------------------------------------------
+                 MAIN FONT & BG COLOR
+----------------------------------------------------
+*/
+
+body {
+	color: #515151;
+	background: #dce9f7 url(../images/style1/body_bg.png) repeat-x 0 top;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 80%;
+}
+
+
+/*
+----------------------------------------------------
+                 HEADER GRAPHIC
+----------------------------------------------------
+*/
+
+
+#header {
+	background: #f2f2f2 url(../images/style1/header_main.png) repeat-x 0 top;
+}
+
+#logo-graphic h1 a {
+	background: url(../images/style1/logo.png) no-repeat;
+}
+
+/*
+----------------------------------------------------
+                 HEADER TEXT
+----------------------------------------------------
+*/
+#logo-text h1 a {
+	margin-top: 20px;
+	margin-left: 10px;
+	color: #222;
+	letter-spacing: -2px;
+	font-weight: bold;
+	font-size: 34px;
+}
+#logo-text h2 {
+	margin-left: 14px;
+	font-size: 22px;
+	color: #4081b2;
+}
+
+
+/*
+----------------------------------------------------
+                 PRIMARY LINK COLORS
+----------------------------------------------------
+*/
+a {
+	color: #246da5;
+	text-decoration: underline;
+}
+a:hover {
+	color: #2b84c8;
+	text-decoration: none;
+}
+
+/*
+----------------------------------------------------
+                   READ MORE LINKS
+----------------------------------------------------
+*/
+
+a.readon {
+	text-decoration: none;
+	background: url(../images/readon.png) no-repeat 0px 2px;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 0px 0px 0px 17px;
+}
+a.readon:hover {
+	text-decoration: underline;
+}
+
+
+/*
+----------------------------------------------------
+                   HEADING STYLES
+----------------------------------------------------
+*/
+
+.componentheading {
+	color: #4a4a4a;
+	line-height: 1.35em;
+	border-bottom: 1px solid #eee;
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+	font-size: 2.5666em;
+	letter-spacing: -2px;
+	font-weight: bold;
+}
+
+/* CONTENT HEADINGS */
+table.blog td.contentheading {
+	font-size:1.8666em;
+	line-height: 1.1em;
+	letter-spacing: -1px;
+	color: #444;
+	border-bottom: 1px solid #f5f5f5;
+}
+/* CONTENT HEADINGS */
+td.contentheading {
+	font-size:2.1em;
+	line-height: 1.1em;
+	letter-spacing: -2px;
+	color: #444;
+}
+/* CONTENT HEADINGS (LINKED) */
+a.contentpagetitle {
+	text-decoration: none;
+	line-height: 1.1em;
+	color: #246da5;
+}
+a.contentpagetitle:hover {
+	color: #121517;
+}
+
+
+/* NEWSFLASH MODULE */
+
+#newsflash td.contentheading,
+#newsflash a.contentpagetitle {
+	font-size: 1.3em;
+	line-height: 1.5em;
+	letter-spacing: normal;
+}
+
+#newsflash a {
+	color: #1e69a3;
+}
+
+#newsflash a:hover {
+	color: #000;
+}
+
+#newsflash p, #newsflash td {
+	padding: 0;
+	margin: 0px;
+	color: #6e6e6e;
+}
+
+
+/* HEADINGS H1-H6 */
+
+h1 {
+	color: #3a3a3a;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 2.3em;
+	line-height: 1em;
+	letter-spacing: -1px;
+}
+
+h2 {
+	color: #1b5e92;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 2em;
+	line-height: 1em;
+	letter-spacing: -1px;
+}
+
+h3 {
+	color: #787878;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.7em;
+	line-height: 1em;
+	letter-spacing: -1px;
+}
+
+h4 {
+	color: #666;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.4em;
+	line-height: 1em;
+	letter-spacing: -1px;
+}
+
+
+p.info {
+    background: #F8FAFC url(../images/info.png) center no-repeat;
+    background-position: 15px 50%; /* x-pos y-pos */
+    text-align: left;
+    padding: 5px 20px 5px 45px;
+    border-top: 2px solid #B5D4FE;
+    border-bottom: 2px solid #B5D4FE;
+}
+
+p.warn {
+    background: #FFF7C0 url(../images/warn.png) center no-repeat;
+    background-position: 15px 50%; /* x-pos y-pos */
+    text-align: left;
+    padding: 5px 20px 5px 45px;
+    border-top: 2px solid #F7D229;
+    border-bottom: 2px solid #F7D229;
+}
+
+p.alert {
+    background: #FBEEF1 url(../images/exc.png) center no-repeat;
+    background-position: 15px 50%; /* x-pos y-pos */
+    text-align: left;
+    padding: 5px 20px 5px 45px;
+    border-top: 2px solid #FEABB9;
+    border-bottom: 2px solid #FEABB9;
+}
+
+span.arrow {
+	background: url(../images/list-arrow.png) no-repeat 0 4px;
+	padding-left: 14px;
+}
+
+
+
+/* CODE  */
+pre {
+	background: #F6F6F6;
+	border: 1px dotted #c4c4c4;
+	color: #000;
+	display: block;
+	padding: 5px;
+	white-space: normal;
+	font: 1em "Courier New", Courier, monospace;
+}
+
+
+
+p.quote:first-letter{text-transform: uppercase;}
+p.quote {
+	color: #424242;
+	font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+	letter-spacing:0.1em;
+	text-align:center;
+	margin: 24px auto;
+	text-transform: lowercase;
+	line-height: 125%;
+	font-size: 1.26666em;
+	font-variant: small-caps;
+	border-bottom: 4px solid #eee;
+	border-top: 4px solid #eee;
+	padding:  5px;
+
+}
+
+
+ul li span.small {
+	font-variant: normal;
+	font-size: .8em;
+	text-transform: none;
+	line-height: .5em;
+}
+
+/*
+----------------------------------------------------
+            INNER CONTENT MAIN BG COLOR
+----------------------------------------------------
+*/
+
+
+#wrap {
+	background: #FFF;
+	}
+	
+
+
+/*
+----------------------------------------------------
+                "S1" MODULE SUFFIX
+----------------------------------------------------
+*/
+
+
+/* "S1" TEXT COLOR */
+div.moduleS1 {
+	color: #51504a;
+}
+
+
+
+/* "S1" LINK COLOR */
+div.moduleS1 a,div.moduleS1 a:hover,
+div.moduleS1 a.latestnewsS1,div.moduleS1 a.latestnewsS1:hover,
+div.moduleS1 a.mostreadS1,div.moduleS1 a.mostreadS1:hover {
+	color: #1e69a3;
+}
+/* "S1" MODULE HEADING COLOR */
+div.moduleS1 h3 {
+	color: #fff;
+	font-size: 1.2em;
+	letter-spacing:normal;
+	line-height: .75em;
+}
+
+
+/*
+----------------------------------------------------
+                 "S2" MODULE SUFFIX
+----------------------------------------------------
+*/
+
+
+/* "S2" TEXT COLOR */
+div.moduleS2 {
+	color: #51504a;
+}
+/* "S2" LINK COLOR */
+div.moduleS2 a,div.moduleS2 a:hover,
+div.moduleS2 a.latestnewsS2,div.moduleS2 a.latestnewsS2:hover,
+div.moduleS2 a.mostreadS2,div.moduleS2 a.mostreadS2:hover {
+	color: #1e69a3;
+}
+/* "S2" MODULE HEADING COLOR */
+div.moduleS2 h3 {
+	color: #fdfeff;
+	font-size: 1.2em;
+	letter-spacing:normal;
+	line-height: .75em;
+}
+
+
+/*
+----------------------------------------------------
+                 "S3" MODULE SUFFIX
+----------------------------------------------------
+*/
+
+
+/* "S3" TEXT COLOR */
+div.moduleS3 {
+	color: #51504a;
+}
+
+/* "S3" LINK COLOR */
+div.moduleS3 a,div.moduleS3 a:hover,
+div.moduleS3 a.latestnewsS3,div.moduleS3 a.latestnewsS3:hover,
+div.moduleS3 a.mostreadS3,div.moduleS3 a.mostreadS3:hover
+ {
+	color: #1e69a3;
+}
+
+/* "S3" MODULE HEADING COLOR */
+div.moduleS3 h3 {
+	color: #fff;
+	font-size: 1.2em;
+	letter-spacing:normal;
+	line-height: .75em;
+
+}
+
+/*
+----------------------------------------------------
+           "bdr" MODULE SUFFIX (default)
+----------------------------------------------------
+*/
+
+/* "bdr" TEXT COLOR */
+div.module,div.modulebdr {
+	color: #333;
+}
+
+
+/* "bdr" LINK COLOR */
+div.module a,div.modulebdr a,
+div.module a:hover,div.modulebdr a:hover,
+div.module a.latestnews,div.modulebdr a.latestnewsbdr,
+div.module a.latestnews:hover,div.modulebdr a.latestnewsbdr:hover,
+div.module a.mostread,div.modulebdr a.mostreadbdr,
+div.module a.mostread:hover,div.modulebdr a.mostreadbdr:hover {
+	color:#246da5;
+}
+
+/* "bdr" MODULE HEADING COLOR */
+div.module h3, div.modulebdr h3 {
+	color: #242b30;
+	font-size: 1.2em;
+	letter-spacing:normal;
+}
+
+/*
+----------------------------------------------------
+               PATHWAY/BREADCRUMBS
+----------------------------------------------------
+*/
+.path {
+	background-color: #f5fbff;
+	border: 1px solid #ddf1ff;
+	margin: 8px;
+	padding: 8px;
+	font-size: 1.13333em;
+}
+
+/*
+----------------------------------------------------
+                        FOOTER
+----------------------------------------------------
+*/
+
+/*TEXT*/
+
+
+#footer {
+	background-color: #1e69a3;
+	color: #fff;
+}
+
+/*LINKS*/
+#footer a, #footer #mainlevel li a {
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #efefef;
+}
+#footer a:hover,
+#footer #mainlevel li a:hover,
+#footer #mainlevel li a#active_menu {
+	color: #ccc;
+	text-decoration: underline;
+}
+
+/*
+----------------------------------------------------
+                    IMAGE STYLES
+----------------------------------------------------
+*/
+
+img.left {float:left;margin-right:5px;background-color:#f4f4f4;border:1px solid #eaeaea;padding:4px;margin-top:5px;}
+img.right {float:right;margin-left:5px;background-color:#f4f4f4;border:1px solid #eaeaea;padding:4px;margin-top:5px;}
+img.pad {float:none;margin:0px auto;background-color:#f4f4f4;border:1px solid #eaeaea;padding:4px;margin-top:5px;}
+
+
+/*
+----------------------------------------------------
+                    JOOMLA! STYLES
+----------------------------------------------------
+*/
+
+li.latestnews,
+li.latestnewsS1,
+li.latestnewsS2,
+li.latestnewsS3,
+li.latestnewsbdr,
+li.mostread,
+li.mostreadS3,
+li.mostreadS1,
+li.mostreadS2,
+li.mostreadbdr {
+	background: url(../images/style1/bullet.gif) no-repeat 0em .35em;
+}
+
+ul.menu-sidenav li,
+a.mainlevel-sidenav {
+	background: url(../images/style1/bullet.gif) no-repeat 0 .15em;
+	padding-left: 14px;
+}
+
+.createdate,.modifydate,.small {
+	color: #99a1a7;
+	font-size: 1em;
+	line-height: 1em;
+	text-transform: lowercase;
+}
+
+/*Header for table content*/
+
+td.sectiontableheader {
+	color: #FFF;
+	background: #222;
+	line-height: 100%;	
+}
+/*Alternating table rows*/
+
+tr.sectiontableentry1 td,td.sectiontableentry1 {
+	background-color: #fff;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+tr.sectiontableentry2 td ,td.sectiontableentry2 {
+	background-color: #fff;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+/* Article Overflow */
+
+div.blog_more {
+	border-top: 1px solid #e6e6d4;
+}
+
+div.blog_more ul li a {
+	border-bottom: 1px solid #eee;
+    background: url(../images/style1/list-arrow.png) no-repeat 4px 10px;
+    text-indent: 14px;
+}
+
+div.blog_more ul li a:hover {
+	background-color: #f4f4f4;
+}
+
+/* Article TOC Table */
+
+table.contenttoc {
+	color: #330;
+	border: 1px solid #d6d6d6;
+}
+table.contenttoc th {
+	background-color: #ececec;
+	color: #4f4f4f;
+}
+
+div.mosimage_caption {
+	font-size: 0.9em;
+	color: #666;
+}
+
+.pagenav {
+	font-size: 1em;
+	color: #CAD7A0;
+}
+
+/*
+----------------------------------------------------
+             STRUCTURAL TEMPLATE IMAGES
+----------------------------------------------------
+*/
+
+.menuleft {
+	background: url(../images/style1/menuleft.png) no-repeat left top;
+}
+.menuright {
+	background: url(../images/style1/menuright.png) no-repeat left top;
+}
+.ftr-left {
+	background: url(../images/style1/ftr-left.png) no-repeat left bottom;
+}
+.ftr-right {
+	background: url(../images/style1/ftr-right.png) no-repeat left bottom;
+}
+
+div.module,div.modulebdr {background: url(../images/style1/topright_bdr.png) 100% 0 no-repeat;}
+div.module div, div.modulebdr div {background: url(../images/style1/topleft_bdr.png) 0 0 no-repeat;}
+div.module div div, div.modulebdr div div  {background: url(../images/style1/botright_bdr.png) 100% 100% no-repeat;}
+div.module div div div, div.modulebdr div div div  {background: url(../images/style1/botleft_bdr.png) 0 100% no-repeat;}
+
+div.moduleS1 {background: url(../images/style1/topright_light.png) 100% 0 no-repeat;}
+div.moduleS1 div {background: url(../images/style1/topleft_light.png) 0 0 no-repeat;}
+div.moduleS1 div div {background: url(../images/style1/botright_light.png) 100% 100% no-repeat;}
+div.moduleS1 div div div {background: url(../images/style1/botleft_light.png) 0 100% no-repeat;}
+
+div.moduleS2 {background: url(../images/style1/topright_mid.png) 100% 0 no-repeat;}
+div.moduleS2 div {background: url(../images/style1/topleft_mid.png) 0 0 no-repeat;}
+div.moduleS2 div div {background: url(../images/style1/botright_mid.png) 100% 100% no-repeat;}
+div.moduleS2 div div div {background: url(../images/style1/botleft_mid.png) 0 100% no-repeat;}
+
+div.moduleS3 {background: url(../images/style1/topright_dark.png) 100% 0 no-repeat;}
+div.moduleS3 div {background: url(../images/style1/topleft_dark.png) 0 0 no-repeat;}
+div.moduleS3 div div {background: url(../images/style1/botright_dark.png) 100% 100% no-repeat;}
+div.moduleS3 div div div {background: url(../images/style1/botleft_dark.png) 0 100% no-repeat;}
+
+
+
+/* @group TOPNAV CUSTOMIZATION */
+
+
+/*
+----------------------------------------------------
+               SUCKERFISH MENU COLORS
+----------------------------------------------------
+*/
+
+
+#nav ul li a {
+/* NAV UP COLOR */	color: #fff;
+	background: url(../images/style1/nav_left_up.png) no-repeat left center;
+}
+
+#nav ul li a:hover,
+#nav ul li:hover a,
+#nav ul li.iehover a {
+/* NAV OVER COLOR */	color: #044c84;
+	background: url(../images/style1/nav_left_over.png) no-repeat left center;
+}
+
+#nav li#current a,
+#nav li#current a:hover,
+#nav li#current:hover a,
+#nav li#current.iehover a {
+/* NAV ACTIVE COLOR */	color: #303030;
+	background: url(../images/style1/nav_left_active.png) no-repeat left center;
+}
+#nav li#current,
+#nav li#current:hover,
+#nav li#current.iehover {
+	background: url(../images/style1/nav_right_active.png) no-repeat right center;
+}
+
+
+#nav ul li:hover li a,
+#nav ul li.iehover li a,
+#nav ul li#current:hover li a,
+#nav ul li#current.iehover li a,
+#nav ul li:hover ul ul li a {
+/* LEVEL 2 NAV UP COLOR */	color: #fff;
+	background-image: none;
+}
+
+
+#nav li:hover ul, 
+#nav li li:hover ul, 
+#nav li li li:hover ul, 
+#nav li li li li:hover ul,
+#nav li.iehover ul, 
+#nav li li.iehover ul, 
+#nav li li li.iehover ul,
+#nav li li li li.iehover ul,
+#nav ul li:hover li a,
+#nav ul li.iehover li a,
+#nav ul li:hover ul ul li a,
+#nav ul li.iehover ul ul li a {
+/* LEVEL 2 NAV UP BG COLOR */	background-color: #2b72a9;
+}
+
+#nav li ul li a:hover,
+#nav li ul li ul li a:hover,
+#nav li li:hover,
+#nav ul li li.iehover,
+#nav li li.iehover a,
+#nav ul li li:hover a,
+#nav ul li li:hover,
+#nav ul li li.iehover,
+#nav ul li li#current a:hover,
+#nav li.haschild ul li#current.iehover,
+#nav li.haschild ul li#current:hover,
+#nav ul li.haschild li#current a:hover
+{
+/* LEVEL 2 NAV OVER BG COLOR */	background-color: #0a5c99;
+/* LEVEL 2 NAV OVER TEXT COLOR */	color: #ffffff;
+background-image: none;
+}
+
+#nav ul li#current ul li a,
+#nav ul li#current ul li,
+#nav ul li#current ul li a:hover,
+#nav ul li#current ul li.hover
+#nav ul li#current ul li.iehover,
+#nav ul li.haschild li#current a {
+/* LEVEL 2 ACTIVE TEXT COLOR */	color: #ffffff;
+}
+
+#nav li li {
+/* LEVEL 2 SEPARATOR */	border-bottom: 1px solid #3080be;
+}
+
+#nav li ul {
+	width: 173px;
+/* SUBLEVEL BLOCK OUTLINE */
+	border-right: 1px solid #266597;
+	border-left: 1px solid #266597;
+	border-top: none;
+}
+
+/* END TOPNAV CUSTOMIZATION */
+#nav li, #nav {background: url(../images/style1/nav_bg.png) repeat-x 0 bottom;font-weight: bold;}
+#nav li {background: url(../images/style1/nav_right_up.png) no-repeat right center;}
+#nav ul li:hover,#nav ul li.iehover {background: url(../images/style1/nav_right_over.png) no-repeat right center;}
+#nav ul li:hover li a,#nav ul li.iehover li a {background-image: none;}
+#nav ul ul a {width: 170px;}
+#nav li li,#nav li.haschild ul li#current:hover,#nav li.haschild ul li#current.iehover {width: 173px;}
+
+
+/* @end */
