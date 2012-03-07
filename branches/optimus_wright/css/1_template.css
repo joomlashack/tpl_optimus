@@ -1,0 +1,633 @@
+/* @override http://demotemplates.joomlashack.com/optimus/templates/js_optimus/css/template_css.css */
+
+/* @group Global Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp, hr,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;}
+
+/* #mbar ul ul {display: none;}  */
+
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+:focus {outline: 0;}
+table {border-collapse: collapse;border-spacing: 0;}
+html body * span.clear,
+html body * div.clear,
+html body * li.clear,
+html body * dd.clear {background: none;border: 0;clear: both;display: block;float: none;font-size: 0;list-style: none;margin: 0;padding: 0;overflow: hidden;visibility: hidden;width: 0;height: 0;}
+.clearfix:after {clear: both;content: '.';display: block;visibility: hidden;height: 0;}
+.clearfix {display: inline-block;}
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+body.contentpane {background: #fff;}
+/* @end Reset */
+
+/* @group Typography Helper Styles */
+
+body, html {
+	line-height: 150%;
+	font-size: 100%;
+	letter-spacing: 0px;
+}
+
+/* Main Content Area Font Size */
+
+td.maincol {
+	line-height: 150%;
+	font-size: 1.166666em;
+}
+
+/* Module Font Sizes */
+
+td.leftcol,td.rightcol {
+	font-size: 1em;	
+}
+td.leftcol p,td.rightcol p {
+	margin: 0;
+}
+
+/* Headings */
+
+
+.componentheading {
+	margin: 0px 0px 10px 4px;
+}
+table.blog table.contentpaneopen td.contentheading,td.contentheading {
+	width: 100%;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin: .75em 0;
+}
+
+/* Latest/Popular Lists */
+
+
+ul.latestnews,
+ul.latestnewsS1,
+ul.latestnewsS2,
+ul.latestnewsS3,
+ul.latestnewsbdr,
+ul.mostread,
+ul.mostreadS3,
+ul.mostreadS1,
+ul.mostreadS2,
+ul.mostreadbdr {
+	padding: 0px;
+	margin: 0px 0px;
+	list-style-type: none;
+}
+
+
+li.latestnews,
+li.latestnewsS1,
+li.latestnewsS2,
+li.latestnewsS3,
+li.latestnewsbdr,
+li.mostread,
+li.mostreadS3,
+li.mostreadS1,
+li.mostreadS2,
+li.mostreadbdr {
+	padding: 0px 0px 4px 14px;
+	margin: 0px;
+	background: url(../images/bullet.gif) no-repeat 0em .35em;
+}
+
+
+a.readon {
+	text-decoration: underline;
+	float: right;
+	padding: 0px;
+	margin: 0;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+a.readon:hover {
+	text-decoration: none;
+}
+
+
+/*Side Column Navigation (List) */
+
+a.mainlevel-sidenav,ul.menu-sidenav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 1.1em;
+}
+
+ul.menu-sidenav li,
+a.mainlevel-sidenav {
+	background: url(../images/bullet.gif) no-repeat 0 .15em;
+	padding-left: 14px;
+}
+
+ul.menu-sidenav li li {
+	background: none no-repeat 0 .25em;
+	padding-left: 0em;
+	list-style-type: circle;
+	color: #cecece;
+
+}
+ul.menu-sidenav li ul {
+	margin-left: 10px;
+	padding: 0;
+}
+
+
+a.sublevel-sidenav {
+	margin-left: 16px;
+}
+
+ul.menu-sidenav a,
+a.mainlevel-sidenav,
+a.sublevel-sidenav {
+	text-decoration: none;
+}
+
+a.sublevel-sidenav:hover,
+ul.menu-sidenav a:hover {
+	text-decoration: underline;
+}
+
+
+/*If you want to use table based menus in vertical menu style*/
+
+td.leftcol a.mainlevel, td.rightcol a.mainlevel {
+	text-decoration: none;
+	line-height: 135%;
+	font-weight: bold;
+}
+
+td.leftcol a.mainlevel:hover, td.rightcol a.mainlevel:hover {
+	text-decoration: underline;
+}
+
+/*Sublevel Support*/
+
+td.leftcol a.sublevel,
+td.rightcol a.sublevel
+ {
+	text-decoration: underline;
+	padding-left: 4px;
+	font-size: .9em;
+}
+
+td.leftcol a.sublevel:hover, td.rightcol a.sublevel:hover {
+	text-decoration: none;
+}
+
+/* Lists */
+td.maincol ol, td.maincol ul {margin-left:40px;margin-bottom: 5px;}
+td.maincol li ul {margin-left:20px;margin-bottom: 0px;}
+td.maincol ul li {list-style-type: disc;}
+td.maincol ul li li {list-style-type: circle;}
+/* Ordered Lists */
+td.maincol ol {list-style-type: decimal;}
+td.maincol ol ol {list-style-type: lower-alpha;}
+
+
+
+p {margin: 10px 0px;}
+
+pre {
+	display: block;
+	padding: 5px;
+	margin: 10px;
+	white-space: normal;
+	font-family: "Courier New", Courier, monospace;
+}
+
+
+/*-----SPECIAL LIST STYLE (CHANGE OR ADD ANOTHER)-----*/
+
+td.maincol ul.checklist,
+td.leftcol ul.checklist,
+td.rightcol ul.checklist {
+	list-style: none;
+}
+
+td.maincol ul.checklist li,
+td.leftcol ul.checklist li,
+td.rightcol ul.checklist li {
+	list-style: none;
+	line-height: 16px;
+	padding: 2px 0px 2px 18px;
+	background: url(../images/tick.png) no-repeat left center;
+	list-style-position: outside;
+}
+
+td.maincol ul.checklist a,
+td.leftcol ul.checklist a,
+td.rightcol ul.checklist a {
+	text-decoration: underline;
+	padding: 1px;
+}
+
+td.maincol ul.checklist a:hover,
+td.maincol ul.checklist a:hover,
+td.maincol ul.checklist a:hover {
+	text-decoration: none;
+	padding: 1px;
+}
+
+
+/* @end */
+
+
+/* @group Structure */
+
+#wrap {
+	margin: 10px auto 0px auto;
+}
+#header {width: 100%;}
+
+
+#logo-graphic h1 {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+
+#logo-graphic h1 a {
+	display: block;
+	text-indent: -8000em;
+	line-height: 100%;
+	background: url(../images/logo.png) no-repeat;
+	margin: 0px;
+	padding: 0px;
+}
+#logo-graphic h2 {
+	line-height: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	text-indent: -8000em;
+}
+
+#logo-text h1 a {
+	display: block;
+	line-height: 100%;
+	text-decoration: none;
+	background-image: none;
+	margin: 0px;
+	padding: 0px;
+}
+#logo-text {
+	float: left;
+}
+
+#logo-text h1 {
+	margin: 0px;
+	padding: 0px;
+}
+#logo-text h2 {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#newsflash {
+	top: 10px;
+	right: 15px;
+	width: 400px;
+	position: absolute;
+	overflow: hidden;
+}
+
+.menuleft {
+	float: left;
+	width: 10px;
+	height: 52px;
+	background: url(../images/menuleft.png) no-repeat left top;
+}
+.menuright {
+	float: right;
+	width: 10px;
+	height: 52px;
+	background: url(../images/menuright.png) no-repeat left top;
+}
+
+.mainbody {
+	margin: 8px;
+}
+
+.banner {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #eee;
+}
+td.leftcol,td.maincol,td.rightcol {
+	vertical-align: top;
+}
+.inside {
+	padding: 4px 8px;
+}
+
+#footer {
+	height: 30px;
+	text-align: center;
+	margin: 0px auto;
+	width: 100%;
+	overflow: hidden;
+	font: .90em/100% "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.ftr-left {
+	float: left;
+	width: 10px;
+	height: 30px;
+	background: url(../images/ftr-left.png) no-repeat left bottom;
+}
+.ftr-right {
+	float: right;
+	width: 10px;
+	height: 30px;
+	background: url(../images/ftr-right.png) no-repeat left bottom;
+}
+
+.designer a {
+	cursor: pointer;
+	text-indent: -5000em;
+	display:block;
+	float: left;
+	width: 75px;
+	height: 12px;
+	background: url(../images/jscright.png) no-repeat left top;
+	margin-top: 4px;
+}
+
+/* @end */
+
+
+/* @group Modules */
+
+
+/* S1 */
+
+div.moduleS1
+{
+	margin-bottom: 10px;
+	background: url(../images/topright_light.png) 100% 0 no-repeat;
+	height: 1%;
+}
+
+div.moduleS1 div
+ {
+	background: url(../images/topleft_light.png) 0 0 no-repeat;
+}
+div.moduleS1 div div  {
+	background: url(../images/botright_light.png) 100% 100% no-repeat;
+}
+div.moduleS1 div div div  {
+	background: url(../images/botleft_light.png) 0 100% no-repeat;
+	padding: 12px 15px 15px 15px;
+}
+div.moduleS1 div div div div {
+	background: transparent none;
+	padding: 0;
+}
+div.moduleS1 h3 {
+	margin: 0px 0px 10px 0px;
+	text-indent: 0px;
+	border: none;
+}
+
+
+
+
+/* S2 */
+
+div.moduleS2
+{
+	margin-bottom: 10px;
+	background: url(../images/topright_mid.png) 100% 0 no-repeat;
+	height: 1%;
+}
+
+div.moduleS2 div
+ {
+	background: url(../images/topleft_mid.png) 0 0 no-repeat;
+}
+div.moduleS2 div div  {
+	background: url(../images/botright_mid.png) 100% 100% no-repeat;
+}
+div.moduleS2 div div div  {
+	background: url(../images/botleft_mid.png) 0 100% no-repeat;
+	padding: 12px 15px 15px 15px;
+}
+div.moduleS2 div div div div {
+	background: transparent none;
+	padding: 0;
+}
+div.moduleS2 h3 {
+	margin: 0px 0px 10px 0px;
+	text-indent: 0px;
+	border: none;
+}
+
+/* S3 */
+
+div.moduleS3
+{
+	margin-bottom: 10px;
+	background: url(../images/topright_dark.png) 100% 0 no-repeat;
+	height: 1%;
+}
+
+div.moduleS3 div
+ {
+	background: url(../images/topleft_dark.png) 0 0 no-repeat;
+}
+div.moduleS3 div div  {
+	background: url(../images/botright_dark.png) 100% 100% no-repeat;
+}
+div.moduleS3 div div div  {
+	background: url(../images/botleft_dark.png) 0 100% no-repeat;
+	padding: 12px 15px 15px 15px;
+}
+div.moduleS3 div div div div {
+	background: transparent none;
+	padding: 0;
+}
+div.moduleS3 h3 {
+	margin: 0px 0px 10px 0px;
+	text-indent: 0px;
+	border: none;
+}
+
+/* BDR */
+
+div.module,div.modulebdr
+{
+	margin-bottom: 10px;
+	background: url(../images/topright_bdr.png) 100% 0 no-repeat;
+	height: 1%;
+}
+
+div.module div, div.modulebdr div
+ {
+	background: url(../images/topleft_bdr.png) 0 0 no-repeat;
+}
+div.module div div, div.modulebdr div div  {
+	background: url(../images/botright_bdr.png) 100% 100% no-repeat;
+}
+div.module div div div, div.modulebdr div div div  {
+	background: url(../images/botleft_bdr.png) 0 100% no-repeat;
+	padding: 12px 15px 15px 15px;
+}
+div.module div div div div, div.modulebdr div div div div {
+	background: transparent none;
+	padding: 0;
+}
+div.module h3, div.modulebdr h3 {
+	margin: 0px 0px 10px 0px;
+	text-indent: 0px;
+	border: none;
+}
+
+/* @end Modules */
+
+/* @group Footer */
+
+
+#footer #mainlevel ul {
+	cursor: default;
+	display: inline;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#footer #mainlevel li {
+	cursor: default;
+	display: inline;
+	line-height: 12px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0 5px;
+}
+
+
+/* @end */
+
+/* @group Joomla Specific Styles */
+
+/* Login Module */
+a.forgotpass,a.forgotuser,a.regusr {
+	padding-left: 18px;
+	line-height: 18px;
+	display: block;
+}
+a.forgotpass  {background: url(../images/log_pass.png) no-repeat left center;}
+a.forgotuser {background: url(../images/log_user.png) no-repeat left center;}
+a.regusr {background: url(../images/log_reg.png) no-repeat left center;}
+
+table.contentpaneopen td.buttonheading,
+table.blog table.contentpaneopen td.buttonheading {
+	padding: 0px;
+	margin: 0;
+}
+
+div.mosimage {
+	margin: 5px;
+}
+
+.pagenav {
+	padding: 3px 5px 3px 3px;
+}
+
+table.contenttoc {
+	margin: 5px;
+	padding: 1px;
+	float: right;
+}
+table.contenttoc th {
+	padding: 2px 10px;
+}
+table.contenttoc td {
+	font-size: 0.9em;
+	font-weight: normal;
+	text-align: left;
+	padding: 2px 0px 2px 4px;
+}
+table.contenttoc a {
+	text-decoration: none;
+	line-height: 1em;
+}
+table.contentpaneopen {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+table.blog table.contentpaneopen td {
+	padding: 0px 4px;
+}
+
+/*Header for table content*/
+
+td.sectiontableheader {
+	font-weight: bold;
+	padding: 8px;
+}
+
+/*Alternating table rows*/
+
+tr.sectiontableentry1 td,td.sectiontableentry1 {
+	padding: 6px;
+}
+
+tr.sectiontableentry2 td ,td.sectiontableentry2 {
+	padding: 6px;
+}
+/* Article Overflow */
+
+div.blog_more {
+	border-top: 1px solid #e6e6d4;
+}
+div.blog_more strong {
+	position: relative;
+}
+div.blog_more ul li {
+	list-style: none;
+	background-image: none;
+	padding: 0px;
+}
+div.blog_more ul li a {
+	text-decoration: none;
+	display: block;
+	padding: 4px;
+}
+div.blog_more ul li a:hover {
+	text-decoration: none;
+}
+
+/* System Messages */
+
+#system-message ul li {
+list-style: none;
+margin-left: 30px;
+}
+
+#system-message dd {
+	text-indent: 0px;
+}
+
+#sys_messages {
+	margin: 0px;
+}
+
+/* @end */
+
+
