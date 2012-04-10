@@ -40,15 +40,6 @@ if ($opwidth == '800px') {
 	<html>
 		<head>
 			<w:head />
-			<?php /*
-			<link rel="stylesheet" href="<?php echo $this -> baseurl;?>/templates/<?php echo $this -> template;?>/css/<?php echo $width;?>.css" type="text/css" media="screen" />
-			<link rel="stylesheet" href="<?php echo $this -> baseurl;?>/templates/<?php echo $this -> template;?>/css/<?php echo $font;?>.css" type="text/css" media="screen" />
-			
-			<script language="javascript" type="text/javascript" src="<?php echo $this->baseurl ?>/templates/js_studio/js/accordion.open.js"></script>
-			<script language="javascript" type="text/javascript">
-				var wrightAccordionHover = <?php echo ((strpos($menutype,'hover') === FALSE) ? "false" : "true"); ?>;
-			</script>
-			*/ ?>
 		</head>
 		<body>
 			<div class="border-top"></div>
@@ -104,7 +95,6 @@ if ($opwidth == '800px') {
 						&nbsp;
 					</div>
 					<div class="mainbody container_<?php echo $opwidth ?>">
-						<w:module type="grid" name="showcase" chrome="wrightflexgrid" />
 						<div class="clear"></div>
 						<section id="main">
 							<w:content />
