@@ -1,24 +1,41 @@
 /* @override http://demotemplates.joomlashack.com/optimus/templates/js_optimus/css/nav.css */
 /* @group NAVBAR */
-#nav {height:52px;z-index:500;float:none;}
-#nav ul {list-style:none;line-height:42px;padding-top:10px;}
+
+/*
+#nav 
+{height:52px;z-index:500;float:none;}
+#nav ul 
+{list-style:none;line-height:42px;padding-top:20px;}
 #nav ul li {position:relative;margin:0;}
-#nav a {text-decoration:none;display:block;cursor:pointer;height:42px;padding:0px 0px 0px 7px;margin:0px 0px 0px 8px;}
-#nav li a:hover {height:42px;}
+#nav a ,
+#nav span{text-decoration:none;display:block;cursor:pointer;height: 22px;
+    line-height: 22px;;margin:0px 0px 0px 8px;}
 #nav li {float:left;padding:0;padding:0px 7px 0px 0px;}
-#nav ul ul a {background:none;}
+#nav ul ul a,
+#nav ul ul span{background:none;}
 #nav ul ul {border:none;}
-#nav li li a {font-weight:normal;padding:0;margin:0;height:26px;line-height:26px;text-indent:5px;}
-#nav ul ul a {display:block;text-decoration:none;text-transform:none;}
+#nav li li a,
+#nav li li span {font-weight:normal;padding:0;margin:0;height:26px;line-height:26px;text-indent:5px;}
+#nav ul ul a,
+#nav ul ul span {display:block;text-decoration:none;text-transform:none;}
 #nav li li {padding:0;background:none;}
 #nav li li {float:left;padding:0;}
 #nav li:hover, #nav li.iehover {left:0;}
-#nav ul ul a:hover {background:none;height:26px;line-height:26px;padding:0;margin:0;}
-#nav li ul {position:absolute;left:-999em;height:auto;font-weight:normal;border-width:0;margin:0;padding:0;border-bottom:none;}
+#nav ul ul a:hover,
+#nav ul ul span:hover {background:none;height:26px;line-height:26px;padding:0;margin:0;}
+#nav li ul {position:absolute;height:auto;font-weight:normal;border-width:0;margin:0;padding:0;border-bottom:none;  display:none;}
 #nav li:hover,#nav li.iehover {position: static;}
-/* Pro */
-#nav ul li ul li a.child,#nav ul li ul li a.child:hover,#nav ul li#current ul li a.child,#nav ul li#current ul li a.child:hover {background:url(../images/arrow_right.gif) 100% 50% no-repeat;}
-#nav ul li.active ul li a.child,#nav ul li.haschild.active ul li#current a.child {background:url(../images/arrow_right.gif) 100% 50% no-repeat;}
+/* Pro *
+ /* 
+
+
+
+#nav ul li.active ul li a.child,
+#nav ul li.haschild.active ul li#current a.child
+{background:url(../images/arrow_right.gif) 100% 50% no-repeat;}
+
+
+
 #nav li:hover ul ul, #nav li:hover ul ul ul,#nav li:hover ul ul ul ul,  #nav li.iehover ul ul, #nav li.iehover ul ul ul, #nav li.iehover ul ul ul ul {left:-999em;}
 #nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul,#nav li li li li:hover ul,#nav li.iehover ul, #nav li li.iehover ul,#nav li li li.iehover ul,#nav li li li li.iehover ul {z-index:100;left:auto;}
 
@@ -26,5 +43,95 @@
 #nav a {text-transform:none;}
 #nav ul li:hover li:hover,#nav ul li#current ul li a,#nav ul li#current ul li,#nav ul li#current ul li a:hover,#nav ul li#current ul li.hover, #nav li.haschild:hover li span,#nav li.haschild.iehover li span,#nav li.iehover li span,#nav ul li li a,#nav ul li.haschild li#current a,#nav ul li.haschild li#current,#nav ul li.iehover li.iehover, #nav ul li ul li a:hover,#nav ul li ul li:hover,#nav ul li ul li.iehover {background-image:none;}
 #nav li ul ul {margin: -26px 0 0 173px;}
+*/
+/* @end */ 
+#nav ul li{
+	float: left;
+	font-family: "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+	margin: 0 5px;
+	height: 40px;
+	
+}
+#nav ul li ul li {
+    background-color:transparent;
+    border-radius: 0 0 0 0;
+   float:none;
+	margin: 0;
+    height: auto;
+    background-color: transparent;
+   
+}
+body #nav ul li ul li a,
+body #nav ul li ul li span{
+	color:#fff;
+	border-radius: 0;
+	margin: 0 ;
+	height: 100%;
+	padding: 5px;
+	background-color: transparent;
+	font-weight: normal;
+	background-image: none;
+}
+#menu ul li:hover > ul {
+    display: block;
+}
 
-/* @end */
+#nav ul li ul{
+	border-top: medium none;
+    position: absolute;
+    top: 100%;
+    display: none;
+    min-width: 75px;
+    width:auto;
+}
+#menu{
+	z-index: 9000;
+}
+#nav ul li a,
+#nav ul li span{
+	height:auto;
+	padding:0 5px 2px;
+	display: block;
+	margin: 10px 0 0 0;
+	border-radius:5px;
+	text-decoration: none;  
+	font-family: "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+}
+#nav ul li ul li ul {
+	left: 100%;
+	top: 0;
+}
+#nav ul li ul li a.child,
+#nav ul li#current ul li a.child,
+#nav ul li ul li.parent
+
+{
+	background-image:url(../images/arrow_right.gif);
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+#nav ul li.current ul li a,
+#nav ul li.current ul li span{
+	background-image: none;
+	color: #fff; 
+}
+
+#nav ul li ul li a:hover,
+#nav ul li ul li span:hover,
+#nav ul li ul li.current a,
+#nav ul li ul li.current span,
+#nav ul li ul li#current a,
+#nav ul li ul li#current span{
+	background-image: none;
+	color: #fff;
+}
+#footer .menu{
+	display: table;
+	margin: 0 auto;
+}
+#footer li{
+	margin-left: 30px;
+}

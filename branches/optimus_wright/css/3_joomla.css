@@ -134,3 +134,20 @@ td.key {
 }
 td.sectiontableheader a {color: #fff;text-decoration: none;}
 #content table.contentpane {width: 100%;}
+.category  thead tr{
+	background-color: #222222;
+}
+.category  thead tr a{
+	  color: #FFFFFF;
+    font-size: 15px;
+    line-height: 30px;
+    text-decoration: none;
+}
+.category td{
+	  border-bottom: 1px solid #F4F4F4;
+    font-size: 15px;
+    padding: 5px 0;
+}
+.category  thead{
+	height: 30px;
+}

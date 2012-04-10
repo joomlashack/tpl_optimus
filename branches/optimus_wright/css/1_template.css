@@ -1,5 +1,90 @@
 /* @override http://demotemplates.joomlashack.com/optimus/templates/js_optimus/css/template_css.css */
+.container_12 .flexgrid_1 {
+width: 940px;
+}
+.container_12 .flexgrid_2 {
+width: 460px;
+}
+.container_12 .flexgrid_3 {
+width: 300px;
+}
+.container_12 .flexgrid_4 {
+width:220px;
+}
+.container_12 .flexgrid_5 {
+width:172px;
+}
+.container_12 .flexgrid_6 {
+width: 140px;
+}
+#sidebar2 ul ul li a,
+#sidebar2 ul ul li span{
+padding:3px 3px 3px 30px;
+}
+#sidebar2 ul ul ul li a,
+#sidebar2 ul ul ul li span{
+padding:3px 3px 3px 40px;
+}
+#sidebar2 ul ul ul ul li a,
+#sidebar2 ul ul ul ul li span{
+padding:3px 3px 3px 50px;
+}
 
+#sidebar2 ul ul ul ul ul li a,
+#sidebar2 ul ul ul ul ul li span{
+padding:3px 3px 3px 60px;
+}
+
+#sidebar2 ul ul ul ul ul ul li a,
+#sidebar2 ul ul ul ul ul ul li span{
+display:block;
+padding:3px 3px 3px 70px;
+}
+#sidebar2 ul ul ul ul ul ul ul li a,
+#sidebar2 ul ul ul ul ul ul ul li span{
+padding:3px 3px 3px 80px;
+}
+#sidebar2 ul ul ul ul ul ul ul ul li a,
+#sidebar2 ul ul ul ul ul ul ul ul li span{
+padding:3px 3px 3px 90px;
+}
+#sidebar1 ul ul li a,
+#sidebar1 ul ul li span{
+padding:3px 3px 3px 27px;
+}
+#sidebar1 ul ul ul li a,
+#sidebar1 ul ul ul li span{
+padding:3px 3px 3px 40px;
+}
+#sidebar1 ul ul ul ul li a,
+#sidebar1 ul ul ul ul li span{
+padding:3px 3px 3px 50px;
+}
+
+#sidebar1 ul ul ul ul ul li a,
+#sidebar1 ul ul ul ul ul li span{
+padding:3px 3px 3px 60px;
+}
+
+#sidebar1 ul ul ul ul ul ul li a,
+#sidebar1 ul ul ul ul ul ul li span{
+display:block;
+padding:3px 3px 3px 70px;
+}
+#sidebar1 ul ul ul ul ul ul ul li a,
+#sidebar1 ul ul ul ul ul ul ul li span{
+padding:3px 3px 3px 80px;
+}
+#sidebar1 ul ul ul ul ul ul ul ul li a,
+#sidebar1 ul ul ul ul ul ul ul ul li span{
+padding:3px 3px 3px 90px;
+}
+#sidebar1 ul li ul li,
+#sideber2 ul li ul li,
+#sidebar1 ul li ul li a,
+#sideber2 ul li ul li span{
+	background-image: none;
+}
 /* @group Global Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -241,14 +326,14 @@ td.maincol ul.checklist a:hover {
 	padding: 1px;
 }
 
-
 /* @end */
 
 
 /* @group Structure */
 
 #wrap {
-	margin: 10px auto 0px auto;
+	margin: 0px auto 0px auto;
+	border-radius: 0 0 10px 10px;
 }
 #header {width: 100%;}
 
@@ -319,7 +404,7 @@ td.maincol ul.checklist a:hover {
 }
 
 .mainbody {
-	margin: 8px;
+	margin: 8px 0;
 }
 
 .banner {
@@ -335,7 +420,8 @@ td.leftcol,td.maincol,td.rightcol {
 }
 
 #footer {
-	height: 30px;
+	height: auto;
+	padding: 10px 0 ;
 	text-align: center;
 	margin: 0px auto;
 	width: 100%;
@@ -375,127 +461,49 @@ td.leftcol,td.maincol,td.rightcol {
 
 /* S1 */
 
-div.moduleS1
-{
-	margin-bottom: 10px;
-	background: url(../images/topright_light.png) 100% 0 no-repeat;
-	height: 1%;
-}
-
-div.moduleS1 div
- {
-	background: url(../images/topleft_light.png) 0 0 no-repeat;
-}
-div.moduleS1 div div  {
-	background: url(../images/botright_light.png) 100% 100% no-repeat;
-}
-div.moduleS1 div div div  {
-	background: url(../images/botleft_light.png) 0 100% no-repeat;
-	padding: 12px 15px 15px 15px;
-}
-div.moduleS1 div div div div {
-	background: transparent none;
-	padding: 0;
+h3 {
+	margin: 10px 0;
 }
 div.moduleS1 h3 {
-	margin: 0px 0px 10px 0px;
+	
 	text-indent: 0px;
 	border: none;
 }
 
-
-
-
-/* S2 */
-
-div.moduleS2
-{
-	margin-bottom: 10px;
-	background: url(../images/topright_mid.png) 100% 0 no-repeat;
-	height: 1%;
-}
-
-div.moduleS2 div
- {
-	background: url(../images/topleft_mid.png) 0 0 no-repeat;
-}
-div.moduleS2 div div  {
-	background: url(../images/botright_mid.png) 100% 100% no-repeat;
-}
-div.moduleS2 div div div  {
-	background: url(../images/botleft_mid.png) 0 100% no-repeat;
-	padding: 12px 15px 15px 15px;
-}
-div.moduleS2 div div div div {
-	background: transparent none;
-	padding: 0;
-}
 div.moduleS2 h3 {
-	margin: 0px 0px 10px 0px;
+
 	text-indent: 0px;
 	border: none;
-}
-
-/* S3 */
-
-div.moduleS3
-{
-	margin-bottom: 10px;
-	background: url(../images/topright_dark.png) 100% 0 no-repeat;
-	height: 1%;
-}
-
-div.moduleS3 div
+} 
+div.moduleS3 h3,
+div.moduleS1 h3,
+div.moduleS2 h3
  {
-	background: url(../images/topleft_dark.png) 0 0 no-repeat;
+	color: #fff;
+	font-size: 1.2em;
+	letter-spacing:normal;
+    padding: 10px;
 }
-div.moduleS3 div div  {
-	background: url(../images/botright_dark.png) 100% 100% no-repeat;
-}
-div.moduleS3 div div div  {
-	background: url(../images/botleft_dark.png) 0 100% no-repeat;
-	padding: 12px 15px 15px 15px;
-}
-div.moduleS3 div div div div {
-	background: transparent none;
-	padding: 0;
-}
+
 div.moduleS3 h3 {
-	margin: 0px 0px 10px 0px;
 	text-indent: 0px;
 	border: none;
 }
 
-/* BDR */
+/* Module style Sin sufix  */
 
-div.module,div.modulebdr
-{
-	margin-bottom: 10px;
-	background: url(../images/topright_bdr.png) 100% 0 no-repeat;
-	height: 1%;
-}
+div.module {background: url(../images/blue/topright_bdr.png) 100% 0 no-repeat;}
+div.module div.pad {background: url(../images/blue/topleft_bdr.png) 0 0 no-repeat;}
+div.module  div.pad2 {background: url(../images/blue/botright_bdr.png) 100% 100% no-repeat;}
+div.module  div.pad3 {background: url(../images/blue/botleft_bdr.png) 0 100% no-repeat; padding: 12px 15px;}
 
-div.module div, div.modulebdr div
- {
-	background: url(../images/topleft_bdr.png) 0 0 no-repeat;
-}
-div.module div div, div.modulebdr div div  {
-	background: url(../images/botright_bdr.png) 100% 100% no-repeat;
-}
-div.module div div div, div.modulebdr div div div  {
-	background: url(../images/botleft_bdr.png) 0 100% no-repeat;
-	padding: 12px 15px 15px 15px;
-}
-div.module div div div div, div.modulebdr div div div div {
-	background: transparent none;
-	padding: 0;
-}
-div.module h3, div.modulebdr h3 {
-	margin: 0px 0px 10px 0px;
-	text-indent: 0px;
-	border: none;
-}
-
+/* 
+div.module  div.pad3 {
+	padding: 12px 15px;
+	border:1px solid #DFDFDF;
+	border-radius: 10px;
+	box-shadow:0 0 5px #ccc;
+}*/
 /* @end Modules */
 
 /* @group Footer */
@@ -629,5 +637,125 @@ margin-left: 30px;
 }
 
 /* @end */
+#wrap{
+	width:960px;
+}
+div.logo-wrapp{
+	border-radius: 0 0 10px 10px;
+}
+#mbar #nav{
+	border-radius: 0 0 10px 10px;
+	height:44px;
+	
+}
+.border-top{
+	background-color: #1E69A3;
+	height: 3px;
+	width:100%;
+}
+.article-info {
+    color: #99A1A7;
+}
+#logo{
+	overflow: hidden;
+}
+blockquote {
+    display: inline-block;
+    font-family: "Times New Roman",Times,serif;
+    font-size: 1.1em;
+    font-style: italic;
+    line-height: 25px;
+    margin: 10px 0;
+    padding: 0 0 0 36px;
+}
+.top{
+	clear: both;
+}
+#footer li{
+	float:left;
+	margin-left: 10px;
+}
+
+div.module,
+div.moduleS1,
+div.moduleS2,
+div.moduleS3{
+	margin-bottom: 20px;
+}
+#header {
+	/*background: #f2f2f2 url(../images/blue/header_main.png) repeat-x 0 top;
+	 */
+	background-color:#4582B3;
+	border-radius: 0 0 15px 15px;
+	z-index: 9050;
+}
+#footer {
+	background-color: #1e69a3; 
+	color: #fff;
+	border-radius: 0 0 10px 10px;
+}
+
+div.moduleS1 .pad-title, 
+div.moduleS2 .pad-title,
+div.moduleS3 .pad-title {
+    border-radius: 10px 10px 0 0;
+    margin: -12px -15px 10px;
+    
+}
+div.moduleS1 .pad3,
+div.moduleS2 .pad3,
+div.moduleS3 .pad3 {
+   
+    border-radius: 10px 10px 10px 10px;
+    padding: 12px 15px;
+   
+}
 
 
+.footer1,
+.footer2{
+	color:#fff;
+}
+
+#grid-top{
+	margin: 10px 0 0;
+}
+#sidebar1 ul li,
+#sidebar2 ul li {
+	background: url(../images/blue/bullet.gif) no-repeat 0em .35em;
+}
+
+#sidebar1 ul li a,
+#sidebar1 ul li span,
+#sidebar2 ul li a,
+#sidebar2 ul li span{
+	padding-left: 14px;
+}
+
+.blog h2 {
+    border-bottom: 1px solid #EEEEEE;
+    color: #4A4A4A;
+    font-family: times,Times New Roman,times-roman,georgia,serif;
+    font-size: 2.5666em;
+    font-weight: normal;
+    letter-spacing: -2px;
+    line-height: 1.35em;
+}
+h2,h3,h4, h5,h6{
+	font-weight:normal;
+}
+#sidebar1 a.nolink,
+#sidebar1 span.nolink,
+#sidebar2 a.nolink,
+#sidebar2 span.nolink {
+	text-decoration:underline;
+    cursor: pointer;
+}
+div a.joomlashack {
+    background: url("../images/jscright.png") no-repeat scroll center center transparent;
+    display: inline-block;
+    height: 27px;
+    margin: 0 auto;
+    text-indent: -1000em;
+    width: 960px;
+}

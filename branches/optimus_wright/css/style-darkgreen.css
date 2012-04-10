@@ -7,9 +7,24 @@
 
 body {
 	color: #515151;
-	background: #313d0c url(../images/style4/body_bg.png) repeat-x 0 top;
+	background-image: linear-gradient(bottom, rgb(49,61,12) 31%, rgb(87,107,9) 99%);
+background-image: -o-linear-gradient(bottom, rgb(49,61,12) 31%, rgb(87,107,9) 99%);
+background-image: -moz-linear-gradient(bottom, rgb(49,61,12) 31%, rgb(87,107,9) 99%);
+background-image: -webkit-linear-gradient(bottom, rgb(49,61,12) 31%, rgb(87,107,9) 99%);
+background-image: -ms-linear-gradient(bottom, rgb(49,61,12) 31%, rgb(87,107,9) 99%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.31, rgb(49,61,12)),
+	color-stop(0.99, rgb(87,107,9))
+);
+
+
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 80%;
+	border-top: 7px solid #1C270D;
 }
 
 
@@ -19,13 +34,15 @@ body {
 ----------------------------------------------------
 */
 
-
 #header {
-	background: #f2f2f2 url(../images/style4/header_main.png) repeat-x 0 top;
+	/*background: #f2f2f2 url(../images/blue/header_main.png) repeat-x 0 top;
+	 */
+	background-color:#101E00;
+	border-radius: 0 0 15px 15px;
+	z-index: 9050;
 }
-
 #logo-graphic h1 a {
-	background: url(../images/style4/logo.png) no-repeat;
+	background: url(../images/darkgreen/logo.png) no-repeat;
 }
 
 /*
@@ -56,6 +73,12 @@ a {
 	text-decoration: underline;
 
 }
+ ul li a ,
+ul li span{
+	color: #728e14;
+	text-decoration: underline;
+
+} 
 a:hover {
 	color: #728e14;
 	text-decoration: none;
@@ -414,13 +437,17 @@ div.moduletable h3, div.moduletablebdr h3 {
 }
 
 /*LINKS*/
-#footer a, #footer #mainlevel li a {
+#footer a, #footer #mainlevel li a,
+#footer span, #footer #mainlevel li span {
 	font: 11px Arial, Helvetica, sans-serif;
 	color: #efefef;
 }
 #footer a:hover,
 #footer #mainlevel li a:hover,
-#footer #mainlevel li a#active_menu {
+#footer #mainlevel li a#active_menu ,
+#footer span:hover,
+#footer #mainlevel li span:hover,
+#footer #mainlevel li span#active_menu {
 	color: #ccc;
 	text-decoration: underline;
 }
@@ -452,12 +479,12 @@ li.mostreadS3,
 li.mostreadS1,
 li.mostreadS2,
 li.mostreadbdr {
-	background: url(../images/style4/bullet.gif) no-repeat 0em .35em;
+	background: url(../images/darkgreen/bullet.gif) no-repeat 0em .35em;
 }
 
 ul.menu-sidenav li,
 a.mainlevel-sidenav {
-	background: url(../images/style4/bullet.gif) no-repeat 0 .15em;
+	background: url(../images/darkgreen/bullet.gif) no-repeat 0 .15em;
 	padding-left: 14px;
 }
 
@@ -495,7 +522,7 @@ div.blog_more {
 
 div.blog_more ul li a {
 	border-bottom: 1px solid #eee;
-    background: url(../images/style4/list-arrow.png) no-repeat 4px 10px;
+    background: url(../images/darkgreen/list-arrow.png) no-repeat 4px 10px;
     text-indent: 14px;
 }
 
@@ -531,26 +558,26 @@ div.mosimage_caption {
 */
 
 .menuleft {
-	background: url(../images/style4/menuleft.png) no-repeat left top;
+	background: url(../images/darkgreen/menuleft.png) no-repeat left top;
 }
 .menuright {
-	background: url(../images/style4/menuright.png) no-repeat left top;
+	background: url(../images/darkgreen/menuright.png) no-repeat left top;
 }
 .ftr-left {
-	background: url(../images/style4/ftr-left.png) no-repeat left bottom;
+	background: url(../images/darkgreen/ftr-left.png) no-repeat left bottom;
 }
 .ftr-right {
-	background: url(../images/style4/ftr-right.png) no-repeat left bottom;
+	background: url(../images/darkgreen/ftr-right.png) no-repeat left bottom;
 }
 
-div.moduletablebdr {background: url(../images/style4/topright_bdr.png) 100% 0 no-repeat;}
-div.moduletablebdr div {background: url(../images/style4/topleft_bdr.png) 0 0 no-repeat;}
-div.moduletablebdr div div  {background: url(../images/style4/botright_bdr.png) 100% 100% no-repeat;}
-div.moduletablebdr div div div  {background: url(../images/style4/botleft_bdr.png) 0 100% no-repeat;}
+div.moduletablebdr {background: url(../images/darkgreen/topright_bdr.png) 100% 0 no-repeat;}
+div.moduletablebdr div {background: url(../images/darkgreen/topleft_bdr.png) 0 0 no-repeat;}
+div.moduletablebdr div div  {background: url(../images/darkgreen/botright_bdr.png) 100% 100% no-repeat;}
+div.moduletablebdr div div div  {background: url(../darkgreen/style4/botleft_bdr.png) 0 100% no-repeat;}
 
-div.moduletableS1 {background: url(../images/style4/topright_light.png) 100% 0 no-repeat;}
-div.moduletableS1 div {background: url(../images/style4/topleft_light.png) 0 0 no-repeat;}
-div.moduletableS1 div div {background: url(../images/style4/botright_light.png) 100% 100% no-repeat;}
+div.moduletableS1 {background: url(../images/darkgreen/topright_light.png) 100% 0 no-repeat;}
+div.moduletableS1 div {background: url(../images/darkgreen/topleft_light.png) 0 0 no-repeat;}
+div.moduletableS1 div div {background: url(../images/darkgreen/botright_light.png) 100% 100% no-repeat;}
 div.moduletableS1 div div div {background: url(../images/style4/botleft_light.png) 0 100% no-repeat;}
 
 div.moduletableS2 {background: url(../images/style4/topright_mid.png) 100% 0 no-repeat;}
@@ -574,108 +601,134 @@ div.moduletableS3 div div div {background: url(../images/style4/botleft_dark.png
 ----------------------------------------------------
 */
 
-#mbar #nav ul.menu li {
-	font-weight: normal;
-	font-weight: bold;
-}
-#nav ul li a {
-/* NAV UP COLOR */	color: #f4f7d4;
-	background: url(../images/style4/nav_left_up.png) no-repeat left center;
-}
+#nav ul li a ,
+#nav ul li span {
+	background-image: linear-gradient(bottom, rgb(49,64,14) 25%, rgb(77,93,19) 100%);
+background-image: -o-linear-gradient(bottom, rgb(49,64,14) 25%, rgb(77,93,19) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(49,64,14) 25%, rgb(77,93,19) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(49,64,14) 25%, rgb(77,93,19) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(49,64,14) 25%, rgb(77,93,19) 100%);
 
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.25, rgb(49,64,14)),
+	color-stop(1, rgb(77,93,19))
+);
+color: #F4F7D4;
+}
 #nav ul li a:hover,
-#nav ul li:hover a,
-#nav ul li.iehover a {
-/* NAV OVER COLOR */	color: #3a460f;
-	background: url(../images/style4/nav_left_over.png) no-repeat left center;
+#nav ul li span:hover{
+	background-image: linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
+background-image: -o-linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
+background-image: -moz-linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
+background-image: -webkit-linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
+background-image: -ms-linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.38, rgb(208,208,198)),
+	color-stop(0.69, rgb(249,249,248))
+);
+color: #3A460F;
 }
 
-#nav li#current a,
-#nav li#current a:hover,
-#nav li#current:hover a,
-#nav li#current.iehover a {
-/* NAV ACTIVE COLOR */	color: #303030;
-	background: url(../images/style4/nav_left_active.png) no-repeat left center;
+#nav ul li ul{
+	background-color: #23330D;
 }
-#nav li#current,
-#nav li#current:hover,
-#nav li#current.iehover {
-	background: url(../images/style4/nav_right_active.png) no-repeat right center;
+#nav ul li ul li:hover{
+	background-color: #F0BE2D;
+	
 }
-
-
-#nav ul li:hover li a,
-#nav ul li.iehover li a,
-#nav ul li#current:hover li a,
-#nav ul li#current.iehover li a,
-#nav ul li:hover ul ul li a {
-/* LEVEL 2 NAV UP COLOR */	color: #fff;
-	background-image: none;
+#nav ul li ul li:hover a,
+#nav ul li ul li:hover span,
+#nav ul li ul li:hover ul li:hover a,
+#nav ul li ul li:hover ul li:hover span{
+	color: #3A460F;
 }
-
-
-#nav li:hover ul, 
-#nav li li:hover ul, 
-#nav li li li:hover ul, 
-#nav li li li li:hover ul,
-#nav li.iehover ul, 
-#nav li li.iehover ul, 
-#nav li li li.iehover ul,
-#nav li li li li.iehover ul,
-#nav ul li:hover li a,
-#nav ul li.iehover li a,
-#nav ul li:hover ul ul li a,
-#nav ul li.iehover ul ul li a
- {
-/* LEVEL 2 NAV UP BG COLOR */	background-color: #23330d;
-}
-
-#nav li ul li a:hover,
-#nav li ul li ul li a:hover,
-#nav li li:hover,
-#nav ul li li.iehover,
-#nav li li.iehover a,
-#nav ul li li:hover a,
-#nav ul li li:hover,
-#nav ul li li.iehover,
-#nav ul li li#current a:hover,
-#nav li.haschild ul li#current.iehover,
-#nav li.haschild ul li#current:hover,
-#nav ul li.haschild li#current a:hover
-{
-/* LEVEL 2 NAV OVER BG COLOR */	background-color: #f0be2d;
-/* LEVEL 2 NAV OVER TEXT COLOR */	color: #3a460f;
-background-image: none;
-}
-
-#nav ul li#current ul li a,
-#nav ul li#current ul li,
-#nav ul li#current ul li a:hover,
-#nav ul li#current ul li.hover
-#nav ul li#current ul li.iehover,
-#nav ul li.haschild li#current a {
-/* LEVEL 2 ACTIVE TEXT COLOR */	color: #ffffff;
-}
-
-#nav li li {
-/* LEVEL 2 SEPARATOR */	border-bottom: 1px solid #2d4211;
-}
-
-#nav li ul,#nav ul ul ul a {
-	width: 173px;
-/* SUBLEVEL BLOCK OUTLINE */
-	border-right: 1px solid #2d4211;
-	border-left: 1px solid #2d4211;
-	border-top: none;
+#nav ul li ul li:hover ul li a{
+	color: #fff;
 }
 
 /* END TOPNAV CUSTOMIZATION */
-#nav li, #nav {background: url(../images/style4/nav_bg.png) repeat-x 0 bottom;font-weight: bold;}
-#nav li {background: url(../images/style4/nav_right_up.png) no-repeat right center;}
-#nav ul li:hover,#nav ul li.iehover {background: url(../images/style4/nav_right_over.png) no-repeat right center;}
-#nav ul li:hover li a,#nav ul li.iehover li a {background-image: none;}
-#nav ul ul a {width: 170px;}
-#nav li li,#nav li.haschild ul li#current:hover,#nav li.haschild ul li#current.iehover {width: 173px;}
-
 
 /* @end */
+.border-top{
+	background-color: #3D4416;
+	height: 3px;
+	width:100%;
+}
+.logo-wrapp{
+
+background-image: linear-gradient(bottom, rgb(61,76,29) 25%, rgb(15,21,5) 100%);
+background-image: -o-linear-gradient(bottom, rgb(61,76,29) 25%, rgb(15,21,5) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(61,76,29) 25%, rgb(15,21,5) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(61,76,29) 25%, rgb(15,21,5) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(61,76,29) 25%, rgb(15,21,5) 100%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.25, rgb(61,76,29)),
+	color-stop(1, rgb(15,21,5))
+);
+
+
+} 
+.footer1,
+.footer2{
+	color:#fff;
+}
+#footer {
+	border-radius: 0 0 10px 10px;
+}
+#nav li#current a, 
+#nav li.current a, 
+#nav li#current span,
+ #nav li.current span 
+ {
+    background-image: linear-gradient(bottom, rgb(236,189,46) 38%, rgb(252,196,41) 69%);
+background-image: -o-linear-gradient(bottom, rgb(236,189,46) 38%, rgb(252,196,41) 69%);
+background-image: -moz-linear-gradient(bottom, rgb(236,189,46) 38%, rgb(252,196,41) 69%);
+background-image: -webkit-linear-gradient(bottom, rgb(236,189,46) 38%, rgb(252,196,41) 69%);
+background-image: -ms-linear-gradient(bottom, rgb(236,189,46) 38%, rgb(252,196,41) 69%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.38, rgb(236,189,46)),
+	color-stop(0.69, rgb(252,196,41))
+);
+color: #303030;
+}
+
+div.moduleS1 .pad-title{
+    background-color: #516014;
+   
+}
+div.moduleS1 .pad3 {
+    background-color: #EDEDED;  
+}
+div.moduleS2 .pad-title{
+    background-color: #EDBD2E;
+   
+}
+div.moduleS2 .pad3 {
+    background-color: #F4D882;  
+}
+div.moduleS3 .pad-title{
+    background-color: #364419;
+   
+}
+div.moduleS3 .pad3 {
+    background-color: #516014;  
+    color: #fff;
+}
+div.moduleS3 .pad-title h3{
+	color: #EAF4D6;      
+}

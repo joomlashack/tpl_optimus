@@ -1,0 +1,167 @@
+/* TEMPLATE SPECIFIC CSS CODE fo fluid */
+
+div#wrap.wrap_fluid {
+	width: 90%;
+	min-width: 800px;
+}
+
+#logogrid .grid_1,
+#logogrid .grid_2,
+#logogrid .grid_3,
+#logogrid .grid_4,
+#logogrid .grid_5,
+#logogrid .grid_6,
+#logogrid .grid_7,
+#logogrid .grid_8,
+#logogrid .grid_9,
+#logogrid .grid_10,
+#logogrid .grid_11,
+#logogrid .grid_12 {
+    width: 100%;
+}
+
+.container_fluid .flexgrid_1 {
+width: 98%;
+}
+.container_fluid .flexgrid_2 {
+width: 48%;
+}
+.container_fluid .flexgrid_3 {
+width:  31.33%;
+}
+.container_fluid .flexgrid_4 {
+width:23%;
+}
+.container_fluid .flexgrid_5 {
+width:18%;
+}
+.container_fluid .flexgrid_6 {
+width: 14.66%;
+}
+/** For menu flexgrid logo ***/
+.container_fluid .grid_1 {
+    width: 8.33%;
+     margin-left: 0;
+    margin-right: 0;
+}
+.container_fluid .grid_2 {
+    width: 16.66%;
+     margin-left: 0;
+    margin-right: 0;
+}
+.container_fluid .grid_3 {
+    width:  25%;
+     margin-left: 0;
+    margin-right: 0;
+}
+.container_fluid .grid_4 {
+    width: 33.33%;
+     margin-left: 0;
+    margin-right: 0;
+}
+.container_fluid .grid_5 {
+    width: 41.66%;
+     margin-left: 0;
+    margin-right: 0;
+}
+.container_fluid .grid_6 {
+    width: 50%;
+     margin-left: 0;
+    margin-right: 0;
+}
+.container_fluid .grid_7 {
+    width: 58.33%;
+     margin-left: 0;
+    margin-right: 0;
+}
+.container_fluid .grid_8 {
+    width:  66.66%;
+     margin-left: 0;
+    margin-right: 0;
+}
+.container_fluid .grid_9 {
+     width: 75%;
+      margin-left: 0;
+    margin-right: 0;
+}
+.container_fluid .grid_10 {
+    width:  83.33%;
+     margin-left: 0;
+    margin-right: 0;
+}
+.container_fluid .grid_11 {
+   	width: 91.6%;
+   	 margin-left: 0;
+    margin-right: 0;
+}
+.container_fluid .grid_12 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+.container_fluid .push_1 {
+    left: 8.33%;
+}
+.container_fluid .push_2 {
+    left: 16.66%;
+}
+.container_fluid .push_3 {
+    left: 25%;
+}
+.container_fluid .push_4 {
+    left: 33.33%;
+}
+.container_fluid .push_5 {
+    left: 41.66%;
+}
+.container_fluid .push_6 {
+    left: 50%;
+}
+.container_fluid .push_7 {
+    left: 58.33%;
+}
+.container_fluid .push_8 {
+    left: 66.66%;
+}
+.container_fluid .push_9 {
+    left: 75%;
+}
+.container_fluid .push_10 {
+    left: 83.33%;
+}
+.container_fluid .push_11 {
+    left: 91.6%;
+}
+.container_fluid .pull_1 {
+    left: -8.33%;
+}
+.container_fluid .pull_2 {
+    left: -16.66%;
+}
+.container_fluid .pull_3 {
+    left: -25%;
+}
+.container_fluid .pull_4 {
+    left: -33.33%;
+}
+.container_fluid .pull_5 {
+    left: -41.66%;
+}
+.container_fluid .pull_6 {
+    left: -50%;
+}
+.container_fluid .pull_7 {
+    left: -58.33%;
+}
+.container_fluid .pull_8 {
+    left: -66.66%;
+}
+.container_fluid .pull_9 {
+    left: -75%;
+}
+.container_fluid .pull_10 {
+    left: -83.33%;
+}
+.container_fluid .pull_11 {
+    left: -91.6%;
+}

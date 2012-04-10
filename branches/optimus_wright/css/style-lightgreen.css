@@ -7,9 +7,22 @@
 
 body {
 	color: #515151;
-	background: #c0cf7f url(../images/style5/body_bg.png) repeat-x 0 top;
+	background-image: linear-gradient(bottom, rgb(192,207,127) 41%, rgb(117,149,41) 81%);
+background-image: -o-linear-gradient(bottom, rgb(192,207,127) 41%, rgb(117,149,41) 81%);
+background-image: -moz-linear-gradient(bottom, rgb(192,207,127) 41%, rgb(117,149,41) 81%);
+background-image: -webkit-linear-gradient(bottom, rgb(192,207,127) 41%, rgb(117,149,41) 81%);
+background-image: -ms-linear-gradient(bottom, rgb(192,207,127) 41%, rgb(117,149,41) 81%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.41, rgb(192,207,127)),
+	color-stop(0.81, rgb(117,149,41))
+);
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 80%;
+	border-top:7px solid #C0CF7F;
 }
 
 
@@ -57,7 +70,19 @@ a {
 	text-decoration: underline;
 
 }
+ul li a,
+ul li span {
+	color: #728e14;
+	text-decoration: underline;
+
+}
 a:hover {
+	color: #728e14;
+	text-decoration: none;
+}
+
+ul li a:hover,
+ul li span:hover {
 	color: #728e14;
 	text-decoration: none;
 }
@@ -415,13 +440,17 @@ div.moduletable h3, div.moduletablebdr h3 {
 }
 
 /*LINKS*/
-#footer a, #footer #mainlevel li a {
+#footer a, #footer #mainlevel li a ,
+#footer span, #footer #mainlevel li span{
 	font: 11px Arial, Helvetica, sans-serif;
 	color: #efefef;
 }
 #footer a:hover,
 #footer #mainlevel li a:hover,
-#footer #mainlevel li a#active_menu {
+#footer #mainlevel li a#active_menu ,
+#footer span:hover,
+#footer #mainlevel li span:hover,
+#footer #mainlevel li span#active_menu {
 	color: #ccc;
 	text-decoration: underline;
 }
@@ -531,19 +560,6 @@ div.mosimage_caption {
 ----------------------------------------------------
 */
 
-.menuleft {
-	background: url(../images/style5/menuleft.png) no-repeat left top;
-}
-.menuright {
-	background: url(../images/style5/menuright.png) no-repeat left top;
-}
-.ftr-left {
-	background: url(../images/style5/ftr-left.png) no-repeat left bottom;
-}
-.ftr-right {
-	background: url(../images/style5/ftr-right.png) no-repeat left bottom;
-}
-
 div.moduletablebdr {background: url(../images/style5/topright_bdr.png) 100% 0 no-repeat;}
 div.moduletablebdr div {background: url(../images/style5/topleft_bdr.png) 0 0 no-repeat;}
 div.moduletablebdr div div  {background: url(../images/style5/botright_bdr.png) 100% 100% no-repeat;}
@@ -566,117 +582,155 @@ div.moduletableS3 div div div {background: url(../images/style5/botleft_dark.png
 
 
 
-/* @group TOPNAV CUSTOMIZATION */
 
-
-/*
-----------------------------------------------------
-               SUCKERFISH MENU COLORS
-----------------------------------------------------
-*/
-
-#mbar #nav ul.menu li {
-	font-weight: normal;
-	font-weight: bold;
-}
-#nav ul li a {
-/* NAV UP COLOR */	color: #456b11;
-	background: url(../images/style5/nav_left_up.png) no-repeat left center;
+#nav ul li a ,
+#nav ul li span{	color: #456b11;
+	
 }
 
 #nav ul li a:hover,
-#nav ul li:hover a,
-#nav ul li.iehover a {
+#nav ul li span:hover{
 /* NAV OVER COLOR */	color: #3a590e;
-	background: url(../images/style5/nav_left_over.png) no-repeat left center;
 }
 
 #nav li#current a,
-#nav li#current a:hover,
-#nav li#current:hover a,
-#nav li#current.iehover a {
+#nav li#current span,
+#nav li.current a,
+#nav li.current span {
 /* NAV ACTIVE COLOR */	color: #456c13;
-	background: url(../images/style5/nav_left_active.png) no-repeat left center;
-}
-#nav li#current,
-#nav li#current:hover,
-#nav li#current.iehover {
-	background: url(../images/style5/nav_right_active.png) no-repeat right center;
 }
 
 
-#nav ul li:hover li a,
-#nav ul li.iehover li a,
-#nav ul li#current:hover li a,
-#nav ul li#current.iehover li a,
-#nav ul li:hover ul ul li a {
-/* LEVEL 2 NAV UP COLOR */	color: #fff;
-	background-image: none;
+
+
+#nav ul li ul
+ {background-color: #759a2c;
 }
 
-
-#nav li:hover ul, 
-#nav li li:hover ul, 
-#nav li li li:hover ul, 
-#nav li li li li:hover ul,
-#nav li.iehover ul, 
-#nav li li.iehover ul, 
-#nav li li li.iehover ul,
-#nav li li li li.iehover ul,
-#nav ul li:hover li a,
-#nav ul li.iehover li a,
-#nav ul li:hover ul ul li a,
-#nav ul li.iehover ul ul li a
- {
-/* LEVEL 2 NAV UP BG COLOR */	background-color: #759a2c;
-}
-
-#nav li ul li a:hover,
-#nav li ul li ul li a:hover,
-#nav li li:hover,
-#nav ul li li.iehover,
-#nav li li.iehover a,
-#nav ul li li:hover a,
-#nav ul li li:hover,
-#nav ul li li.iehover,
-#nav ul li li#current a:hover,
-#nav li.haschild ul li#current.iehover,
-#nav li.haschild ul li#current:hover,
-#nav ul li.haschild li#current a:hover
-{
-/* LEVEL 2 NAV OVER BG COLOR */	background-color: #f0be2d;
-/* LEVEL 2 NAV OVER TEXT COLOR */	color: #455225;
-background-image: none;
-}
-
-#nav ul li#current ul li a,
-#nav ul li#current ul li,
-#nav ul li#current ul li a:hover,
-#nav ul li#current ul li.hover
-#nav ul li#current ul li.iehover,
-#nav ul li.haschild li#current a {
-/* LEVEL 2 ACTIVE TEXT COLOR */	color: #ffffff;
-}
-
-#nav li li {
-/* LEVEL 2 SEPARATOR */	border-bottom: 1px solid #698b27;
-}
-
-#nav li ul,#nav ul ul ul a {
-	width: 173px;
-/* SUBLEVEL BLOCK OUTLINE */
-	border-right: 1px solid #678926;
-	border-left: 1px solid #678926;
-	border-top: none;
-}
-
-/* END TOPNAV CUSTOMIZATION */
-#nav li, #nav {background: url(../images/style5/nav_bg.png) repeat-x 0 bottom;font-weight: bold;}
-#nav li {background: url(../images/style5/nav_right_up.png) no-repeat right center;}
-#nav ul li:hover,#nav ul li.iehover {background: url(../images/style5/nav_right_over.png) no-repeat right center;}
-#nav ul li:hover li a,#nav ul li.iehover li a {background-image: none;}
-#nav ul ul a {width: 170px;}
-#nav li li,#nav li.haschild ul li#current:hover,#nav li.haschild ul li#current.iehover {width: 173px;}
 
 
 /* @end */
+div.moduleS1 .pad-title{
+    background-color: #C9E27A;
+   
+}
+div.moduleS1 .pad-title h3{
+	color: #76923F;
+}
+div.moduleS1 .pad3 {
+    background-color: #F1F1F1;  
+}
+div.moduleS2 .pad-title{
+    background-color: #4C7513;
+   
+}
+div.moduleS2 .pad-title h3{
+	color:#fff;
+}
+div.moduleS2 .pad3 {
+    background-color: #C9E27A;  
+    color: #000;
+}
+div.moduleS3 .pad-title{
+    background-color: #B2C96C;
+   
+}
+div.moduleS3 .pad3 {
+    background-color: #749E28;  
+    color: #F8FFBE;
+}
+div.moduleS3 .pad-title h3{
+	color: #516F1B;      
+}
+.border-top{
+	background-color: #697D2E;
+}
+#header{
+background-image: linear-gradient(bottom, rgb(118,155,43) 10%, rgb(87,129,24) 45%);
+background-image: -o-linear-gradient(bottom, rgb(118,155,43) 10%, rgb(87,129,24) 45%);
+background-image: -moz-linear-gradient(bottom, rgb(118,155,43) 10%, rgb(87,129,24) 45%);
+background-image: -webkit-linear-gradient(bottom, rgb(118,155,43) 10%, rgb(87,129,24) 45%);
+background-image: -ms-linear-gradient(bottom, rgb(118,155,43) 10%, rgb(87,129,24) 45%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.1, rgb(118,155,43)),
+	color-stop(0.45, rgb(87,129,24))
+);
+}
+.logo-wrapp{
+	background-image: linear-gradient(bottom, rgb(235,235,235) 41%, rgb(255,255,255) 81%);
+background-image: -o-linear-gradient(bottom, rgb(235,235,235) 41%, rgb(255,255,255) 81%);
+background-image: -moz-linear-gradient(bottom, rgb(235,235,235) 41%, rgb(255,255,255) 81%);
+background-image: -webkit-linear-gradient(bottom, rgb(235,235,235) 41%, rgb(255,255,255) 81%);
+background-image: -ms-linear-gradient(bottom, rgb(235,235,235) 41%, rgb(255,255,255) 81%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.41, rgb(235,235,235)),
+	color-stop(0.81, rgb(255,255,255))
+);
+}
+#nav ul li a,
+#nav ul li span{
+	background-image: linear-gradient(bottom, rgb(178,199,107) 41%, rgb(203,229,123) 81%);
+background-image: -o-linear-gradient(bottom, rgb(178,199,107) 41%, rgb(203,229,123) 81%);
+background-image: -moz-linear-gradient(bottom, rgb(178,199,107) 41%, rgb(203,229,123) 81%);
+background-image: -webkit-linear-gradient(bottom, rgb(178,199,107) 41%, rgb(203,229,123) 81%);
+background-image: -ms-linear-gradient(bottom, rgb(178,199,107) 41%, rgb(203,229,123) 81%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.41, rgb(178,199,107)),
+	color-stop(0.81, rgb(203,229,123))
+);
+border:1px solid #759B2B;
+}
+#nav ul li a:hover,
+#nav ul li span:hover{
+	background-image: linear-gradient(bottom, rgb(244,195,19) 41%, rgb(252,177,1) 81%);
+background-image: -o-linear-gradient(bottom, rgb(244,195,19) 41%, rgb(252,177,1) 81%);
+background-image: -moz-linear-gradient(bottom, rgb(244,195,19) 41%, rgb(252,177,1) 81%);
+background-image: -webkit-linear-gradient(bottom, rgb(244,195,19) 41%, rgb(252,177,1) 81%);
+background-image: -ms-linear-gradient(bottom, rgb(244,195,19) 41%, rgb(252,177,1) 81%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.41, rgb(244,195,19)),
+	color-stop(0.81, rgb(252,177,1))
+);
+
+}
+#nav li#current a,
+#nav li.current a,
+#nav li#current span,
+#nav li.current span {
+	background-image: linear-gradient(bottom, rgb(237,243,247) 0%, rgb(237,243,247) 54%, rgb(251,252,253) 77%);
+background-image: -o-linear-gradient(bottom, rgb(237,243,247) 0%, rgb(237,243,247) 54%, rgb(251,252,253) 77%);
+background-image: -moz-linear-gradient(bottom, rgb(237,243,247) 0%, rgb(237,243,247) 54%, rgb(251,252,253) 77%);
+background-image: -webkit-linear-gradient(bottom, rgb(237,243,247) 0%, rgb(237,243,247) 54%, rgb(251,252,253) 77%);
+background-image: -ms-linear-gradient(bottom, rgb(237,243,247) 0%, rgb(237,243,247) 54%, rgb(251,252,253) 77%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(237,243,247)),
+	color-stop(0.54, rgb(237,243,247)),
+	color-stop(0.77, rgb(251,252,253))
+);
+}
+#nav ul li ul li{
+	border-bottom: 1px solid  #698B27;
+}
+#nav ul li ul li:hover{
+	background-color: #F0BE2D;
+}

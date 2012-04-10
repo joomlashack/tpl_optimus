@@ -6,10 +6,24 @@
 */
 
 body {
-	color: #515151;
-	background: #dce9f7 url(../images/style1/body_bg.png) repeat-x 0 top;
+	color: #515151;/*
+	background: #dce9f7 url(../images/blue/body_bg.png) repeat-x 0 top;*/
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 80%;
+	border-top: 7px solid #025695;
+background-image: linear-gradient(bottom, rgb(220,233,247) 70%, rgb(98,151,192) 100%);
+background-image: -o-linear-gradient(bottom, rgb(220,233,247) 70%, rgb(98,151,192) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(220,233,247) 70%, rgb(98,151,192) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(220,233,247) 70%, rgb(98,151,192) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(220,233,247) 70%, rgb(98,151,192) 100%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.7, rgb(220,233,247)),
+	color-stop(1, rgb(98,151,192))
+);
 }
 
 
@@ -21,11 +35,13 @@ body {
 
 
 #header {
-	background: #f2f2f2 url(../images/style1/header_main.png) repeat-x 0 top;
+	/*background: #f2f2f2 url(../images/blue/header_main.png) repeat-x 0 top;
+	 */
+	background-color:#4582B3;
 }
 
 #logo-graphic h1 a {
-	background: url(../images/style1/logo.png) no-repeat;
+	background: url(../images/blue/logo.png) no-repeat;
 }
 
 /*
@@ -46,7 +62,6 @@ body {
 	font-size: 22px;
 	color: #4081b2;
 }
-
 
 /*
 ----------------------------------------------------
@@ -268,8 +283,6 @@ ul li span.small {
 	background: #FFF;
 	}
 	
-
-
 /*
 ----------------------------------------------------
                 "S1" MODULE SUFFIX
@@ -278,27 +291,29 @@ ul li span.small {
 
 
 /* "S1" TEXT COLOR */
-div.moduletableS1 {
+div.moduleS1 {
 	color: #51504a;
 }
 
 
 
 /* "S1" LINK COLOR */
-div.moduletableS1 a,div.moduletableS1 a:hover,
-div.moduletableS1 a.latestnewsS1,div.moduletableS1 a.latestnewsS1:hover,
-div.moduletableS1 a.mostreadS1,div.moduletableS1 a.mostreadS1:hover {
+div.moduleS1 a,div.moduletableS1 a:hover,
+div.moduleS1 a.latestnewsS1,div.moduleS1 a.latestnewsS1:hover,
+div.moduleS1 a.mostreadS1,div.moduleS1 a.mostreadS1:hover {
 	color: #1e69a3;
 }
 /* "S1" MODULE HEADING COLOR */
-div.moduletableS1 h3 {
+div.moduleS1 h3 {
 	color: #fff;
 	font-size: 1.2em;
 	letter-spacing:normal;
-	line-height: .75em;
-    padding: 10px;
 }
-
+div.moduleS1 .pad3{
+	padding: 12px 15px;
+	background-color: #F5FBFF;
+	border-radius: 10px;
+}
 
 /*
 ----------------------------------------------------
@@ -308,25 +323,33 @@ div.moduletableS1 h3 {
 
 
 /* "S2" TEXT COLOR */
-div.moduletableS2 {
+div.moduleS2 {
 	color: #51504a;
 }
 /* "S2" LINK COLOR */
-div.moduletableS2 a,div.moduletableS2 a:hover,
-div.moduletableS2 a.latestnewsS2,div.moduletableS2 a.latestnewsS2:hover,
-div.moduletableS2 a.mostreadS2,div.moduletableS2 a.mostreadS2:hover {
+div.moduleS2 a,div.moduleS2 a:hover,
+div.moduleS2 a.latestnewsS2,div.moduleS2 a.latestnewsS2:hover,
+div.moduleS2 a.mostreadS2,div.moduleS2 a.mostreadS2:hover {
 	color: #1e69a3;
 }
 /* "S2" MODULE HEADING COLOR */
-div.moduletableS2 h3 {
+div.moduleS2 h3 {
 	color: #fdfeff;
 	font-size: 1.2em;
 	letter-spacing:normal;
-	line-height: .75em;
-    padding: 10px;
 }
-
-
+div.moduleS2 .pad3{
+	background-color: #EFEFEF;
+	border-radius: 10px;
+	padding: 12px 15px;
+}
+div.moduleS1 .pad-title,
+div.moduleS2 .pad-title{
+	background-color: #538EBA;
+	border-radius: 10px 10px 0 0;
+	margin: -12px -15px 10px;
+	
+}
 /*
 ----------------------------------------------------
                  "S3" MODULE SUFFIX
@@ -335,27 +358,34 @@ div.moduletableS2 h3 {
 
 
 /* "S3" TEXT COLOR */
-div.moduletableS3 {
+div.moduleS3 {
 	color: #51504a;
 }
 
 /* "S3" LINK COLOR */
-div.moduletableS3 a,div.moduletableS3 a:hover,
-div.moduletableS3 a.latestnewsS3,div.moduletableS3 a.latestnewsS3:hover,
-div.moduletableS3 a.mostreadS3,div.moduletableS3 a.mostreadS3:hover
+div.moduleS3 a,div.moduleS3 a:hover,
+div.moduleS3 a.latestnewsS3,div.moduleS3 a.latestnewsS3:hover,
+div.moduleS3 a.mostreadS3,div.moduleS3 a.mostreadS3:hover
  {
 	color: #1e69a3;
 }
 
 /* "S3" MODULE HEADING COLOR */
-div.moduletableS3 h3 {
+div.moduleS3 h3 {
 	color: #fff;
 	font-size: 1.2em;
 	letter-spacing:normal;
-	line-height: .75em;
-    padding: 10px;
 }
-
+div.moduleS3 .pad-title{
+	background-color: #1E69A3;
+	border-radius: 10px 10px 0 0;
+	margin: 0 -15px 0;
+}
+div.moduleS3 .pad3{
+	border-radius:10px;
+	background-color: #D2E2F1;
+	padding: 0 15px 10px;
+}
 /*
 ----------------------------------------------------
            "bdr" MODULE SUFFIX (default)
@@ -369,12 +399,8 @@ div.module,div.moduletablebdr {
 
 
 /* "bdr" LINK COLOR */
-div.module a,div.moduletablebdr a,
-div.module a:hover,div.moduletablebdr a:hover,
-div.module a.latestnews,div.moduletablebdr a.latestnewsbdr,
-div.module a.latestnews:hover,div.moduletablebdr a.latestnewsbdr:hover,
-div.module a.mostread,div.moduletablebdr a.mostreadbdr,
-div.module a.mostread:hover,div.moduletablebdr a.mostreadbdr:hover {
+li a,
+li span{
 	color:#246da5;
 }
 
@@ -411,20 +437,16 @@ div.module h3, div.moduletablebdr h3 {
 #footer {
 	background-color: #1e69a3;
 	color: #fff;
+	border-radius: 0 0 10px 10px;
 }
 
 /*LINKS*/
-#footer a, #footer #mainlevel li a {
+#footer a,
+#footer span,
+#footer #mainlevel li a {
 	font: 11px Arial, Helvetica, sans-serif;
 	color: #efefef;
 }
-#footer a:hover,
-#footer #mainlevel li a:hover,
-#footer #mainlevel li a#active_menu {
-	color: #ccc;
-	text-decoration: underline;
-}
-
 /*
 ----------------------------------------------------
                     IMAGE STYLES
@@ -442,24 +464,7 @@ img.pad {float:none;margin:0px auto;background-color:#f4f4f4;border:1px solid #e
 ----------------------------------------------------
 */
 
-li.latestnews,
-li.latestnewsS1,
-li.latestnewsS2,
-li.latestnewsS3,
-li.latestnewsbdr,
-li.mostread,
-li.mostreadS3,
-li.mostreadS1,
-li.mostreadS2,
-li.mostreadbdr {
-	background: url(../images/style1/bullet.gif) no-repeat 0em .35em;
-}
 
-ul.menu-sidenav li,
-a.mainlevel-sidenav {
-	background: url(../images/style1/bullet.gif) no-repeat 0 .15em;
-	padding-left: 14px;
-}
 
 .createdate,.modifydate,.small {
 	color: #99a1a7;
@@ -495,7 +500,7 @@ div.blog_more {
 
 div.blog_more ul li a {
 	border-bottom: 1px solid #eee;
-    background: url(../images/style1/list-arrow.png) no-repeat 4px 10px;
+    background: url(../images/blue/list-arrow.png) no-repeat 4px 10px;
     text-indent: 14px;
 }
 
@@ -530,41 +535,6 @@ div.mosimage_caption {
 ----------------------------------------------------
 */
 
-.menuleft {
-	background: url(../images/style1/menuleft.png) no-repeat left top;
-}
-.menuright {
-	background: url(../images/style1/menuright.png) no-repeat left top;
-}
-.ftr-left {
-	background: url(../images/style1/ftr-left.png) no-repeat left bottom;
-}
-.ftr-right {
-	background: url(../images/style1/ftr-right.png) no-repeat left bottom;
-}
-
-div.module,div.moduletablebdr {background: url(../images/style1/topright_bdr.png) 100% 0 no-repeat;}
-div.module div, div.moduletablebdr div {background: url(../images/style1/topleft_bdr.png) 0 0 no-repeat;}
-div.module div div, div.moduletablebdr div div  {background: url(../images/style1/botright_bdr.png) 100% 100% no-repeat;}
-div.module div div div, div.moduletablebdr div div div  {background: url(../images/style1/botleft_bdr.png) 0 100% no-repeat;}
-
-div.moduletableS1 {background: url(../images/style1/topright_light.png) 100% 0 no-repeat;}
-div.moduletableS1 div {background: url(../images/style1/topleft_light.png) 0 0 no-repeat;}
-div.moduletableS1 div div {background: url(../images/style1/botright_light.png) 100% 100% no-repeat;}
-div.moduletableS1 div div div {background: url(../images/style1/botleft_light.png) 0 100% no-repeat;}
-
-div.moduletableS2 {background: url(../images/style1/topright_mid.png) 100% 0 no-repeat;}
-div.moduletableS2 div {background: url(../images/style1/topleft_mid.png) 0 0 no-repeat;}
-div.moduletableS2 div div {background: url(../images/style1/botright_mid.png) 100% 100% no-repeat;}
-div.moduletableS2 div div div {background: url(../images/style1/botleft_mid.png) 0 100% no-repeat;}
-
-div.moduletableS3 {background: url(../images/style1/topright_dark.png) 100% 0 no-repeat;}
-div.moduletableS3 div {background: url(../images/style1/topleft_dark.png) 0 0 no-repeat;}
-div.moduletableS3 div div {background: url(../images/style1/botright_dark.png) 100% 100% no-repeat;}
-div.moduletableS3 div div div {background: url(../images/style1/botleft_dark.png) 0 100% no-repeat;}
-
-
-
 /* @group TOPNAV CUSTOMIZATION */
 
 
@@ -575,103 +545,83 @@ div.moduletableS3 div div div {background: url(../images/style1/botleft_dark.png
 */
 
 
-#nav ul li a {
-/* NAV UP COLOR */	color: #fff;
-	background: url(../images/style1/nav_left_up.png) no-repeat left center;
-}
-
 #nav ul li a:hover,
-#nav ul li:hover a,
-#nav ul li.iehover a {
-/* NAV OVER COLOR */	color: #044c84;
-	background: url(../images/style1/nav_left_over.png) no-repeat left center;
-}
-
-#nav li#current a,
-#nav li#current a:hover,
-#nav li#current:hover a,
-#nav li#current.iehover a {
-/* NAV ACTIVE COLOR */	color: #303030;
-	background: url(../images/style1/nav_left_active.png) no-repeat left center;
-}
-#nav li#current,
-#nav li#current:hover,
-#nav li#current.iehover {
-	background: url(../images/style1/nav_right_active.png) no-repeat right center;
-}
-
-
-#nav ul li:hover li a,
-#nav ul li.iehover li a,
-#nav ul li#current:hover li a,
-#nav ul li#current.iehover li a,
-#nav ul li:hover ul ul li a {
-/* LEVEL 2 NAV UP COLOR */	color: #fff;
-	background-image: none;
-}
-
-
-#nav li:hover ul, 
-#nav li li:hover ul, 
-#nav li li li:hover ul, 
-#nav li li li li:hover ul,
-#nav li.iehover ul, 
-#nav li li.iehover ul, 
-#nav li li li.iehover ul,
-#nav li li li li.iehover ul,
-#nav ul li:hover li a,
-#nav ul li.iehover li a,
-#nav ul li:hover ul ul li a,
-#nav ul li.iehover ul ul li a {
-/* LEVEL 2 NAV UP BG COLOR */	background-color: #2b72a9;
-}
-
-#nav li ul li a:hover,
-#nav li ul li ul li a:hover,
-#nav li li:hover,
-#nav ul li li.iehover,
-#nav li li.iehover a,
-#nav ul li li:hover a,
-#nav ul li li:hover,
-#nav ul li li.iehover,
-#nav ul li li#current a:hover,
-#nav li.haschild ul li#current.iehover,
-#nav li.haschild ul li#current:hover,
-#nav ul li.haschild li#current a:hover
+#nav ul li span:hover
 {
-/* LEVEL 2 NAV OVER BG COLOR */	background-color: #0a5c99;
-/* LEVEL 2 NAV OVER TEXT COLOR */	color: #ffffff;
-background-image: none;
+	background-image: linear-gradient(bottom, rgb(238,239,240) 20%, rgb(213,224,228) 86%);
+	background-image: -o-linear-gradient(bottom, rgb(238,239,240) 20%, rgb(213,224,228) 86%);
+	background-image: -moz-linear-gradient(bottom, rgb(238,239,240) 20%, rgb(213,224,228) 86%);
+	background-image: -webkit-linear-gradient(bottom, rgb(238,239,240) 20%, rgb(213,224,228) 86%);
+	background-image: -ms-linear-gradient(bottom, rgb(238,239,240) 20%, rgb(213,224,228) 86%);
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.2, rgb(238,239,240)),
+	color-stop(0.86, rgb(213,224,228))
+);
+color: #004B84
+}
+#nav li li {	
+	border-bottom: 1px solid #3080be;
 }
 
-#nav ul li#current ul li a,
-#nav ul li#current ul li,
-#nav ul li#current ul li a:hover,
-#nav ul li#current ul li.hover
-#nav ul li#current ul li.iehover,
-#nav ul li.haschild li#current a {
-/* LEVEL 2 ACTIVE TEXT COLOR */	color: #ffffff;
+#nav ul li a,
+#nav ul li span
+ {
+background-color: #0A5C99;
+color: #fff;
 }
 
-#nav li li {
-/* LEVEL 2 SEPARATOR */	border-bottom: 1px solid #3080be;
+#nav ul li ul li:hover{
+	background-color: #0A5C99;
+	
 }
+#nav ul li.current a,
+#nav ul li.current span,
+#nav ul li#current a,
+#nav ul li#current span{
+	background-image: linear-gradient(bottom, rgb(237,243,248) 12%, rgb(249,251,252) 56%);
+background-image: -o-linear-gradient(bottom, rgb(237,243,248) 12%, rgb(249,251,252) 56%);
+background-image: -moz-linear-gradient(bottom, rgb(237,243,248) 12%, rgb(249,251,252) 56%);
+background-image: -webkit-linear-gradient(bottom, rgb(237,243,248) 12%, rgb(249,251,252) 56%);
+background-image: -ms-linear-gradient(bottom, rgb(237,243,248) 12%, rgb(249,251,252) 56%);
 
-#nav li ul {
-	width: 173px;
-/* SUBLEVEL BLOCK OUTLINE */
-	border-right: 1px solid #266597;
-	border-left: 1px solid #266597;
-	border-top: none;
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.12, rgb(237,243,248)),
+	color-stop(0.56, rgb(249,251,252))
+);
+	color: #303030;
 }
-
-/* END TOPNAV CUSTOMIZATION */
-#nav li, #nav {background: url(../images/style1/nav_bg.png) repeat-x 0 bottom;font-weight: bold;}
-#nav li {background: url(../images/style1/nav_right_up.png) no-repeat right center;}
-#nav ul li:hover,#nav ul li.iehover {background: url(../images/style1/nav_right_over.png) no-repeat right center;}
-#nav ul li:hover li a,#nav ul li.iehover li a {background-image: none;}
-#nav ul ul a {width: 170px;}
-#nav li li,#nav li.haschild ul li#current:hover,#nav li.haschild ul li#current.iehover {width: 173px;}
-
-
 /* @end */
+#nav{
+	
+	background-image: linear-gradient(bottom, rgb(45,116,170) 44%, rgb(69,129,179) 72%);
+background-image: -o-linear-gradient(bottom, rgb(45,116,170) 44%, rgb(69,129,179) 72%);
+background-image: -moz-linear-gradient(bottom, rgb(45,116,170) 44%, rgb(69,129,179) 72%);
+background-image: -webkit-linear-gradient(bottom, rgb(45,116,170) 44%, rgb(69,129,179) 72%);
+background-image: -ms-linear-gradient(bottom, rgb(45,116,170) 44%, rgb(69,129,179) 72%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.44, rgb(45,116,170)),
+	color-stop(0.72, rgb(69,129,179))
+);
+}
+#nav ul li ul{
+	background-color: #2B72A9;
+}
+div.logo-wrapp{
+	background-color:#fff;
+}
+li.parent-category-name, li.category-name, li.create, li.modified, li.published, li.createdby, li.hits {
+    float: left;
+    font: 1.16667em georgia,Tahoma,Verdana,sans-serif;
+    margin: 0;
+    padding: 1px 10px 1px 20px;
+}
