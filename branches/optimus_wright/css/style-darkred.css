@@ -511,21 +511,29 @@ tr.sectiontableentry2 td ,td.sectiontableentry2 {
 }
 
 /* Article Overflow */
-
-div.blog_more {
+div.blog_more,
+div.items-more,
+div.cat-children {
 	border-top: 1px solid #e6e6d4;
 }
 
-div.blog_more ul li a {
+div.blog_more ul li a,
+div.items-more ul li a,
+div.cat-children  ul li a,
+div.items-more ol li a,
+div.cat-children  ol li a {
 	border-bottom: 1px solid #eee;
-    background: url(../images/style3/list-arrow.png) no-repeat 4px 10px;
+    background: url(../images/darkred/list-arrow.png) no-repeat 4px 10px;
     text-indent: 14px;
 }
 
-div.blog_more ul li a:hover {
+div.blog_more ul li a:hover,
+div.items-more ul li a:hover,
+div.cat-children ul li a:hover,
+div.items-more ol li a:hover,
+div.cat-children ol li a:hover {
 	background-color: #fffcdb;
 }
-
 /* Article TOC Table */
 
 table.contenttoc {
@@ -750,6 +758,13 @@ div.moduleS3 .pad-title{
    
 }
 div.moduleS3 .pad3 {
+	border-radius:10px;
     background-color: #851400;  
     color: #fff;
+	padding: 0 15px 10px;
+}
+
+div.moduleS3 a:link,
+div.moduleS3 a:visited {
+	color: #DF9A00;
 }

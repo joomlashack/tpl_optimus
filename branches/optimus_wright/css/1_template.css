@@ -627,21 +627,27 @@ div.cat-children h3 {
 }
 div.blog_more ul li,
 div.items-more ul li,
-div.cat-children ul li {
+div.cat-children ul li,
+div.items-more ol li,
+div.cat-children ol li {
 	list-style: none;
 	background-image: none;
 	padding: 0px;
 }
 div.blog_more ul li a,
 div.items-more ul li a,
-div.cat-children ul li a {
+div.cat-children ul li a,
+div.items-more ol li a,
+div.cat-children ol li a {
 	text-decoration: none;
 	display: block;
 	padding: 4px;
 }
 div.blog_more ul li a:hover,
 div.items-more ul li a:hover,
-div.cat-children ul li a:hover {
+div.cat-children ul li a:hover,
+div.items-more ol li a:hover,
+div.cat-children ol li a:hover {
 	text-decoration: none;
 }
 
