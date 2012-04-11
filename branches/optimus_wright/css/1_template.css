@@ -98,6 +98,12 @@ table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;
 
 /* #mbar ul ul {display: none;}  */
 
+
+html, body {
+	min-height: 100%;
+	height: auto;
+}
+
 body {line-height: 1;}
 ol, ul {list-style: none;}
 blockquote, q {quotes: none;}
@@ -344,7 +350,8 @@ td.maincol ul.checklist a:hover {
 	float: left;
 }
 
-#logo-graphic h1 a {
+#logo-graphic h1 a,
+div#logo a.image h1 {
 	display: block;
 	text-indent: -8000em;
 	line-height: 100%;
@@ -352,7 +359,8 @@ td.maincol ul.checklist a:hover {
 	margin: 0px;
 	padding: 0px;
 }
-#logo-graphic h2 {
+#logo-graphic h2,
+div#logo a.image h2 {
 	line-height: 0;
 	height: 0;
 	margin: 0;
@@ -428,6 +436,11 @@ td.leftcol,td.maincol,td.rightcol {
 	overflow: hidden;
 	font: .90em/100% "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
+
+#footer div.moduletable {
+	margin-bottom: 10px;
+}
+
 
 .ftr-left {
 	float: left;
@@ -601,23 +614,34 @@ tr.sectiontableentry2 td ,td.sectiontableentry2 {
 }
 /* Article Overflow */
 
-div.blog_more {
+div.blog_more,
+div.items-more,
+div.cat-children {
 	border-top: 1px solid #e6e6d4;
+	margin-top: 5px;
 }
-div.blog_more strong {
+div.blog_more strong,
+div.items-more h3,
+div.cat-children h3 {
 	position: relative;
 }
-div.blog_more ul li {
+div.blog_more ul li,
+div.items-more ul li,
+div.cat-children ul li {
 	list-style: none;
 	background-image: none;
 	padding: 0px;
 }
-div.blog_more ul li a {
+div.blog_more ul li a,
+div.items-more ul li a,
+div.cat-children ul li a {
 	text-decoration: none;
 	display: block;
 	padding: 4px;
 }
-div.blog_more ul li a:hover {
+div.blog_more ul li a:hover,
+div.items-more ul li a:hover,
+div.cat-children ul li a:hover {
 	text-decoration: none;
 }
 

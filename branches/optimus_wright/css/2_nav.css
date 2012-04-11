@@ -1,4 +1,6 @@
 /* @override http://demotemplates.joomlashack.com/optimus/templates/js_optimus/css/nav.css */
+/* @group NAVBAR */
+
 #nav ul li{
 	float: left;
 	font-family: "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
@@ -13,6 +15,7 @@
 	margin: 0;
     height: auto;
     background-color: transparent;
+    white-space: nowrap;
    
 }
 body #nav ul li ul li a,

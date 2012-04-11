@@ -730,16 +730,20 @@ div.moduleS1 .pad-title{
     background-color: #F2B625;
    
 }
-div.moduleS1 .pad3 {
+div.moduleS1 .pad3{
+	padding: 0 15px 12px;
     background-color: #FFFCDB;  
+	border-radius: 10px;
 }
 div.moduleS2 .pad-title{
     background-color: #DF9A00;
    
 }
-div.moduleS2 .pad3 {
+div.moduleS2 .pad3{
     background-color: #F1B537;  
     color: #000;
+	border-radius: 10px;
+	padding: 0 15px 12px;
 }
 div.moduleS3 .pad-title{
     background-color: #490100;

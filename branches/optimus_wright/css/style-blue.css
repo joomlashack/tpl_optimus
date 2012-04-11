@@ -310,7 +310,7 @@ div.moduleS1 h3 {
 	letter-spacing:normal;
 }
 div.moduleS1 .pad3{
-	padding: 12px 15px;
+	padding: 0 15px 12px;
 	background-color: #F5FBFF;
 	border-radius: 10px;
 }
@@ -341,7 +341,7 @@ div.moduleS2 h3 {
 div.moduleS2 .pad3{
 	background-color: #EFEFEF;
 	border-radius: 10px;
-	padding: 12px 15px;
+	padding: 0 15px 12px;
 }
 div.moduleS1 .pad-title,
 div.moduleS2 .pad-title{
