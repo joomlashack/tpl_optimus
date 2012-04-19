@@ -698,8 +698,8 @@ border: 1px solid #000;
 {
 	color: #A90000;
 }
-#nav li#current a,
-#nav li#current span, 
+#nav li.active a,
+#nav li.active span, 
 #nav li.current a,
 #nav li.current span {
 	background-image: linear-gradient(bottom, rgb(204,200,173) 25%, rgb(238,237,228) 100%);
@@ -719,8 +719,8 @@ border: 1px solid #000;
 	border-color:#EEEDE4;
 	background-color: rgb(204,200,173);
 }
-#nav li#current a,
-#nav li#current span,
+#nav li.active a,
+#nav li.active span,
 #nav li.current a,
 #nav li.current span
 {
@@ -769,4 +769,37 @@ div.moduleS3 .pad3 {
 div.moduleS3 a:link,
 div.moduleS3 a:visited {
 	color: #CCC8AD;
+}
+
+#nav ul li.current ul li a,
+#nav ul li.current ul li span,
+#nav ul li.active ul li a,
+#nav ul li.active ul li span{
+	background-color: #600000;
+	color: #FFFFFF;
+	background-image: none;
+	display: block;
+}
+#nav ul li.current ul li.parent > a,
+#nav ul li.current ul li.parent > span,
+#nav ul li.active ul li.parent > a,
+#nav ul li.active ul li.parent > span {
+	background-image: url("../images/arrow_right.gif");
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+#nav ul li.active ul > li.active > a,
+#nav ul li.active ul > li.active > span,
+#nav ul li.active ul > li.active > a,
+#nav ul li.active ul > li.active > span,
+#nav ul li.active ul li a:hover,
+#nav ul li.active ul li span:hover,
+#nav ul li.active ul li a:hover,
+#nav ul li.active ul li span:hover,
+#nav ul li ul li a:hover,
+#nav ul li ul li span:hover,
+#nav ul li ul li a:hover,
+#nav ul li ul li span:hover {
+	background-color: #303030;
+	color: #FFFFFF;
 }

@@ -624,8 +624,8 @@ div.moduletableS3 div div div {background: url(../images/style3/botleft_dark.png
 	
 }
 
-#nav li#current a,
-#nav li#current span {
+#nav li.active a,
+#nav li.active span {
 /* NAV ACTIVE COLOR */	color: #303030;
 	
 }
@@ -633,8 +633,8 @@ div.moduletableS3 div div div {background: url(../images/style3/botleft_dark.png
 
 #nav ul li:hover li a,
 #nav ul li.iehover li a,
-#nav ul li#current:hover li a,
-#nav ul li#current.iehover li a,
+#nav ul li.active:hover li a,
+#nav ul li.active.iehover li a,
 #nav ul li:hover ul ul li a {
 /* LEVEL 2 NAV UP COLOR */	color: #fff;
 	background-image: none;
@@ -647,18 +647,20 @@ div.moduletableS3 div div div {background: url(../images/style3/botleft_dark.png
 
 
 
-#nav ul li#current ul li a,
-#nav ul li#current ul li,
-#nav ul li#current ul li a:hover,
-#nav ul li#current ul li.hover
-#nav ul li#current ul li.iehover,
-#nav ul li.haschild li#current a {
+#nav ul li.active ul li a,
+#nav ul li.active ul li,
+#nav ul li.active ul li a:hover,
+#nav ul li.active ul li.hover
+#nav ul li.active ul li.iehover,
+#nav ul li.haschild li.active a {
 /* LEVEL 2 ACTIVE TEXT COLOR */	color: #ffffff;
 }
 
 #nav li li {
 /* LEVEL 2 SEPARATOR */	border-bottom: 1px solid #500509;
 }
+
+
 
 
 /* @end */
@@ -704,9 +706,9 @@ div.moduletableS3 div div div {background: url(../images/style3/botleft_dark.png
 	);
 	background-color: rgb(236,189,46);
 }
-#nav li#current a, 
+#nav li.active a, 
 #nav li.current a,
-#nav li#current span, 
+#nav li.active span, 
 #nav li.current span 
 {
 	background-image: linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
@@ -774,4 +776,38 @@ div.moduleS3 .pad3 {
 div.moduleS3 a:link,
 div.moduleS3 a:visited {
 	color: #DF9A00;
+}
+
+
+#nav ul li.current ul li a,
+#nav ul li.current ul li span,
+#nav ul li.active ul li a,
+#nav ul li.active ul li span{
+	background-color: #260100;
+	color: #FFFFFF;
+	background-image: none;
+	display: block;
+}
+#nav ul li.current ul li.parent > a,
+#nav ul li.current ul li.parent > span,
+#nav ul li.active ul li.parent > a,
+#nav ul li.active ul li.parent > span {
+	background-image: url("../images/arrow_right.gif");
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+#nav ul li.active ul > li.active > a,
+#nav ul li.active ul > li.active > span,
+#nav ul li.active ul > li.active > a,
+#nav ul li.active ul > li.active > span,
+#nav ul li.active ul li a:hover,
+#nav ul li.active ul li span:hover,
+#nav ul li.active ul li a:hover,
+#nav ul li.active ul li span:hover,
+#nav ul li ul li a:hover,
+#nav ul li ul li span:hover,
+#nav ul li ul li a:hover,
+#nav ul li ul li span:hover {
+	background-color: #670100;
+	color: #FFFFFF;
 }

@@ -4,19 +4,18 @@
 #nav ul li{
 	float: left;
 	font-family: "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
-	margin: 0 5px;
+	margin: 2px 5px 0;
 	height: 40px;
 	
 }
 #nav ul li ul li {
     background-color:transparent;
     border-radius: 0 0 0 0;
-   float:none;
+	float:none;
 	margin: 0;
     height: auto;
     background-color: transparent;
     white-space: nowrap;
-   
 }
 body #nav ul li ul li a,
 body #nav ul li ul li span{
@@ -40,6 +39,7 @@ body #nav ul li ul li span{
     display: none;
     min-width: 150px;
     width:auto;
+    margin: 0;
 }
 #menu{
 	z-index: 9000;
@@ -57,8 +57,8 @@ body #nav ul li ul li span{
 	font-size: 13px;
 }
 #nav ul li ul li ul {
-	left: 100%;
-	top: 0;
+	left: 95%;
+	top: 5%;
 }
 #nav ul li ul li a.child,
 #nav ul li#current ul li a.child,

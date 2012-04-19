@@ -604,8 +604,8 @@ div.moduletableS3 div div div {background: url(../images/style5/botleft_dark.png
 /* NAV OVER COLOR */	color: #3a590e;
 }
 
-#nav li#current a,
-#nav li#current span,
+#nav li.active a,
+#nav li.active span,
 #nav li.current a,
 #nav li.current span {
 /* NAV ACTIVE COLOR */	color: #456c13;
@@ -734,9 +734,9 @@ div.moduleS3 .pad-title h3{
 	);
 	background-color: rgb(244,195,19);
 }
-#nav li#current a,
+#nav li.active a,
 #nav li.current a,
-#nav li#current span,
+#nav li.active span,
 #nav li.current span {
 	background-image: linear-gradient(bottom, rgb(237,243,247) 0%, rgb(237,243,247) 54%, rgb(251,252,253) 77%);
 	background-image: -o-linear-gradient(bottom, rgb(237,243,247) 0%, rgb(237,243,247) 54%, rgb(251,252,253) 77%);
@@ -764,4 +764,37 @@ div.moduleS3 .pad-title h3{
 div.moduleS3 a:link,
 div.moduleS3 a:visited {
 	color: #C9E27A;
+}
+
+#nav ul li.current ul li a,
+#nav ul li.current ul li span,
+#nav ul li.active ul li a,
+#nav ul li.active ul li span{
+	background-color: #759B2B;
+	color: #F4F7D4;
+	background-image: none;
+	display: block;
+}
+#nav ul li.current ul li.parent > a,
+#nav ul li.current ul li.parent > span,
+#nav ul li.active ul li.parent > a,
+#nav ul li.active ul li.parent > span {
+	background-image: url("../images/arrow_right.gif");
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+#nav ul li.active ul > li.active > a,
+#nav ul li.active ul > li.active > span,
+#nav ul li.active ul > li.active > a,
+#nav ul li.active ul > li.active > span,
+#nav ul li.active ul li a:hover,
+#nav ul li.active ul li span:hover,
+#nav ul li.active ul li a:hover,
+#nav ul li.active ul li span:hover,
+#nav ul li ul li a:hover,
+#nav ul li ul li span:hover,
+#nav ul li ul li a:hover,
+#nav ul li ul li span:hover {
+	background-color: #ECBD2E;
+	color: #23330D;
 }

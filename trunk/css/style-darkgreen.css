@@ -655,15 +655,49 @@ div.moduletableS3 div div div {background: url(../images/darkgreen/botleft_dark.
 	background-color: #F0BE2D;
 	
 }
-#nav ul li ul li:hover a,
-#nav ul li ul li:hover span,
-#nav ul li ul li:hover ul li:hover a,
-#nav ul li ul li:hover ul li:hover span{
+#nav ul li ul li:hover > a,
+#nav ul li ul li:hover > span,
+#nav ul li ul li:hover ul li:hover > a,
+#nav ul li ul li:hover ul li:hover > span{
 	color: #3A460F;
 }
 #nav ul li ul li:hover ul li a{
 	color: #fff;
 }
+
+#nav ul li.current ul li a,
+#nav ul li.current ul li span,
+#nav ul li.active ul li a,
+#nav ul li.active ul li span{
+	background-color: #31400E;
+	color: #F4F7D4;
+	background-image: none;
+	display: block;
+}
+#nav ul li.current ul li.parent > a,
+#nav ul li.current ul li.parent > span,
+#nav ul li.active ul li.parent > a,
+#nav ul li.active ul li.parent > span {
+	background-image: url("../images/arrow_right.gif");
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+#nav ul li.active ul > li.active > a,
+#nav ul li.active ul > li.active > span,
+#nav ul li.active ul > li.active > a,
+#nav ul li.active ul > li.active > span,
+#nav ul li.active ul li a:hover,
+#nav ul li.active ul li span:hover,
+#nav ul li.active ul li a:hover,
+#nav ul li.active ul li span:hover,
+#nav ul li ul li a:hover,
+#nav ul li ul li span:hover,
+#nav ul li ul li a:hover,
+#nav ul li ul li span:hover {
+	background-color: #ECBD2E;
+	color: #23330D;
+}
+
 
 /* END TOPNAV CUSTOMIZATION */
 
@@ -699,9 +733,9 @@ div.moduletableS3 div div div {background: url(../images/darkgreen/botleft_dark.
 #footer {
 	border-radius: 0 0 10px 10px;
 }
-#nav li#current a, 
+#nav li.active a, 
 #nav li.current a, 
-#nav li#current span,
+#nav li.active span,
 #nav li.current span 
  {
     background-image: linear-gradient(bottom, rgb(236,189,46) 38%, rgb(252,196,41) 69%);
