@@ -6,6 +6,9 @@
 */
 
 body {
+	background-image: url('../images/darkred/background.jpg');
+	background-repeat: repeat-x;
+	
 	color: #515151;
 	background-image: linear-gradient(bottom, rgb(197,62,0) 25%, rgb(223,153,12) 100%);
 	background-image: -o-linear-gradient(bottom, rgb(197,62,0) 25%, rgb(223,153,12) 100%);
@@ -21,8 +24,7 @@ body {
 		color-stop(1, rgb(223,153,12))
 	);
 	
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#C53E00, endColorstr=#DF990C);
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#C53E00, endColorstr=#DF990C)";
+	background-color: rgb(197,62,0);
 
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 80%;

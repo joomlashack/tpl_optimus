@@ -8,6 +8,10 @@
 body {
 	color: #515151;/*
 	background: #dce9f7 url(../images/blue/body_bg.png) repeat-x 0 top;*/
+	
+	background-image: url('../images/blue/background.jpg');
+	background-repeat: repeat-x;
+
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 80%;
 	border-top: 7px solid #025695;
@@ -26,9 +30,8 @@ body {
 		color-stop(1, rgb(98,151,192))
 	);
 	
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#DCE9F7, endColorstr=#6297C0);
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#DCE9F7, endColorstr=#6297C0)";
-
+	background-color: rgb(220,233,247);
+	
 }
 
 

@@ -8,6 +8,9 @@
 body {
 	color: #515151;
 
+	background-image: url('../images/lightgreen/background.jpg');
+	background-repeat: repeat-x;
+
 	background-image: linear-gradient(bottom, rgb(192,207,127) 41%, rgb(117,149,41) 81%);
 	background-image: -o-linear-gradient(bottom, rgb(192,207,127) 41%, rgb(117,149,41) 81%);
 	background-image: -moz-linear-gradient(bottom, rgb(192,207,127) 41%, rgb(117,149,41) 81%);
@@ -22,8 +25,7 @@ body {
 		color-stop(0.81, rgb(117,149,41))
 	);
 
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#C0CF7F, endColorstr=#759529);
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#C0CF7F, endColorstr=#759529)";
+	background-color: rgb(192,207,127);
 
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 80%;

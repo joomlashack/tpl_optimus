@@ -92,7 +92,8 @@ body, html {
 	line-height: 150%;
 	font-size: 100%;
 	letter-spacing: 0px;
-	height: 100%;
+	min-height: 100%;
+	height: auto;
 }
 
 /* Main Content Area Font Size */

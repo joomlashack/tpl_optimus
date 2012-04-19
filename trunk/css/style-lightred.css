@@ -7,6 +7,10 @@
 
 body {
 	color: #515151;
+	
+	background-image: url('../images/lightred/background.jpg');
+	background-repeat: repeat-x;
+	
 	background-image: linear-gradient(bottom, rgb(204,200,173) 25%, rgb(246,241,208) 100%);
 	background-image: -o-linear-gradient(bottom, rgb(204,200,173) 25%, rgb(246,241,208) 100%);
 	background-image: -moz-linear-gradient(bottom, rgb(204,200,173) 25%, rgb(246,241,208) 100%);
@@ -20,9 +24,8 @@ body {
 		color-stop(0.25, rgb(204,200,173)),
 		color-stop(1, rgb(246,241,208))
 	);
-	
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#CCC8AD, endColorstr=#F6F1D0);
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#CCC8AD, endColorstr=#F6F1D0)";
+
+	background-color: rgb(204,200,173);
 
 	border-top: 7px solid #520000;
 	font-family: Georgia, "Times New Roman", Times, serif;
