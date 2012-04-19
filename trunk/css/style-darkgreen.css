@@ -8,18 +8,21 @@
 body {
 	color: #515151;
 	background-image: linear-gradient(bottom, rgb(49,61,12) 31%, rgb(87,107,9) 99%);
-background-image: -o-linear-gradient(bottom, rgb(49,61,12) 31%, rgb(87,107,9) 99%);
-background-image: -moz-linear-gradient(bottom, rgb(49,61,12) 31%, rgb(87,107,9) 99%);
-background-image: -webkit-linear-gradient(bottom, rgb(49,61,12) 31%, rgb(87,107,9) 99%);
-background-image: -ms-linear-gradient(bottom, rgb(49,61,12) 31%, rgb(87,107,9) 99%);
+	background-image: -o-linear-gradient(bottom, rgb(49,61,12) 31%, rgb(87,107,9) 99%);
+	background-image: -moz-linear-gradient(bottom, rgb(49,61,12) 31%, rgb(87,107,9) 99%);
+	background-image: -webkit-linear-gradient(bottom, rgb(49,61,12) 31%, rgb(87,107,9) 99%);
+	background-image: -ms-linear-gradient(bottom, rgb(49,61,12) 31%, rgb(87,107,9) 99%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.31, rgb(49,61,12)),
+		color-stop(0.99, rgb(87,107,9))
+	);
 
-background-image: -webkit-gradient(
-	linear,
-	left bottom,
-	left top,
-	color-stop(0.31, rgb(49,61,12)),
-	color-stop(0.99, rgb(87,107,9))
-);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#313D0C, endColorstr=#576B09);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#313D0C, endColorstr=#576B09)";
 
 
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -35,8 +38,6 @@ background-image: -webkit-gradient(
 */
 
 #header {
-	/*background: #f2f2f2 url(../images/blue/header_main.png) repeat-x 0 top;
-	 */
 	background-color:#101E00;
 	border-radius: 0 0 15px 15px;
 	z-index: 9050;
@@ -582,22 +583,22 @@ div.mosimage_caption {
 div.moduletablebdr {background: url(../images/darkgreen/topright_bdr.png) 100% 0 no-repeat;}
 div.moduletablebdr div {background: url(../images/darkgreen/topleft_bdr.png) 0 0 no-repeat;}
 div.moduletablebdr div div  {background: url(../images/darkgreen/botright_bdr.png) 100% 100% no-repeat;}
-div.moduletablebdr div div div  {background: url(../darkgreen/style4/botleft_bdr.png) 0 100% no-repeat;}
+div.moduletablebdr div div div  {background: url(../darkgreen/botleft_bdr.png) 0 100% no-repeat;}
 
 div.moduletableS1 {background: url(../images/darkgreen/topright_light.png) 100% 0 no-repeat;}
 div.moduletableS1 div {background: url(../images/darkgreen/topleft_light.png) 0 0 no-repeat;}
 div.moduletableS1 div div {background: url(../images/darkgreen/botright_light.png) 100% 100% no-repeat;}
-div.moduletableS1 div div div {background: url(../images/style4/botleft_light.png) 0 100% no-repeat;}
+div.moduletableS1 div div div {background: url(../images/darkgreen/botleft_light.png) 0 100% no-repeat;}
 
-div.moduletableS2 {background: url(../images/style4/topright_mid.png) 100% 0 no-repeat;}
-div.moduletableS2 div {background: url(../images/style4/topleft_mid.png) 0 0 no-repeat;}
-div.moduletableS2 div div {background: url(../images/style4/botright_mid.png) 100% 100% no-repeat;}
-div.moduletableS2 div div div {background: url(../images/style4/botleft_mid.png) 0 100% no-repeat;}
+div.moduletableS2 {background: url(../images/darkgreen/topright_mid.png) 100% 0 no-repeat;}
+div.moduletableS2 div {background: url(../images/darkgreen/topleft_mid.png) 0 0 no-repeat;}
+div.moduletableS2 div div {background: url(../images/darkgreen/botright_mid.png) 100% 100% no-repeat;}
+div.moduletableS2 div div div {background: url(../images/darkgreen/botleft_mid.png) 0 100% no-repeat;}
 
-div.moduletableS3 {background: url(../images/style4/topright_dark.png) 100% 0 no-repeat;}
-div.moduletableS3 div {background: url(../images/style4/topleft_dark.png) 0 0 no-repeat;}
-div.moduletableS3 div div {background: url(../images/style4/botright_dark.png) 100% 100% no-repeat;}
-div.moduletableS3 div div div {background: url(../images/style4/botleft_dark.png) 0 100% no-repeat;}
+div.moduletableS3 {background: url(../images/darkgreen/topright_dark.png) 100% 0 no-repeat;}
+div.moduletableS3 div {background: url(../images/darkgreen/topleft_dark.png) 0 0 no-repeat;}
+div.moduletableS3 div div {background: url(../images/darkgreen/botright_dark.png) 100% 100% no-repeat;}
+div.moduletableS3 div div div {background: url(../images/darkgreen/botleft_dark.png) 0 100% no-repeat;}
 
 
 
@@ -613,36 +614,38 @@ div.moduletableS3 div div div {background: url(../images/style4/botleft_dark.png
 #nav ul li a ,
 #nav ul li span {
 	background-image: linear-gradient(bottom, rgb(49,64,14) 25%, rgb(77,93,19) 100%);
-background-image: -o-linear-gradient(bottom, rgb(49,64,14) 25%, rgb(77,93,19) 100%);
-background-image: -moz-linear-gradient(bottom, rgb(49,64,14) 25%, rgb(77,93,19) 100%);
-background-image: -webkit-linear-gradient(bottom, rgb(49,64,14) 25%, rgb(77,93,19) 100%);
-background-image: -ms-linear-gradient(bottom, rgb(49,64,14) 25%, rgb(77,93,19) 100%);
-
-background-image: -webkit-gradient(
-	linear,
-	left bottom,
-	left top,
-	color-stop(0.25, rgb(49,64,14)),
-	color-stop(1, rgb(77,93,19))
-);
-color: #F4F7D4;
+	background-image: -o-linear-gradient(bottom, rgb(49,64,14) 25%, rgb(77,93,19) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(49,64,14) 25%, rgb(77,93,19) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(49,64,14) 25%, rgb(77,93,19) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(49,64,14) 25%, rgb(77,93,19) 100%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.25, rgb(49,64,14)),
+		color-stop(1, rgb(77,93,19))
+	);
+	color: #F4F7D4;
+	background-color: rgb(49,64,14);
 }
 #nav ul li a:hover,
 #nav ul li span:hover{
 	background-image: linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
-background-image: -o-linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
-background-image: -moz-linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
-background-image: -webkit-linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
-background-image: -ms-linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
-
-background-image: -webkit-gradient(
-	linear,
-	left bottom,
-	left top,
-	color-stop(0.38, rgb(208,208,198)),
-	color-stop(0.69, rgb(249,249,248))
-);
-color: #3A460F;
+	background-image: -o-linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
+	background-image: -moz-linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
+	background-image: -webkit-linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
+	background-image: -ms-linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.38, rgb(208,208,198)),
+		color-stop(0.69, rgb(249,249,248))
+	);
+	color: #3A460F;
+	background-color: rgb(208,208,198);
 }
 
 #nav ul li ul{
@@ -672,20 +675,21 @@ color: #3A460F;
 }
 .logo-wrapp{
 
-background-image: linear-gradient(bottom, rgb(61,76,29) 25%, rgb(15,21,5) 100%);
-background-image: -o-linear-gradient(bottom, rgb(61,76,29) 25%, rgb(15,21,5) 100%);
-background-image: -moz-linear-gradient(bottom, rgb(61,76,29) 25%, rgb(15,21,5) 100%);
-background-image: -webkit-linear-gradient(bottom, rgb(61,76,29) 25%, rgb(15,21,5) 100%);
-background-image: -ms-linear-gradient(bottom, rgb(61,76,29) 25%, rgb(15,21,5) 100%);
+	background-image: linear-gradient(bottom, rgb(61,76,29) 25%, rgb(15,21,5) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(61,76,29) 25%, rgb(15,21,5) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(61,76,29) 25%, rgb(15,21,5) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(61,76,29) 25%, rgb(15,21,5) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(61,76,29) 25%, rgb(15,21,5) 100%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.25, rgb(61,76,29)),
+		color-stop(1, rgb(15,21,5))
+	);
 
-background-image: -webkit-gradient(
-	linear,
-	left bottom,
-	left top,
-	color-stop(0.25, rgb(61,76,29)),
-	color-stop(1, rgb(15,21,5))
-);
-
+	background-color: rgb(61,76,29);
 
 } 
 .footer1,
@@ -698,22 +702,23 @@ background-image: -webkit-gradient(
 #nav li#current a, 
 #nav li.current a, 
 #nav li#current span,
- #nav li.current span 
+#nav li.current span 
  {
     background-image: linear-gradient(bottom, rgb(236,189,46) 38%, rgb(252,196,41) 69%);
-background-image: -o-linear-gradient(bottom, rgb(236,189,46) 38%, rgb(252,196,41) 69%);
-background-image: -moz-linear-gradient(bottom, rgb(236,189,46) 38%, rgb(252,196,41) 69%);
-background-image: -webkit-linear-gradient(bottom, rgb(236,189,46) 38%, rgb(252,196,41) 69%);
-background-image: -ms-linear-gradient(bottom, rgb(236,189,46) 38%, rgb(252,196,41) 69%);
-
-background-image: -webkit-gradient(
-	linear,
-	left bottom,
-	left top,
-	color-stop(0.38, rgb(236,189,46)),
-	color-stop(0.69, rgb(252,196,41))
-);
-color: #303030;
+	background-image: -o-linear-gradient(bottom, rgb(236,189,46) 38%, rgb(252,196,41) 69%);
+	background-image: -moz-linear-gradient(bottom, rgb(236,189,46) 38%, rgb(252,196,41) 69%);
+	background-image: -webkit-linear-gradient(bottom, rgb(236,189,46) 38%, rgb(252,196,41) 69%);
+	background-image: -ms-linear-gradient(bottom, rgb(236,189,46) 38%, rgb(252,196,41) 69%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.38, rgb(236,189,46)),
+		color-stop(0.69, rgb(252,196,41))
+	);
+	color: #303030;
+	background-color: rgb(236,189,46);
 }
 
 div.moduleS1 .pad-title{

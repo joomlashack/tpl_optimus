@@ -47,7 +47,7 @@ body #nav ul li ul li span{
 #nav ul li a,
 #nav ul li span{
 	height:auto;
-	padding:0 5px 2px;
+	padding:2px 5px;
 	display: block;
 	margin: 10px 0 0 0;
 	border-radius:5px;
