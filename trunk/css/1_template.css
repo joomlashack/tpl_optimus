@@ -717,13 +717,9 @@ div.moduleS3 .pad3 {
 #sidebar1 ul li,
 #sidebar2 ul li {
 	background: url(../images/blue/bullet.gif) no-repeat 0em .35em;
-}
-
-#sidebar1 ul li a,
-#sidebar1 ul li span,
-#sidebar2 ul li a,
-#sidebar2 ul li span{
-	padding-left: 14px;
+	margin-left: 0;
+	list-style: none;
+	padding-left: 15px;
 }
 
 .blog h2 {
