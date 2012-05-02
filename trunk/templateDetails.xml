@@ -61,7 +61,7 @@
 			<option value="xhtml1strict">XHTML 1 Strict</option>
 		</param>
         <!-- End of default Wright params -->
-        <param name="width" type="list" default="960px" label="Default Page Width" description="Sets the default Page Width">
+        <param name="opwidth" type="list" default="960px" label="Default Page Width" description="Sets the default Page Width">
             <option value="800px">Fixed 800px</option>
             <option value="960px">Fixed 1024px</option>
             <option value="fluid">Fluid 90%</option>
