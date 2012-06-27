@@ -17,73 +17,26 @@ width:172px;
 .container_12 .flexgrid_6 {
 width: 140px;
 }
-#sidebar2 ul ul li a,
-#sidebar2 ul ul li span{
-padding:3px 3px 3px 30px;
-}
-#sidebar2 ul ul ul li a,
-#sidebar2 ul ul ul li span{
-padding:3px 3px 3px 40px;
-}
-#sidebar2 ul ul ul ul li a,
-#sidebar2 ul ul ul ul li span{
-padding:3px 3px 3px 50px;
-}
 
-#sidebar2 ul ul ul ul ul li a,
-#sidebar2 ul ul ul ul ul li span{
-padding:3px 3px 3px 60px;
-}
-
-#sidebar2 ul ul ul ul ul ul li a,
-#sidebar2 ul ul ul ul ul ul li span{
-display:block;
-padding:3px 3px 3px 70px;
-}
-#sidebar2 ul ul ul ul ul ul ul li a,
-#sidebar2 ul ul ul ul ul ul ul li span{
-padding:3px 3px 3px 80px;
-}
-#sidebar2 ul ul ul ul ul ul ul ul li a,
-#sidebar2 ul ul ul ul ul ul ul ul li span{
-padding:3px 3px 3px 90px;
-}
-#sidebar1 ul ul li a,
-#sidebar1 ul ul li span{
-padding:3px 3px 3px 27px;
-}
-#sidebar1 ul ul ul li a,
-#sidebar1 ul ul ul li span{
-padding:3px 3px 3px 40px;
-}
-#sidebar1 ul ul ul ul li a,
-#sidebar1 ul ul ul ul li span{
-padding:3px 3px 3px 50px;
-}
-
-#sidebar1 ul ul ul ul ul li a,
-#sidebar1 ul ul ul ul ul li span{
-padding:3px 3px 3px 60px;
-}
-
-#sidebar1 ul ul ul ul ul ul li a,
-#sidebar1 ul ul ul ul ul ul li span{
-display:block;
-padding:3px 3px 3px 70px;
-}
-#sidebar1 ul ul ul ul ul ul ul li a,
-#sidebar1 ul ul ul ul ul ul ul li span{
-padding:3px 3px 3px 80px;
-}
-#sidebar1 ul ul ul ul ul ul ul ul li a,
-#sidebar1 ul ul ul ul ul ul ul ul li span{
-padding:3px 3px 3px 90px;
 }
 #sidebar1 ul li ul li,
 #sideber2 ul li ul li,
 #sidebar1 ul li ul li a,
 #sideber2 ul li ul li span{
 	background-image: none;
+}
+#footer {
+	background-color: #1e69a3;
+	background-image: url(../images/blue/footer-l.jpg);
+	background-repeat: no-repeat;
+	background-position:bottom left;
+}
+#footer .footer-int{
+	background-image: url(../images/blue/footer-r.jpg);
+	background-repeat: no-repeat;
+	background-position:bottom right;
+	float:left;
+	width: 960px;
 }
 
 /* @group Typography Helper Styles */
@@ -305,7 +258,6 @@ td.maincol ul.checklist a:hover {
 
 #wrap {
 	margin: 0px auto 0px auto;
-	border-radius: 0 0 10px 10px;
 }
 #header {width: 100%;}
 
@@ -395,7 +347,7 @@ td.leftcol,td.maincol,td.rightcol {
 
 #footer {
 	height: auto;
-	padding: 10px 0 ;
+	padding: 10px 0 0;
 	text-align: center;
 	margin: 0px auto;
 	width: 100%;
@@ -405,6 +357,7 @@ td.leftcol,td.maincol,td.rightcol {
 
 #footer div.moduletable {
 	margin-bottom: 10px;
+	
 }
 
 
@@ -461,18 +414,20 @@ div.moduleS2 h3
 	color: #fff;
 	font-size: 1.2em;
 	letter-spacing:normal;
-    padding: 10px;
+    padding:0 10px;
 }
 
 div.moduleS3 h3 {
 	text-indent: 0px;
 	border: none;
+	margin: 0;
+	padding-bottom: 10px;
 }
 
 /* Module style Sin sufix  */
 
 div.module {background: url(../images/blue/topright_bdr.png) 100% 0 no-repeat;}
-div.module div.pad {background: url(../images/blue/topleft_bdr.png) 0 0 no-repeat;}
+div.module div.pad {background: url(../images/blue/topleft_bdr.png) 0 0 no-repeat; padding-top: 1px;}
 div.module  div.pad2 {background: url(../images/blue/botright_bdr.png) 100% 100% no-repeat;}
 div.module  div.pad3 {background: url(../images/blue/botleft_bdr.png) 0 100% no-repeat; padding: 12px 15px;}
 
@@ -636,13 +591,49 @@ margin-left: 30px;
 #wrap{
 	width:960px;
 }
-div.logo-wrapp{
-	border-radius: 0 0 10px 10px;
+div.logo-wrapp .logo-three{
+	background-image: url(../images/blue/t-l.jpg);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	overflow: hidden;
 }
-#mbar #nav{
-	border-radius: 0 0 10px 10px;
-	height:44px;
+div.logo-wrapp .container_12{
+	background-image: url(../images/blue/t-r.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+div.logo-wrapp {
+	background-image: url(../images/blue/t-repeat.jpg);
+	background-repeat: repeat-x;
+
+	background-position: left bottom;
+}
+#mbar{
+	background:url(../images/blue/repeat-menu.jpg) repeat-x left top;
 	
+}
+body.explorer.v_7 #nav ul{
+	float: left;
+	margin:0 0 5px 0;
+	padding:0 0 5px 0;
+}
+
+#nav ul{
+	float: left;
+	margin:0 0 5px 0;
+}
+
+#mbar #nav{
+	height:100%;
+	background-image: url(../images/blue/b-r.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+.nav-left{
+	background-image: url(../images/blue/b-l.jpg);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	float: left;
 }
 .border-top{
 	background-color: #1E69A3;
@@ -679,20 +670,16 @@ div.moduleS3{
 	margin-bottom: 20px;
 }
 #header {
-	background-color:#4582B3;
-	border-radius: 0 0 15px 15px;
 	z-index: 9050;
 }
 #footer {
 	background-color: #1e69a3; 
 	color: #fff;
-	border-radius: 0 0 10px 10px;
 }
 
 div.moduleS1 .pad-title, 
 div.moduleS2 .pad-title,
 div.moduleS3 .pad-title {
-    border-radius: 10px 10px 0 0;
     margin: -12px -15px 10px;
     
 }
@@ -700,12 +687,39 @@ div.moduleS1 .pad3,
 div.moduleS2 .pad3,
 div.moduleS3 .pad3 {
    
-    border-radius: 10px 10px 10px 10px;
     padding: 12px 15px;
    
 }
-
-
+div.moduleS1 .pad4,
+div.moduleS2 .pad4{
+	height: 9px;
+	background-image: url(../images/blue/S1&S2/border-left.jpg);
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-color: #538EBA;
+}
+div.moduleS1 .pad5,
+div.moduleS2 .pad5{
+	height: 9px;
+	background-image: url(../images/blue/S1&S2/border-right.jpg);
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+div.moduleS1 .pad7,
+div.moduleS2 .pad7{
+	height: 9px;
+	background-image: url(../images/blue/S1&S2/bottom-left.jpg);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-color: #F5FBFF;
+}
+div.moduleS1 .pad8,
+div.moduleS2 .pad8{
+	height: 9px;
+	background-image: url(../images/blue/S1&S2/bottom-right.jpg);
+	background-position: right top;
+	background-repeat: no-repeat;
+}
 .footer1,
 .footer2{
 	color:#fff;
@@ -748,4 +762,39 @@ div a.joomlashack {
     margin: 0 auto;
     text-indent: -1000em;
     width: 960px;
+}
+div.moduleS3 .pad4{
+	height: 9px;
+	background-image: url(../images/blue/S3/border-left.jpg);
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-color: #1E69A3;
+}
+div.moduleS3 .pad5{
+	height: 9px;
+	background-image: url(../images/blue/S3/border-right.jpg);
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+div.moduleS3 .pad7{
+	height: 9px;
+	background-image: url(../images/blue/S3/bottom-left.jpg);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-color: #D2E2F1;
+}
+div.moduleS3 .pad8{
+	height: 9px;
+	background-image: url(../images/blue/S3/bottom-right.jpg);
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+#nav ul li.current ul li.parent,
+#nav ul li.active ul li.parent {
+	background-image: url("../images/arrow_right.gif");
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+#nav li li:last-child{
+	border-bottom: 0 none;
 }

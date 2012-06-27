@@ -30,11 +30,8 @@ body {
 		color-stop(1, rgb(98,151,192))
 	);
 	
-	background-color: rgb(220,233,247);
-	
+	background-color: rgb(220,233,247);	
 }
-
-
 
 /*
 ----------------------------------------------------
@@ -292,15 +289,10 @@ ul li span.small {
                 "S1" MODULE SUFFIX
 ----------------------------------------------------
 */
-
-
 /* "S1" TEXT COLOR */
 div.moduleS1 {
 	color: #51504a;
 }
-
-
-
 /* "S1" LINK COLOR */
 div.moduleS1 a,div.moduletableS1 a:hover,
 div.moduleS1 a.latestnewsS1,div.moduleS1 a.latestnewsS1:hover,
@@ -316,7 +308,7 @@ div.moduleS1 h3 {
 div.moduleS1 .pad3{
 	padding: 0 15px 12px;
 	background-color: #F5FBFF;
-	border-radius: 10px;
+	
 }
 
 /*
@@ -343,14 +335,13 @@ div.moduleS2 h3 {
 	letter-spacing:normal;
 }
 div.moduleS2 .pad3{
-	background-color: #EFEFEF;
-	border-radius: 10px;
+	background-color:#F5FBFF;
 	padding: 0 15px 12px;
 }
 div.moduleS1 .pad-title,
 div.moduleS2 .pad-title{
 	background-color: #538EBA;
-	border-radius: 10px 10px 0 0;
+	
 	margin: -12px -15px 10px;
 	
 }
@@ -370,7 +361,7 @@ div.moduleS3 {
 div.moduleS3 a,div.moduleS3 a:hover,
 div.moduleS3 a.latestnewsS3,div.moduleS3 a.latestnewsS3:hover,
 div.moduleS3 a.mostreadS3,div.moduleS3 a.mostreadS3:hover
- {
+{
 	color: #1e69a3;
 }
 
@@ -382,13 +373,37 @@ div.moduleS3 h3 {
 }
 div.moduleS3 .pad-title{
 	background-color: #1E69A3;
-	border-radius: 10px 10px 0 0;
 	margin: 0 -15px 0;
 }
 div.moduleS3 .pad3{
-	border-radius:10px;
 	background-color: #D2E2F1;
 	padding: 0 15px 10px;
+}
+div.moduleS3 .pad4{
+	height: 9px;
+	background-image: url(../images/blue/S3/border-left.jpg);
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-color: #1E69A3;
+}
+div.moduleS3 .pad5{
+	height: 9px;
+	background-image: url(../images/blue/S3/border-right.jpg);
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+div.moduleS3 .pad7{
+	height: 9px;
+	background-image: url(../images/blue/S3/bottom-left.jpg);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-color: #D2E2F1;
+}
+div.moduleS3 .pad8{
+	height: 9px;
+	background-image: url(../images/blue/S3/bottom-right.jpg);
+	background-position: right top;
+	background-repeat: no-repeat;
 }
 /*
 ----------------------------------------------------
@@ -440,10 +455,17 @@ div.module h3, div.moduletablebdr h3 {
 
 #footer {
 	background-color: #1e69a3;
-	color: #fff;
-	border-radius: 0 0 10px 10px;
+	background-image: url(../images/blue/footer-l.jpg);
+	background-repeat: no-repeat;
+	background-position:bottom left;
 }
-
+#footer .footer-int{
+	background-image: url(../images/blue/footer-r.jpg);
+	background-repeat: no-repeat;
+	background-position:bottom right;
+	float:left;
+	width: 960px;
+}
 /*LINKS*/
 #footer a,
 #footer span,
@@ -558,80 +580,82 @@ div.mosimage_caption {
 ----------------------------------------------------
 */
 
-
-#nav ul li a:hover,
-#nav ul li span:hover
+#nav ul li:hover 
 {
-	background-image: linear-gradient(bottom, rgb(238,239,240) 20%, rgb(213,224,228) 86%);
-	background-image: -o-linear-gradient(bottom, rgb(238,239,240) 20%, rgb(213,224,228) 86%);
-	background-image: -moz-linear-gradient(bottom, rgb(238,239,240) 20%, rgb(213,224,228) 86%);
-	background-image: -webkit-linear-gradient(bottom, rgb(238,239,240) 20%, rgb(213,224,228) 86%);
-	background-image: -ms-linear-gradient(bottom, rgb(238,239,240) 20%, rgb(213,224,228) 86%);
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0.2, rgb(238,239,240)),
-		color-stop(0.86, rgb(213,224,228))
-	);
-	background-color: rgb(238,239,240);
+	background-image: url(../images/blue/nav_left_over.png);
+	background-position:left;
+	background-repeat: no-repeat;
+}
+
+#nav ul li:hover ul li a,
+#nav ul li:hover ul li span{
+	background-image: none;
+	color:white;
+}
+#nav ul li:hover a,
+#nav ul li:hover span
+{
+	
+	background-image: url(../images/blue/nav_right_over.png);
+	background-repeat:no-repeat;
+	background-position:right;
+	color: #fff;
 	color: #004B84
 }
 
 #nav li li {	
 	border-bottom: 1px solid #3080be;
+	background-image:none; 
 }
-
+#nav li{
+	background-image: url(../images/blue/nav_left_up.png);
+	background-position:left;
+	background-repeat: no-repeat;
+}
 #nav ul li a,
 #nav ul li span
  {
-	background-color: #0A5C99;
+	background-image: url(../images/blue/nav_right_up.png);
+	background-repeat:no-repeat;
+	background-position:right;
 	color: #fff;
 }
-
+/*
 #nav ul li ul li:hover{
 	background-color: #0A5C99;
-	
+	background-image: url(../images/blue/nav_left_up.png);
+	background-position:left;
+	background-repeat: no-repeat;
+}
+*/   
+#nav ul li.current,
+#nav ul li.active{
+	background-image: url(../images/blue/nav_left_active.png);
+	background-position:left;
+	background-repeat: no-repeat;
 }
 #nav ul li.current a,
 #nav ul li.current span,
 #nav ul li.active a,
 #nav ul li.active span {
-	background-image: linear-gradient(bottom, rgb(237,243,248) 12%, rgb(249,251,252) 56%);
-	background-image: -o-linear-gradient(bottom, rgb(237,243,248) 12%, rgb(249,251,252) 56%);
-	background-image: -moz-linear-gradient(bottom, rgb(237,243,248) 12%, rgb(249,251,252) 56%);
-	background-image: -webkit-linear-gradient(bottom, rgb(237,243,248) 12%, rgb(249,251,252) 56%);
-	background-image: -ms-linear-gradient(bottom, rgb(237,243,248) 12%, rgb(249,251,252) 56%);
-	
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0.12, rgb(237,243,248)),
-		color-stop(0.56, rgb(249,251,252))
-	);
+	background-image: url(../images/blue/nav_right_active.png);
+	background-repeat:no-repeat;
+	background-position:right;
 	color: #303030;
-	
-	background-color: rgb(237,243,248);
 }
-
+#nav ul li.current ul li,
+#nav ul li.active ul li{
+	background-image: none;
+	background-color: transparent;
+}
+#nav ul li.current ul li a,
+#nav ul li.current ul li span,
+#nav ul li.active ul li a,
+#nav ul li.active ul li span{
+	background-color: transparent;
+}
 #nav{
 	
-	background-image: linear-gradient(bottom, rgb(45,116,170) 44%, rgb(69,129,179) 72%);
-	background-image: -o-linear-gradient(bottom, rgb(45,116,170) 44%, rgb(69,129,179) 72%);
-	background-image: -moz-linear-gradient(bottom, rgb(45,116,170) 44%, rgb(69,129,179) 72%);
-	background-image: -webkit-linear-gradient(bottom, rgb(45,116,170) 44%, rgb(69,129,179) 72%);
-	background-image: -ms-linear-gradient(bottom, rgb(45,116,170) 44%, rgb(69,129,179) 72%);
-	
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0.44, rgb(45,116,170)),
-		color-stop(0.72, rgb(69,129,179))
-	);
-	
-	background-color: rgb(45,116,170);
 }
 #nav ul li ul{
 	background-color: #2B72A9;
@@ -646,35 +670,20 @@ li.parent-category-name, li.category-name, li.create, li.modified, li.published,
     padding: 1px 10px 1px 20px;
 }
 
-#nav ul li.current ul li a,
-#nav ul li.current ul li span,
-#nav ul li.active ul li a,
-#nav ul li.active ul li span{
+#nav ul li.current ul li,
+#nav ul li.active ul li{
 	background-color: #0A5C99;
 	color: #FFFFFF;
 	background-image: none;
 	display: block;
 }
-#nav ul li.current ul li.parent > a,
-#nav ul li.current ul li.parent > span,
-#nav ul li.active ul li.parent > a,
-#nav ul li.active ul li.parent > span {
-	background-image: url("../images/arrow_right.gif");
-	background-position: right center;
-	background-repeat: no-repeat;
-}
-#nav ul li.active ul > li.active > a,
-#nav ul li.active ul > li.active > span,
-#nav ul li.active ul > li.active > a,
-#nav ul li.active ul > li.active > span,
-#nav ul li.active ul li a:hover,
-#nav ul li.active ul li span:hover,
-#nav ul li.active ul li a:hover,
-#nav ul li.active ul li span:hover,
-#nav ul li ul li a:hover,
-#nav ul li ul li span:hover,
-#nav ul li ul li a:hover,
-#nav ul li ul li span:hover {
-	background-color: #FFFFFF;
-	color: #0A5C99;
+#header{
+	background: #4581b3; /* Old browsers */
+	background: -moz-linear-gradient(top,  #4581b3 0%, #2d72a9 50%, #2d72a9 51%, #2d72a9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4581b3), color-stop(50%,#2d72a9), color-stop(51%,#2d72a9), color-stop(100%,#2d72a9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #4581b3 0%,#2d72a9 50%,#2d72a9 51%,#2d72a9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #4581b3 0%,#2d72a9 50%,#2d72a9 51%,#2d72a9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #4581b3 0%,#2d72a9 50%,#2d72a9 51%,#2d72a9 100%); /* IE10+ */
+	background: linear-gradient(top,  #4581b3 0%,#2d72a9 50%,#2d72a9 51%,#2d72a9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4581b3', endColorstr='#2d72a9',GradientType=0 ); /* IE6-9 */
 }

@@ -47,6 +47,7 @@ if ($opwidth == '800px') {
 				<div id="header">
 					<div class="logo-wrapp">
 						<div class="container_<?php echo $opwidth ?> clearfix">
+							<div class="logo-three">
 							<div class="grid_<?php echo $this->params->get('logowidth','1') ?>" id="logogrid">
 								<w:logo style="none"/>
 							</div>
@@ -62,11 +63,21 @@ if ($opwidth == '800px') {
 								<?php    endif;?>
 							</div>
 						</div>
+						</div>
+					</div>
+					<div class="log-b-repeat">
+						<div class="log-b-right">
+							<div class="log-b-left"></div>
+						</div>
 					</div>
 					<div id="mbar">
 						<div id="nav">
-						
-							<w:nav />
+							<div class="nav-left">
+								<w:nav />
+							</div>
+							<div class="clear">
+								&nbsp;
+							</div>
 						</div>
 					</div>
 				</div><!-- end header -->
@@ -135,11 +146,15 @@ if ($opwidth == '800px') {
 					<?php endif;?>
 				</div>
 				<div id="footer">
-					<w:module name="footer" />
+					<div class="footer-int">
+						<w:module name="footer" />
+					</div>
+					
 				</div>
-				<div class="grid_12">
+				
+			</div><!-- end wrap -->
+			<div class="grid_12">
 					<w:footer />
 				</div>
-			</div><!-- end wrap -->
 		</body>
 	</html>

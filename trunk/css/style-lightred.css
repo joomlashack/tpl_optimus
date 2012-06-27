@@ -438,6 +438,7 @@ div.moduletable h3, div.moduletablebdr h3 {
 ----------------------------------------------------
 */
 #footer {
+	background-image:url("../images/lightred/footer-l.jpg");
 	background-color: #600000;
 	color: #fff;
 }
@@ -629,98 +630,107 @@ div.moduletableS3 div div div {background: url(../images/style2/botleft_dark.png
 #nav li ul li a:hover,
 #nav li ul li span:hover
 {
-/* LEVEL 2 NAV OVER BG COLOR */	background-color: #222;
-/* LEVEL 2 NAV OVER TEXT COLOR */	color: #fff;
-background-image: none;
+	color: #fff;
+	background-image: none;
 }
 
 /* @end */
 .border-top{
 	background-color: #000000;
 }
-.logo-wrapp{
-	background-image: linear-gradient(bottom, rgb(222,219,202) 25%, rgb(255,255,255) 100%);
-	background-image: -o-linear-gradient(bottom, rgb(222,219,202) 25%, rgb(255,255,255) 100%);
-	background-image: -moz-linear-gradient(bottom, rgb(222,219,202) 25%, rgb(255,255,255) 100%);
-	background-image: -webkit-linear-gradient(bottom, rgb(222,219,202) 25%, rgb(255,255,255) 100%);
-	background-image: -ms-linear-gradient(bottom, rgb(222,219,202) 25%, rgb(255,255,255) 100%);
-	
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0.25, rgb(222,219,202)),
-		color-stop(1, rgb(255,255,255))
-	);
-	background-color: rgb(222,219,202);
+div.logo-wrapp{
+	background: #d8d5c2; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiNmZWZkZmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI4NCUiIHN0b3AtY29sb3I9IiNkOGQ1YzIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI4NSUiIHN0b3AtY29sb3I9IiNkOGQ1YzIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI4NyUiIHN0b3AtY29sb3I9IiNkOGQ1YzIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI5MiUiIHN0b3AtY29sb3I9IiNkOGQ1YzIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI5NiUiIHN0b3AtY29sb3I9IiNkOGQ1YzIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZDhkNWMyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+background: -moz-linear-gradient(top,  #fefdfc 10%, #d8d5c2 84%, #d8d5c2 85%, #d8d5c2 87%, #d8d5c2 92%, #d8d5c2 96%, #d8d5c2 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(10%,#fefdfc), color-stop(84%,#d8d5c2), color-stop(85%,#d8d5c2), color-stop(87%,#d8d5c2), color-stop(92%,#d8d5c2), color-stop(96%,#d8d5c2), color-stop(100%,#d8d5c2)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #fefdfc 10%,#d8d5c2 84%,#d8d5c2 85%,#d8d5c2 87%,#d8d5c2 92%,#d8d5c2 96%,#d8d5c2 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #fefdfc 10%,#d8d5c2 84%,#d8d5c2 85%,#d8d5c2 87%,#d8d5c2 92%,#d8d5c2 96%,#d8d5c2 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #fefdfc 10%,#d8d5c2 84%,#d8d5c2 85%,#d8d5c2 87%,#d8d5c2 92%,#d8d5c2 96%,#d8d5c2 100%); /* IE10+ */
+background: linear-gradient(top,  #fefdfc 10%,#d8d5c2 84%,#d8d5c2 85%,#d8d5c2 87%,#d8d5c2 92%,#d8d5c2 96%,#d8d5c2 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefdfc', endColorstr='#d8d5c2',GradientType=0 ); /* IE6-8 */
+
 }
 #header{
 	background-color: #5B0000;
 }
+#nav ul li:hover 
+{
+	background-image: url(../images/lightred/nav_left_over.png);
+	background-position:left;
+	background-repeat: no-repeat;
+}
 #nav ul li a,
 #nav ul li span
 {
-border: 1px solid #000;
-	background-image: linear-gradient(bottom, rgb(146,0,0) 25%, rgb(96,0,0) 100%);
-	background-image: -o-linear-gradient(bottom, rgb(146,0,0) 25%, rgb(96,0,0) 100%);
-	background-image: -moz-linear-gradient(bottom, rgb(146,0,0) 25%, rgb(96,0,0) 100%);
-	background-image: -webkit-linear-gradient(bottom, rgb(146,0,0) 25%, rgb(96,0,0) 100%);
-	background-image: -ms-linear-gradient(bottom, rgb(146,0,0) 25%, rgb(96,0,0) 100%);
+	background-image: url(../images/lightred/nav_right_up.png);
+	background-repeat:no-repeat;
+	background-position:right;
 	
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0.25, rgb(146,0,0)),
-		color-stop(1, rgb(96,0,0))
-	);
-	background-color: rgb(146,0,0);
 }
-
-#nav ul li a:hover,
-#nav ul li span:hover{
-		background-image: linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
-	background-image: -o-linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
-	background-image: -moz-linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
-	background-image: -webkit-linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
-	background-image: -ms-linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
-	
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0.38, rgb(208,208,198)),
-		color-stop(0.69, rgb(249,249,248))
-	);
-
-	border-color:#D0D0C6;
-	background-color: rgb(208,208,198);
+#nav li{
+	background-image: url(../images/lightred/nav_left_up.png);
+	background-position:left;
+	background-repeat: no-repeat;
 }
-#nav ul li a:hover,
-#nav ul li span:hover
+#nav ul li:hover a,
+#nav ul li:hover span{
+	background-image: url(../images/lightred/nav_right_over.png);
+	background-repeat:no-repeat;
+	background-position:right;
+}
+#nav ul li:hover a,
+#nav ul li:hover span
 {
 	color: #A90000;
 }
-#nav li.active a,
-#nav li.active span, 
-#nav li.current a,
-#nav li.current span {
-	background-image: linear-gradient(bottom, rgb(204,200,173) 25%, rgb(238,237,228) 100%);
-	background-image: -o-linear-gradient(bottom, rgb(204,200,173) 25%, rgb(238,237,228) 100%);
-	background-image: -moz-linear-gradient(bottom, rgb(204,200,173) 25%, rgb(238,237,228) 100%);
-	background-image: -webkit-linear-gradient(bottom, rgb(204,200,173) 25%, rgb(238,237,228) 100%);
-	background-image: -ms-linear-gradient(bottom, rgb(204,200,173) 25%, rgb(238,237,228) 100%);
+#nav ul li ul li.active a,  
+#nav ul li ul li#current  a, 
+#nav ul li ul li.active span,
+#nav ul li ul li#current span{
+	background-image: none;
+	color: white;
+}
+#nav ul li.active a,  
+#nav ul li#current  a, 
+#nav ul li.active span,
+#nav ul li#current span 
+{
+    background-image: url(../images/lightred/nav_right_active.png);
+	background-repeat:no-repeat;
+	background-position:right;
+	color:#303030;
+}
+#nav li li:last-child{
+	border-bottom: 0 none;
+}
+#nav ul li.current,
+#nav ul li.active
+{
+	background-image: url(../images/lightred/nav_left_active.png);
+	background-position:left;
+	background-repeat: no-repeat;
+}
+#nav ul li:hover ul li a,
+#nav ul li:hover ul li span{
+	background-color: transparent;
+	background-image: none;
+}
+#nav ul li ul li.current,
+#nav ul li ul li.active{
+	background-image: none;
 	
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0.25, rgb(204,200,173)),
-		color-stop(1, rgb(238,237,228))
-		
-	);
-	border-color:#EEEDE4;
-	background-color: rgb(204,200,173);
+}
+#nav ul li ul li:hover{
+	background-color: #303030;
+}
+#nav ul li.current ul li a,
+#nav ul li.current ul li span,
+#nav ul li.active ul li a,
+#nav ul li.active ul li span{
+	color: #fff;
+	background-image: none;
+	display: block;
 }
 #nav li.active a,
 #nav li.active span,
@@ -744,7 +754,7 @@ div.moduleS1 .pad-title{
 div.moduleS1 .pad3{
 	padding: 0 15px 12px;
     background-color: #EAEAEA;  
-	border-radius: 10px;
+
 }
 div.moduleS2 .pad-title{
     background-color: #CCC8AD;
@@ -756,7 +766,7 @@ div.moduleS2 .pad-title h3{
 }
 div.moduleS2 .pad3{
     background-color: #EFEACA;  
-	border-radius: 10px;
+	
 	padding: 0 15px 12px;
 }
 div.moduleS3 .pad-title{
@@ -764,7 +774,7 @@ div.moduleS3 .pad-title{
    
 }
 div.moduleS3 .pad3 {
-	border-radius:10px;
+	margin-top:12px;
     background-color: #851400;  
     color: #fff;
 	padding: 0 15px 10px;
@@ -773,36 +783,103 @@ div.moduleS3 a:link,
 div.moduleS3 a:visited {
 	color: #CCC8AD;
 }
-
+#nav li li {
+	border-bottom: 1px solid #84090F;
+	background-image: none;
+}
 #nav ul li.current ul li a,
 #nav ul li.current ul li span,
 #nav ul li.active ul li a,
 #nav ul li.active ul li span{
-	background-color: #600000;
 	color: #FFFFFF;
 	background-image: none;
 	display: block;
 }
-#nav ul li.current ul li.parent > a,
-#nav ul li.current ul li.parent > span,
-#nav ul li.active ul li.parent > a,
-#nav ul li.active ul li.parent > span {
-	background-image: url("../images/arrow_right.gif");
-	background-position: right center;
-	background-repeat: no-repeat;
-}
-#nav ul li.active ul > li.active > a,
-#nav ul li.active ul > li.active > span,
-#nav ul li.active ul > li.active > a,
-#nav ul li.active ul > li.active > span,
-#nav ul li.active ul li a:hover,
-#nav ul li.active ul li span:hover,
-#nav ul li.active ul li a:hover,
-#nav ul li.active ul li span:hover,
-#nav ul li ul li a:hover,
-#nav ul li ul li span:hover,
+
 #nav ul li ul li a:hover,
 #nav ul li ul li span:hover {
-	background-color: #303030;
 	color: #FFFFFF;
+}
+div.logo-wrapp .logo-three,
+div.logo-wrapp .container_12{
+	background-image: none;
+}
+div.log-b-left{
+	background-image: url("../images/lightred/t-l.jpg");
+	background-position: left top;
+    background-repeat: no-repeat;
+    height: 15px;
+}
+div.log-b-right{
+	background-image: url("../images/lightred/t-r.jpg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    height: 15px;
+}
+div.log-b-repeat{
+	background-image: url("../images/lightred/t-repeat.jpg");
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    height: 15px;
+}
+#mbar{
+	background-image: url("../images/lightred/repeat-menu.jpg");
+}
+.nav-left{
+	background-image: url("../images/lightred/b-l.jpg")
+}
+#mbar #nav{
+	background-image: url("../images/lightred/b-r.jpg")
+}
+#footer .footer-int{
+	background-image: url("../images/lightred/footer-r.jpg")
+}
+body.explorer.v_7 div.logo-wrapp{
+	background-image: url(../images/lightred/header_main.png);
+	background-repeat: repeat-x;
+	background-position: 0 0 ;
+	background-color: #ebebeb;
+}
+div.moduleS1 .pad5{
+	background-image: url("../images/lightred/S1/border-right.jpg");
+}
+div.moduleS1 .pad4{
+	background-image: url("../images/lightred/S1/border-left.jpg");
+	background-color:#600000;
+}
+div.moduleS2 .pad5{
+	background-image: url("../images/lightred/S2/border-right.jpg");
+}
+div.moduleS2 .pad4{
+	background-image: url("../images/lightred/S2/border-left.jpg");
+	background-color:#CCC8AD;
+}
+div.moduleS3 .pad5{
+	background-image: url("../images/lightred/S3/border-right.jpg");
+}
+div.moduleS3 .pad4{
+	background-image: url("../images/lightred/S3/border-left.jpg");
+	background-color:#490100;
+}
+div.moduleS1 .pad8{
+	background-image: url("../images/lightred/S1/bottom-right.jpg")
+}
+div.moduleS1 .pad7{
+	background-image: url("../images/lightred/S1/bottom-left.jpg");
+	background-color: #EAEAEA;
+}
+
+div.moduleS2 .pad8{
+	background-image: url("../images/lightred/S2/bottom-right.jpg")
+}
+div.moduleS2 .pad7{
+	background-image: url("../images/lightred/S2/bottom-left.jpg");
+	background-color: #EFEACA;
+}
+div.moduleS3 .pad8{
+	background-image: url("../images/lightred/S3/bottom-right.jpg")
+}
+div.moduleS3 .pad7{
+	background-image: url("../images/lightred/S3/bottom-left.jpg");
+	background-color: #851400;
 }

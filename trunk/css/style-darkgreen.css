@@ -33,16 +33,13 @@ body {
 	border-top: 7px solid #1C270D;
 }
 
-
 /*
 ----------------------------------------------------
                  HEADER GRAPHIC
 ----------------------------------------------------
 */
-
 #header {
 	background-color:#101E00;
-	border-radius: 0 0 15px 15px;
 	z-index: 9050;
 }
 #logo-graphic h1 a {
@@ -436,10 +433,13 @@ div.moduletable h3, div.moduletablebdr h3 {
 
 
 #footer {
+	background-image: url(../images/darkgreen/ftr-left.png);
 	background-color: #000;
 	color: #fff;
 }
-
+#footer .footer-int{
+	background-image: url(../images/darkgreen/ftr-right.png);
+}
 /*LINKS*/
 #footer a, #footer #mainlevel li a,
 #footer span, #footer #mainlevel li span {
@@ -613,151 +613,116 @@ div.moduletableS3 div div div {background: url(../images/darkgreen/botleft_dark.
                SUCKERFISH MENU COLORS
 ----------------------------------------------------
 */
+#nav ul li:hover 
+{
+	background-image: url(../images/darkgreen/nav_left_over.png);
+	background-position:left;
+	background-repeat: no-repeat;
+}
+#nav ul li:hover ul li a,
+#nav ul li:hover ul li span{
+	background-image: none;
+	color:white;
+}
+#nav ul li ul li.active{
+	background-image: none;
+}
+#menu ul li:hover a,
+#menu ul li:hover span
+{
+	background-image: url(../images/darkgreen/nav_right_over.png);
+	background-repeat:no-repeat;
+	background-position:right;
+	color: #3A460F;
+}
+
+#nav li li {	
+	border-bottom: 1px solid #2D4211;
+	background-image:none; 
+}
+#nav li{
+	background-image: url(../images/darkgreen/nav_left_up.png);
+	background-position:left;
+	background-repeat: no-repeat;
+}
 
 #nav ul li a ,
 #nav ul li span {
-	background-image: linear-gradient(bottom, rgb(49,64,14) 25%, rgb(77,93,19) 100%);
-	background-image: -o-linear-gradient(bottom, rgb(49,64,14) 25%, rgb(77,93,19) 100%);
-	background-image: -moz-linear-gradient(bottom, rgb(49,64,14) 25%, rgb(77,93,19) 100%);
-	background-image: -webkit-linear-gradient(bottom, rgb(49,64,14) 25%, rgb(77,93,19) 100%);
-	background-image: -ms-linear-gradient(bottom, rgb(49,64,14) 25%, rgb(77,93,19) 100%);
-	
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0.25, rgb(49,64,14)),
-		color-stop(1, rgb(77,93,19))
-	);
+	background-image: url(../images/darkgreen/nav_right_up.png);
+	background-repeat:no-repeat;
+	background-position:right;
 	color: #F4F7D4;
-	background-color: rgb(49,64,14);
 }
-#nav ul li a:hover,
-#nav ul li span:hover{
-	background-image: linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
-	background-image: -o-linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
-	background-image: -moz-linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
-	background-image: -webkit-linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
-	background-image: -ms-linear-gradient(bottom, rgb(208,208,198) 38%, rgb(249,249,248) 69%);
-	
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0.38, rgb(208,208,198)),
-		color-stop(0.69, rgb(249,249,248))
-	);
-	color: #3A460F;
-	background-color: rgb(208,208,198);
-}
+
 
 #nav ul li ul{
 	background-color: #23330D;
 }
 #nav ul li ul li:hover{
 	background-color: #F0BE2D;
-	
 }
-#nav ul li ul li:hover > a,
-#nav ul li ul li:hover > span,
-#nav ul li ul li:hover ul li:hover > a,
-#nav ul li ul li:hover ul li:hover > span{
-	color: #3A460F;
-}
+
 #nav ul li ul li:hover ul li a{
 	color: #fff;
 }
 
-#nav ul li.current ul li a,
-#nav ul li.current ul li span,
-#nav ul li.active ul li a,
-#nav ul li.active ul li span{
-	background-color: #31400E;
-	color: #F4F7D4;
-	background-image: none;
-	display: block;
-}
-#nav ul li.current ul li.parent > a,
-#nav ul li.current ul li.parent > span,
-#nav ul li.active ul li.parent > a,
-#nav ul li.active ul li.parent > span {
-	background-image: url("../images/arrow_right.gif");
-	background-position: right center;
-	background-repeat: no-repeat;
-}
-#nav ul li.active ul > li.active > a,
-#nav ul li.active ul > li.active > span,
-#nav ul li.active ul > li.active > a,
-#nav ul li.active ul > li.active > span,
-#nav ul li.active ul li a:hover,
-#nav ul li.active ul li span:hover,
-#nav ul li.active ul li a:hover,
-#nav ul li.active ul li span:hover,
-#nav ul li ul li a:hover,
-#nav ul li ul li span:hover,
-#nav ul li ul li a:hover,
-#nav ul li ul li span:hover {
-	background-color: #ECBD2E;
+#nav ul li ul li:hover > a,
+#nav ul li ul li:hover > span{
 	color: #23330D;
 }
-
-
 /* END TOPNAV CUSTOMIZATION */
-
 /* @end */
 .border-top{
 	background-color: #3D4416;
 	height: 3px;
 	width:100%;
 }
-.logo-wrapp{
-
-	background-image: linear-gradient(bottom, rgb(61,76,29) 25%, rgb(15,21,5) 100%);
-	background-image: -o-linear-gradient(bottom, rgb(61,76,29) 25%, rgb(15,21,5) 100%);
-	background-image: -moz-linear-gradient(bottom, rgb(61,76,29) 25%, rgb(15,21,5) 100%);
-	background-image: -webkit-linear-gradient(bottom, rgb(61,76,29) 25%, rgb(15,21,5) 100%);
-	background-image: -ms-linear-gradient(bottom, rgb(61,76,29) 25%, rgb(15,21,5) 100%);
-	
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0.25, rgb(61,76,29)),
-		color-stop(1, rgb(15,21,5))
-	);
-
-	background-color: rgb(61,76,29);
-
+body.explorer.v_7 div.logo-wrapp{
+	background-image: url(../images/darkgreen/header_main.jpg);
+	background-repeat: repeat-x;
+	background-position: 0 0 ;
+	background-color: #3F4C1E;
+}
+div.logo-wrapp{
+	background: #3d4c1d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #111706 0%, #3d4c1d 60%, #3d4c1d 61%, #3d4c1d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#111706), color-stop(60%,#3d4c1d), color-stop(61%,#3d4c1d), color-stop(100%,#3d4c1d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #111706 0%,#3d4c1d 60%,#3d4c1d 61%,#3d4c1d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #111706 0%,#3d4c1d 60%,#3d4c1d 61%,#3d4c1d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #111706 0%,#3d4c1d 60%,#3d4c1d 61%,#3d4c1d 100%); /* IE10+ */
+	background: linear-gradient(top,  #111706 0%,#3d4c1d 60%,#3d4c1d 61%,#3d4c1d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111706', endColorstr='#3d4c1d',GradientType=0 ); /* IE6-9 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#111706', endColorstr='#3d4c1d' )";
+	background-image: -ms-linear-gradient(bottom, rgb(202,135,134) 5%, rgb(255,255,255) 100%);
 } 
 .footer1,
 .footer2{
 	color:#fff;
 }
-#footer {
-	border-radius: 0 0 10px 10px;
+#nav ul li.current,
+#nav ul li.active
+{
+	background-image: url(../images/darkgreen/nav_left_active.png);
+	background-position:left;
+	background-repeat: no-repeat;
 }
-#nav li.active a, 
-#nav li.current a, 
-#nav li.active span,
-#nav li.current span 
- {
-    background-image: linear-gradient(bottom, rgb(236,189,46) 38%, rgb(252,196,41) 69%);
-	background-image: -o-linear-gradient(bottom, rgb(236,189,46) 38%, rgb(252,196,41) 69%);
-	background-image: -moz-linear-gradient(bottom, rgb(236,189,46) 38%, rgb(252,196,41) 69%);
-	background-image: -webkit-linear-gradient(bottom, rgb(236,189,46) 38%, rgb(252,196,41) 69%);
-	background-image: -ms-linear-gradient(bottom, rgb(236,189,46) 38%, rgb(252,196,41) 69%);
-	
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0.38, rgb(236,189,46)),
-		color-stop(0.69, rgb(252,196,41))
-	);
+#nav ul li.active a,  
+#nav ul li#current  a, 
+#nav ul li.active span,
+#nav ul li#current span 
+{
+    background-image: url(../images/darkgreen/nav_right_active.png);
+	background-repeat:no-repeat;
+	background-position:right;
 	color: #303030;
-	background-color: rgb(236,189,46);
 }
 
+#nav ul li ul li.active a,  
+#nav ul li ul li#current  a, 
+#nav ul li ul li.active span,
+#nav ul li ul li#current span{
+	background-image: none;
+}
 div.moduleS1 .pad-title{
     background-color: #516014;
    
@@ -765,7 +730,6 @@ div.moduleS1 .pad-title{
 div.moduleS1 .pad3{
 	padding: 0 15px 12px;
     background-color: #EDEDED;  
-	border-radius: 10px;
 }
 div.moduleS2 .pad-title{
     background-color: #EDBD2E;
@@ -773,7 +737,7 @@ div.moduleS2 .pad-title{
 }
 div.moduleS2 .pad3{
     background-color: #F4D882;  
-	border-radius: 10px;
+	
 	padding: 0 15px 12px;
 }
 div.moduleS3 .pad-title{
@@ -781,10 +745,10 @@ div.moduleS3 .pad-title{
    
 }
 div.moduleS3 .pad3 {
-	border-radius:10px;
     background-color: #516014;  
     color: #fff;
 	padding: 0 15px 10px;
+	margin-top: 12px;
 }
 
 div.moduleS3 .pad-title h3{
@@ -794,4 +758,92 @@ div.moduleS3 .pad-title h3{
 div.moduleS3 a:link,
 div.moduleS3 a:visited {
 	color: #EDBD2E;
+}
+div.logo-wrapp .logo-three,
+div.logo-wrapp .container_12{
+	background-image: none;
+}
+div.log-b-left{
+	background-image: url("../images/darkgreen/t-l.jpg");
+	background-position: left top;
+    background-repeat: no-repeat;
+    height: 15px;
+}
+div.log-b-right{
+	background-image: url("../images/darkgreen/t-r.jpg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    height: 15px;
+}
+div.log-b-repeat{
+	background-image: url("../images/darkgreen/t-repeat.jpg");
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    height: 15px;
+}
+.nav-left{
+	background-image: url("../images/darkgreen/b-l.jpg");
+}
+#mbar #nav{
+	background-image: url("../images/darkgreen/b-r.jpg");
+}
+#mbar{
+	background-image: none;
+}
+div.moduleS1 .pad5{
+	background-image: url("../images/darkgreen/S1/border-right.jpg");
+}
+div.moduleS1 .pad4{
+	background-image: url("../images/darkgreen/S1/border-left.jpg");
+	background-color: #516014;
+}
+
+div.moduleS3 .pad5{
+	background-image: url("../images/darkgreen/S3/border-right.jpg");
+}
+div.moduleS3 .pad4{
+	background-image: url("../images/darkgreen/S3/border-left.jpg");
+	background-color: #364419;
+}
+
+div.moduleS1 .pad7{
+	background-color: #EDEDED;
+	background-image: url("../images/darkgreen/S1/bottom-left.jpg");	
+}
+div.moduleS1 .pad8{
+	background-image: url("../images/darkgreen/S1/bottom-right.jpg")
+}
+div.moduleS2 .pad8{
+	background-image: url("../images/darkgreen/S2/bottom-right.jpg")
+}
+
+div.moduleS2 .pad7{
+	background-color: #F4D882;
+	background-image: url("../images/darkgreen/S2/bottom-left.jpg");	
+}
+div.moduleS3 .pad8{
+	background-image: url("../images/darkgreen/S3/bottom-right.jpg")
+}
+
+div.moduleS3 .pad7{
+	background-color: #516014;
+	background-image: url("../images/darkgreen/S3/bottom-left.jpg");	
+}
+div.moduleS2 .pad5{
+ 	background-image: url("../images/darkgreen/S2/border-right.jpg");
+}
+
+div.moduleS2 .pad4{
+	background-image: url("../images/darkgreen/S2/border-left.jpg");
+	background-color: #EDBD2E;
+}
+
+.top div.moduletable,
+.top div.moduletablebdr,
+.top div.moduletable h3,
+.top div.moduletablebdr h3{
+	color:white;
+}
+#nav li li:last-child{
+	border-bottom: 0 none;
 }

@@ -4,9 +4,8 @@
 #nav ul li{
 	float: left;
 	font-family: "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
-	margin: 2px 5px 0;
-	height: 40px;
-	
+	margin:5px;
+	position: relative;
 }
 #nav ul li ul li {
     background-color:transparent;
@@ -28,6 +27,7 @@ body #nav ul li ul li span{
 	font-weight: normal;
 	background-image: none;
 }
+
 #menu ul li:hover > ul {
     display: block;
 }
@@ -47,10 +47,9 @@ body #nav ul li ul li span{
 #nav ul li a,
 #nav ul li span{
 	height:auto;
-	padding:2px 5px;
+	padding:2px 5px 4px;
 	display: block;
-	margin: 10px 0 0 0;
-	border-radius:5px;
+	margin: 0;
 	text-decoration: none;  
 	font-family: "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
 	font-weight: bold;
@@ -60,35 +59,30 @@ body #nav ul li ul li span{
 	left: 100%;
 	top: 5%;
 }
-#nav ul li ul li a.child,
-#nav ul li#current ul li a.child,
-#nav ul li ul li.parent
 
+#nav ul li ul li.parent,
+#nav ul li ul li.parent.active,
+#nav ul li ul li.parent.active:hover,
+#nav ul li ul li.parent:hover
 {
 	background-image:url(../images/arrow_right.gif);
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: right center;
 }
-#nav ul li.current ul li a,
-#nav ul li.current ul li span{
+#nav ul li ul li:hover{
 	background-image: none;
+	background-color:#0A5C99;
 	color: #fff; 
 }
 
-#nav ul li ul li a:hover,
-#nav ul li ul li span:hover,
-#nav ul li ul li.current a,
-#nav ul li ul li.current span,
-#nav ul li ul li#current a,
-#nav ul li ul li#current span{
-	background-image: none;
-	color: #fff;
-}
 #footer .menu{
 	display: table;
 	margin: 0 auto;
 }
 #footer li{
 	margin-left: 30px;
+}
+.menu ul{
+	margin-left: 0;
 }
