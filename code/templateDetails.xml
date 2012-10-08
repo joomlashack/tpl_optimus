@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
+<extension version="2.5" type="template" method="upgrade" client="site">
+	<name>js_optimus</name>
+	<version>3.0.0</version>
+	<creationDate>October 2012</creationDate>
+	<author>Joomlashack</author>
+	<copyright>Joomlashack LLC</copyright>
+    <authorEmail>support@joomlashack.com</authorEmail>
+	<authorUrl>http://www.joomlashack.com</authorUrl>
+    <license>Commercial Template</license>
+	<description>Thank you for installing the Optimus template from Joomlashack</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>functions.php</filename>
+		<filename>index.html</filename>
+		<filename>params.ini</filename>
+		<filename>template.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>js</folder>
+		<folder>images</folder>
+		<folder>wright</folder>
+	</files>
+	<positions>
+		<position>top</position>
+		<position>grid-top</position>
+		<position>grid-top2</position>
+		<position>breadcrumb</position>
+		<position>sidebar2</position>
+		<position>sidebar1</position>
+		<position>menu</position>
+		<position>grid-bottom</position>
+		<position>grid-bottom2</position>
+		<position>above-content</position>
+		<position>below-content</position>
+		<position>footer</position>
+	</positions>
+	
+	<config>
+		<fields name="params" addfieldpath="/templates/js_optimus/wright/parameters/joomla_2.5">
+			<fieldset name="basic">
+                <!-- Start of default Wright params -->
+				<field name="helper" type="help" label="Need Help?" />
+				<field name="rebrand" type="rebrand" default="no" label="Remove Branding" description="This setting removes the branding from the footer of the template." />
+				<field name="style" type="styles" default="blue" label="Style" description="Select which of the style variations you wish to use." />
+				<field name="mootools" type="radio" default="1" label="Enable Mootools" description="Turn off Joomla core Mootools.js">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="logo" type="logo" default="template" label="Logo Image" description="You can select your logo from the images directory after you upload the image." />
+				<field name="logowidth" type="grid" default="5" label="Logo Width" description="Select the column width for the logo, the rest of the space will be given to the newsflash module, or if you set it to full width the module will dissapear" />
+				<field name="body_font" type="typography" default="default" label="Body Font" description="Select the default font face for the body" />
+				<field name="header_font" type="typography" default="default" label="Heading Font" description="Select the default font face for the headers" />
+				<field name="columns" type="columns" default="sidebar1:3;main:6;sidebar2:3" sidebars="2" label="Columns" description="You can set the default widths and arrange the main columns. Any columns that are unused will just be hidden and the main column will be widened." />
+				<field name="doctype" type="list" default="html5" label="Doctype" description="">
+					<option value="html5">HTML5</option>
+					<option value="xhtml1transitional">XHTML 1 Transitional</option>
+					<option value="xhtml1strict">XHTML 1 Strict</option>
+				</field>
+                <!-- End of default Wright params -->
+                <field name="opwidth" type="list" default="960px" label="Default Page Width" description="Sets the default Page Width">
+                    <option value="800px">Fixed 800px</option>
+                    <option value="960px">Fixed 1024px</option>
+                    <option value="fluid">Fluid 90%</option>
+                </field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
