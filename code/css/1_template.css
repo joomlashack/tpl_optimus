@@ -798,3 +798,12 @@ div.moduleS3 .pad8{
 #nav li li:last-child{
 	border-bottom: 0 none;
 }
+/*Joomla 3*/
+fieldset.filters div.alert{
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+.cat-children .icon-folder-open{
+	display: none;
+}
