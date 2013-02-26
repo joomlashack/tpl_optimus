@@ -877,3 +877,9 @@ font-size: 14px !important;
 #nav [class^="icon-"].hide-text, #nav [class*=" icon-"].hide-text{
 	padding-right: 5px;
 }
+ul[class^="latestnews"] li{
+	margin-left: 0;
+}
+aside .banneritem img{
+	width: 100%;
+}
