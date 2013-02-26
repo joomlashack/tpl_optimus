@@ -714,7 +714,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefdfc', end
 #nav ul li:hover ul li a,
 #nav ul li:hover ul li span{
 	background-color: transparent;
-	background-image: none;
+	background-image: none !important;
 }
 #nav ul li ul li.current,
 #nav ul li ul li.active{
