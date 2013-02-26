@@ -663,7 +663,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefdfc', end
 #nav ul li a,
 #nav ul li span
 {
-	background-image: url(../images/lightred/nav_right_up.png);
+	background-image: url(../images/lightred/nav_right_up.png) !important;
 	background-repeat:no-repeat;
 	background-position:right;
 	
@@ -675,7 +675,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefdfc', end
 }
 #nav ul li:hover a,
 #nav ul li:hover span{
-	background-image: url(../images/lightred/nav_right_over.png);
+	background-image: url(../images/lightred/nav_right_over.png) !important;
 	background-repeat:no-repeat;
 	background-position:right;
 }
@@ -696,7 +696,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefdfc', end
 #nav ul li.active span,
 #nav ul li#current span 
 {
-    background-image: url(../images/lightred/nav_right_active.png);
+    background-image: url(../images/lightred/nav_right_active.png) !important;
 	background-repeat:no-repeat;
 	background-position:right;
 	color:#303030;
