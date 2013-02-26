@@ -856,3 +856,24 @@ dl.tabs dt.open a {
 .category thead tr{
 	color: #fff;
 }
+.hide-text {
+font-size: 0 !important;
+height: 18px !important;
+line-height: 18px;
+}
+.hide-text::before {
+font-size: 14px !important;
+}
+#nav [class^="icon-"],#nav [class*=" icon-"]{
+	font-family: FontAwesome;
+	padding-right: 10px;
+	width: auto;
+	min-height: 19px;
+	line-height: 19px;
+}
+#nav [class^="icon-"]::before,#nav [class*=" icon-"]::before{
+	margin-right: 3px;
+}
+#nav [class^="icon-"].hide-text, #nav [class*=" icon-"].hide-text{
+	padding-right: 5px;
+}
