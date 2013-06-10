@@ -61,20 +61,6 @@ defined('_JEXEC') or die('Restricted access');
 					</div>
 				</div><!-- end header -->
 				<div class="container_<?php echo $opwidth ?> clearfix">
-					<?php if ($this->countModules('grid-top')) :
-					?>
-					<div id="grid-top">
-						<w:module type="grid" name="grid-top" chrome="wrightflexgridimages" />
-						<div class="clearmargin"></div>
-					</div>
-					<?php    endif;?>
-					<?php if ($this->countModules('grid-top2')) :
-					?>
-					<div id="grid-top2">
-						<w:module type="grid" name="grid-top2" chrome="wrightflexgridimages" />
-						<div class="clearmargin"></div>
-					</div>
-					<?php    endif;?>
 					<?php if ($this->countModules('breadcrumb')) :
 					?>
 					<div class="path">
@@ -109,20 +95,6 @@ defined('_JEXEC') or die('Restricted access');
 							<w:module name="bottom" type="grid" chrome="wrightflexgrid" />
 						</div>
 					</div>
-					<?php if ($this->countModules('grid-bottom')) :
-					?>
-					<div id="grid-bottom">
-						<w:module type="grid" name="grid-bottom" chrome="wrightflexgridimages" />
-						<div class="clearmargin"></div>
-					</div>
-					<?php    endif;?>
-					<?php if ($this->countModules('grid-bottom2')) :
-					?>
-					<div id="grid-bottom2">
-						<w:module type="grid" name="grid-bottom2" chrome="wrightflexgridimages" />
-						<div class="clearmargin"></div>
-					</div>
-					<?php endif;?>
 				</div>
 				<div id="footer">
 					<div class="footer-int">

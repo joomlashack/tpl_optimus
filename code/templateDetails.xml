@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
 <extension version="2.5" type="template" method="upgrade" client="site">
-	<name>js_optimus</name>
+	<name>js_optimus_free</name>
 	<version>3.0.0_beta</version>
 	<creationDate>June 2013</creationDate>
 	<author>Joomlashack</author>
@@ -27,21 +27,17 @@
 	</files>
 	<positions>
 		<position>top</position>
-		<position>grid-top</position>
-		<position>grid-top2</position>
 		<position>breadcrumb</position>
 		<position>sidebar2</position>
 		<position>sidebar1</position>
 		<position>menu</position>
-		<position>grid-bottom</position>
-		<position>grid-bottom2</position>
 		<position>above-content</position>
 		<position>below-content</position>
 		<position>footer</position>
 	</positions>
 	
 	<config>
-		<fields name="params" addfieldpath="/templates/js_optimus/wright/parameters/joomla_2.5">
+		<fields name="params" addfieldpath="/templates/js_optimus_free/wright/parameters/joomla_2.5">
 			<fieldset name="basic">
                 <!-- Start of default Wright params -->
 				<field name="helper" type="help" label="Need Help?" />
