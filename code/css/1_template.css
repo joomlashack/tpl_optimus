@@ -798,3 +798,88 @@ div.moduleS3 .pad8{
 #nav li li:last-child{
 	border-bottom: 0 none;
 }
+/*Joomla 3*/
+fieldset.filters div.alert{
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+.cat-children .icon-folder-open{
+	display: none;
+}
+/*Tabs*/
+dl.tabs dt.tabs h3{
+	margin-bottom: 5px;
+}
+dl.tabs dt{
+	background-color: #fff;
+	border-radius: 5px 5px 0 0;
+     border: 1px solid #ddd;
+     border-bottom: none;
+     box-shadow: none;
+     margin: 5px 5px 0 0;
+}
+dl.tabs dt.open a {
+	color: #aaa;
+}
+.tabs + div.current{
+	box-shadow: none;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	border-radius: 0 5px 5px 5px;
+	padding: 20px;
+}
+.tabs .form-validate{
+	background-color: transparent;
+	border: none;
+	padding: 0;|
+}
+.contact dt.tabs{
+	padding: 0px 8px 4px;
+}
+.panel h3{
+	margin-left: 0;
+	margin-top: 0;
+}
+.panel h3.pane-toggler-down a{
+	border: none;
+	margin-bottom: 0;
+}
+.panel h3.pane-toggler-down{
+	background-color: #ccc;
+	box-shadow: none;
+}
+.pane-slider.content{
+	padding: 20px;
+}
+#advancedSearch hr{display: none;}
+.category thead tr{
+	color: #fff;
+}
+.hide-text {
+font-size: 0 !important;
+height: 18px !important;
+line-height: 18px;
+}
+.hide-text::before {
+font-size: 14px !important;
+}
+#nav [class^="icon-"],#nav [class*=" icon-"]{
+	font-family: FontAwesome;
+	padding-right: 10px;
+	width: auto;
+	min-height: 19px;
+	line-height: 19px;
+}
+#nav [class^="icon-"]::before,#nav [class*=" icon-"]::before{
+	margin-right: 3px;
+}
+#nav [class^="icon-"].hide-text, #nav [class*=" icon-"].hide-text{
+	padding-right: 5px;
+}
+ul[class^="latestnews"] li{
+	margin-left: 0;
+}
+aside .banneritem img{
+	width: 100%;
+}
