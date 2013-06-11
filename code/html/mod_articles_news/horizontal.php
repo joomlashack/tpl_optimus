@@ -8,4 +8,4 @@
 $app = JFactory::getApplication();
 
 require_once(JPATH_THEMES.'/'.$app->getTemplate().'/'.'wright'.'/'.'html'.'/'.'overrider.php');
-require(Overrider::getOverride('mod_articles_news', 'vert'));
+require(Overrider::getOverride('mod_articles_news', 'horizontal'));
