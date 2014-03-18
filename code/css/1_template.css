@@ -36,7 +36,7 @@ width: 140px;
 	background-repeat: no-repeat;
 	background-position:bottom right;
 	float:left;
-	width: 960px;
+	width: 100%;
 }
 
 /* @group Typography Helper Styles */
@@ -59,7 +59,7 @@ td.maincol {
 /* Module Font Sizes */
 
 td.leftcol,td.rightcol {
-	font-size: 1em;	
+	font-size: 1em;
 }
 td.leftcol p,td.rightcol p {
 	margin: 0;
@@ -357,7 +357,7 @@ td.leftcol,td.maincol,td.rightcol {
 
 #footer div.moduletable {
 	margin-bottom: 10px;
-	
+
 }
 
 
@@ -397,7 +397,7 @@ h3 {
 	margin: 10px 0;
 }
 div.moduleS1 h3 {
-	
+
 	text-indent: 0px;
 	border: none;
 }
@@ -406,7 +406,7 @@ div.moduleS2 h3 {
 
 	text-indent: 0px;
 	border: none;
-} 
+}
 div.moduleS3 h3,
 div.moduleS1 h3,
 div.moduleS2 h3
@@ -431,7 +431,7 @@ div.module div.pad {background: url(../images/blue/topleft_bdr.png) 0 0 no-repea
 div.module  div.pad2 {background: url(../images/blue/botright_bdr.png) 100% 100% no-repeat;}
 div.module  div.pad3 {background: url(../images/blue/botleft_bdr.png) 0 100% no-repeat; padding: 12px 15px;}
 
-/* 
+/*
 div.module  div.pad3 {
 	padding: 12px 15px;
 	border:1px solid #DFDFDF;
@@ -610,7 +610,7 @@ div.logo-wrapp {
 }
 #mbar{
 	background:url(../images/blue/repeat-menu.jpg) repeat-x left top;
-	
+
 }
 body.explorer.v_7 #nav ul{
 	float: left;
@@ -673,22 +673,22 @@ div.moduleS3{
 	z-index: 9050;
 }
 #footer {
-	background-color: #1e69a3; 
+	background-color: #1e69a3;
 	color: #fff;
 }
 
-div.moduleS1 .pad-title, 
+div.moduleS1 .pad-title,
 div.moduleS2 .pad-title,
 div.moduleS3 .pad-title {
     margin: -12px -15px 10px;
-    
+
 }
 div.moduleS1 .pad3,
 div.moduleS2 .pad3,
 div.moduleS3 .pad3 {
-   
+
     padding: 12px 15px;
-   
+
 }
 div.moduleS1 .pad4,
 div.moduleS2 .pad4{

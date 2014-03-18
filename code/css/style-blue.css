@@ -8,7 +8,7 @@
 body {
 	color: #515151;/*
 	background: #dce9f7 url(../images/blue/body_bg.png) repeat-x 0 top;*/
-	
+
 	background-image: url('../images/blue/background.jpg');
 	background-repeat: repeat-x;
 
@@ -20,7 +20,7 @@ body {
 	background-image: -moz-linear-gradient(bottom, rgb(220,233,247) 70%, rgb(98,151,192) 100%);
 	background-image: -webkit-linear-gradient(bottom, rgb(220,233,247) 70%, rgb(98,151,192) 100%);
 	background-image: -ms-linear-gradient(bottom, rgb(220,233,247) 70%, rgb(98,151,192) 100%);
-	
+
 
 	background-image: -webkit-gradient(
 		linear,
@@ -29,8 +29,8 @@ body {
 		color-stop(0.7, rgb(220,233,247)),
 		color-stop(1, rgb(98,151,192))
 	);
-	
-	background-color: rgb(220,233,247);	
+
+	background-color: rgb(220,233,247);
 }
 
 /*
@@ -283,7 +283,7 @@ ul li span.small {
 #wrap {
 	background: #FFF;
 	}
-	
+
 /*
 ----------------------------------------------------
                 "S1" MODULE SUFFIX
@@ -308,7 +308,7 @@ div.moduleS1 h3 {
 div.moduleS1 .pad3{
 	padding: 0 15px 12px;
 	background-color: #F5FBFF;
-	
+
 }
 
 /*
@@ -341,9 +341,9 @@ div.moduleS2 .pad3{
 div.moduleS1 .pad-title,
 div.moduleS2 .pad-title{
 	background-color: #538EBA;
-	
+
 	margin: -12px -15px 10px;
-	
+
 }
 /*
 ----------------------------------------------------
@@ -461,10 +461,6 @@ div.module h3, div.moduletablebdr h3 {
 }
 #footer .footer-int{
 	background-image: url(../images/blue/footer-r.jpg);
-	background-repeat: no-repeat;
-	background-position:bottom right;
-	float:left;
-	width: 960px;
 }
 /*LINKS*/
 #footer a,
@@ -503,7 +499,7 @@ img.pad {float:none;margin:0px auto;background-color:#f4f4f4;border:1px solid #e
 td.sectiontableheader {
 	color: #FFF;
 	background: #222;
-	line-height: 100%;	
+	line-height: 100%;
 }
 /*Alternating table rows*/
 
@@ -579,7 +575,7 @@ div.mosimage_caption {
 ----------------------------------------------------
 */
 
-#nav ul li:hover 
+#nav ul li:hover
 {
 	background-image: url(../images/blue/nav_left_over.png);
 	background-position:left;
@@ -594,7 +590,7 @@ div.mosimage_caption {
 #nav ul li:hover a,
 #nav ul li:hover span
 {
-	
+
 	background-image: url(../images/blue/nav_right_over.png) !important;
 	background-repeat:no-repeat;
 	background-position:right;
@@ -602,9 +598,9 @@ div.mosimage_caption {
 	color: #004B84
 }
 
-#nav li li {	
+#nav li li {
 	border-bottom: 1px solid #3080be;
-	background-image:none; 
+	background-image:none;
 }
 #nav li{
 	background-image: url(../images/blue/nav_left_up.png);
@@ -626,7 +622,7 @@ div.mosimage_caption {
 	background-position:left;
 	background-repeat: no-repeat;
 }
-*/   
+*/
 #nav ul li.current,
 #nav ul li.active{
 	background-image: url(../images/blue/nav_left_active.png);
@@ -654,7 +650,7 @@ div.mosimage_caption {
 	background-color: transparent;
 }
 #nav{
-	
+
 }
 #nav ul li ul{
 	background-color: #2B72A9;
