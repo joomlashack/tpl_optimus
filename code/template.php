@@ -100,9 +100,8 @@ defined('_JEXEC') or die('Restricted access');
 					<div class="footer-int">
 						<w:module name="footer" />
 					</div>
-					
 				</div>
-				
+
 			</div><!-- end wrap -->
 			<div class="grid_12">
 					<w:footer />
