@@ -22,7 +22,7 @@ defined('_JEXEC') or die('Restricted access');
 		</head>
 		<body>
 			<div class="border-top"></div>
-			<div id="wrap" class="wrap_<?php echo $opwidth ?>">
+			<div id="wrap" class="center-element wrap_<?php echo $opwidth ?>">
 				<div id="header">
 					<div class="logo-wrapp">
 						<div class="container_<?php echo $opwidth ?> clearfix">
@@ -131,8 +131,8 @@ defined('_JEXEC') or die('Restricted access');
 				</div>
 
 			</div><!-- end wrap -->
-			<div class="grid_12">
-					<w:footer />
-				</div>
+			<div class="center-element center wrap_<?php echo $opwidth ?>">
+				<w:footer />
+			</div>
 		</body>
 	</html>
