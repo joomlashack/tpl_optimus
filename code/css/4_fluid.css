@@ -1,6 +1,6 @@
 /* TEMPLATE SPECIFIC CSS CODE fo fluid */
 
-div#wrap.wrap_fluid {
+.wrap_fluid {
 	width: 90%;
 	min-width: 800px;
 }
