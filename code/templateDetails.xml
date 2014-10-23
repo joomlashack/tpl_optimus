@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
 <extension version="2.5" type="template" method="upgrade" client="site">
-	<name>js_optimus_free</name>
+	<name>js_optimus</name>
 	<version>3.1.5</version>
 	<creationDate>April 2014</creationDate>
 	<author>Joomlashack</author>
