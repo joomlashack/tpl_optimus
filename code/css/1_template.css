@@ -486,9 +486,16 @@ div.mosimage {
 }
 
 .pagenav {
+	list-style: none;
+	overflow: hidden;
 	padding: 3px 5px 3px 3px;
 }
-
+.pagenav .previous{
+	float: left;
+}
+.pagenav .next{
+	float: right;
+}
 table.contenttoc {
 	margin: 5px;
 	padding: 1px;
