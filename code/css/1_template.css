@@ -432,13 +432,12 @@ div.module div.pad {background: url(../images/blue/topleft_bdr.png) 0 0 no-repea
 div.module  div.pad2 {background: url(../images/blue/botright_bdr.png) 100% 100% no-repeat;}
 div.module  div.pad3 {background: url(../images/blue/botleft_bdr.png) 0 100% no-repeat; padding: 12px 15px;}
 
-/*
-div.module  div.pad3 {
-	padding: 12px 15px;
-	border:1px solid #DFDFDF;
-	border-radius: 10px;
-	box-shadow:0 0 5px #ccc;
-}*/
+div.module  div.pad3 input,
+div.module  div.pad3 textarea,
+div.module  div.pad3 .uneditable-input{
+	width: 170px;
+}
+
 /* @end Modules */
 
 /* @group Footer */
