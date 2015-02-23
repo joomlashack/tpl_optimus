@@ -3,7 +3,7 @@
 <extension version="2.5" type="template" method="upgrade" client="site">
 	<name>js_optimus</name>
 	<version>3.1.6</version>
-	<creationDate>October 2014</creationDate>
+	<creationDate>February 2015</creationDate>
 	<author>Joomlashack</author>
 	<copyright>Joomlashack LLC</copyright>
     <authorEmail>support@joomlashack.com</authorEmail>
