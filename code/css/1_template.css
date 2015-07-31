@@ -606,23 +606,35 @@ margin-left: 30px;
 .wrap_12{
 	width:960px;
 }
-div.logo-wrapp .logo-three{
-	background-image: url(../images/blue/t-l.jpg);
-	background-repeat: no-repeat;
-	background-position: left bottom;
+
+div.logo-wrapp .logo-three {
 	overflow: hidden;
 }
-div.logo-wrapp .container_12{
+
+.log-b-left,
+.log-b-right,
+.log-b-repeat {
+	height: 15px;
+}
+
+.log-b-left {
+	background-image: url(../images/blue/t-l.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.log-b-right {
 	background-image: url(../images/blue/t-r.jpg);
 	background-repeat: no-repeat;
-	background-position: right bottom;
+	background-position: right top;
 }
-div.logo-wrapp {
+
+.log-b-repeat {
 	background-image: url(../images/blue/t-repeat.jpg);
 	background-repeat: repeat-x;
-
-	background-position: left bottom;
+	background-position: left top;
 }
+
 #mbar{
 	background:url(../images/blue/repeat-menu.jpg) repeat-x left top;
 

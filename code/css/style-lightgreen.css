@@ -16,7 +16,7 @@ body {
 	background-image: -moz-linear-gradient(bottom, rgb(192,207,127) 41%, rgb(117,149,41) 81%);
 	background-image: -webkit-linear-gradient(bottom, rgb(192,207,127) 41%, rgb(117,149,41) 81%);
 	background-image: -ms-linear-gradient(bottom, rgb(192,207,127) 41%, rgb(117,149,41) 81%);
-	
+
 	background-image: -webkit-gradient(
 		linear,
 		left bottom,
@@ -297,7 +297,7 @@ ul li span.small {
 #wrap {
 	background: #FFF;
 	}
-	
+
 
 
 /*
@@ -507,7 +507,7 @@ a.mainlevel-sidenav {
 td.sectiontableheader {
 	color: #FFF;
 	background: #222;
-	line-height: 100%;	
+	line-height: 100%;
 }
 /*Alternating table rows*/
 
@@ -598,7 +598,7 @@ div.moduletableS3 div div div {background: url(../images/style5/botleft_dark.png
 
 #nav ul li a ,
 #nav ul li span{	color: #456b11;
-	
+
 }
 
 #nav ul li a:hover,
@@ -625,7 +625,7 @@ div.moduletableS3 div div div {background: url(../images/style5/botleft_dark.png
 /* @end */
 div.moduleS1 .pad-title{
     background-color: #C9E27A;
-   
+
 }
 div.moduleS1 .pad-title h3{
 	color: #76923F;
@@ -637,29 +637,29 @@ div.moduleS1 .pad3{
 
 div.moduleS2 .pad-title{
     background-color: #4C7513;
-   
+
 }
 div.moduleS2 .pad-title h3{
 	color:#fff;
 }
 div.moduleS2 .pad3{
-    background-color: #C9E27A;  
+    background-color: #C9E27A;
     color: #000;
 	padding: 0 15px 12px;
 }
 div.moduleS3 .pad-title{
     background-color: #B2C96C;
-   
+
 }
 div.moduleS3 .pad3 {
-    background-color: #749E28;  
+    background-color: #749E28;
     color: #F8FFBE;
 	padding: 0 15px 10px;
 	margin-top: 12px;
 }
 
 div.moduleS3 .pad-title h3{
-	color: #516F1B;      
+	color: #516F1B;
 }
 .border-top{
 	background-color: #697D2E;
@@ -670,7 +670,7 @@ div.moduleS3 .pad-title h3{
 	background-image: -moz-linear-gradient(bottom, rgb(118,155,43) 10%, rgb(87,129,24) 45%);
 	background-image: -webkit-linear-gradient(bottom, rgb(118,155,43) 10%, rgb(87,129,24) 45%);
 	background-image: -ms-linear-gradient(bottom, rgb(118,155,43) 10%, rgb(87,129,24) 45%);
-	
+
 	background-image: -webkit-gradient(
 		linear,
 		left bottom,
@@ -678,7 +678,7 @@ div.moduleS3 .pad-title h3{
 		color-stop(0.1, rgb(118,155,43)),
 		color-stop(0.45, rgb(87,129,24))
 	);
-	
+
 	background-color: rgb(118,155,43);
 }
 div.logo-wrapp{
@@ -706,7 +706,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	background-repeat:no-repeat;
 	background-position:right;
 }
-#nav ul li:hover 
+#nav ul li:hover
 {
 	background-image: url(../images/lightgreen/nav_left_over.png);
 	background-position:left;
@@ -718,17 +718,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	background-repeat: no-repeat;
 }
 
-#nav ul li ul li.active a,  
-#nav ul li ul li#current  a, 
+#nav ul li ul li.active a,
+#nav ul li ul li#current  a,
 #nav ul li ul li.active span,
 #nav ul li ul li#current span{
 	background-image: none !important;
 	color: white;
 }
-#nav ul li.active a,  
-#nav ul li#current  a, 
+#nav ul li.active a,
+#nav ul li#current  a,
 #nav ul li.active span,
-#nav ul li#current span 
+#nav ul li#current span
 {
     background-image: url(../images/lightgreen/nav_right_active.png) !important;
 	background-repeat:no-repeat;
@@ -777,35 +777,26 @@ div.moduleS3 a:visited {
 }
 #nav ul li ul li a:hover,
 #nav ul li ul li span:hover {
-	
+
 	color: #23330D;
 }
 #nav ul li ul li.current,
 #nav ul li ul li.active{
 	background-image: none;
-	
+
 }
 div.logo-wrapp .logo-three,
 div.logo-wrapp .container_12{
 	background-image: none;
 }
-div.log-b-left{
+.log-b-left {
 	background-image: url("../images/lightgreen/t-l.jpg");
-	background-position: left top;
-    background-repeat: no-repeat;
-    height: 15px;
 }
-div.log-b-right{
+.log-b-right {
 	background-image: url("../images/lightgreen/t-r.jpg");
-    background-position: right top;
-    background-repeat: no-repeat;
-    height: 15px;
 }
-div.log-b-repeat{
+.log-b-repeat {
 	background-image: url("../images/lightgreen/t-repeat.jpg");
-    background-position: left bottom;
-    background-repeat: repeat-x;
-    height: 15px;
 }
 #mbar{
 	background-image: url("../images/lightgreen/repeat-menu.jpg");
