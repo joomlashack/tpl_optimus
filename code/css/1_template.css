@@ -497,6 +497,13 @@ div.mosimage {
 .pagenav .next{
 	float: right;
 }
+
+.pagination {
+	> span {
+		min-height: 37px;
+	}
+}
+
 table.contenttoc {
 	margin: 5px;
 	padding: 1px;
