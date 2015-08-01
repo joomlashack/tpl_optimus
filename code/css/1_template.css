@@ -497,10 +497,8 @@ div.mosimage {
 	float: right;
 }
 
-.pagination {
-	> span {
-		min-height: 37px;
-	}
+.pagination	> span {
+	min-height: 37px;
 }
 
 table.contenttoc {
