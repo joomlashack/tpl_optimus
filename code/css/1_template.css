@@ -410,12 +410,11 @@ div.moduleS2 h3 {
 }
 div.moduleS3 h3,
 div.moduleS1 h3,
-div.moduleS2 h3
- {
+div.moduleS2 h3 {
 	color: #fff;
 	font-size: 1.2em;
 	letter-spacing:normal;
-    padding:0 10px;
+    padding: 6px 10px 10px;
 }
 
 div.moduleS3 h3 {
