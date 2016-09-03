@@ -47,10 +47,10 @@ body #nav ul li ul li span{
 #nav ul li a,
 #nav ul li span{
 	height:auto;
-	padding:2px 5px 4px;
+	padding:4px 6px;
 	display: block;
 	margin: 0;
-	text-decoration: none;  
+	text-decoration: none;
 	font-family: "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
 	font-weight: bold;
 	font-size: 13px;
@@ -73,7 +73,7 @@ body #nav ul li ul li span{
 #nav ul li ul li:hover{
 	background-image: none;
 	background-color:#0A5C99;
-	color: #fff; 
+	color: #fff;
 }
 
 #footer .menu{
@@ -85,4 +85,10 @@ body #nav ul li ul li span{
 }
 .menu ul{
 	margin-left: 0;
+}
+
+.menu ul.small {
+	padding: 5px 0 0 0;
+	font-size: 13px;
+	line-height: 150%;
 }

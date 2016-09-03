@@ -1,2 +1,2 @@
 www.dir=/var/www/optimus
-node.skip=false
+node.build=all
