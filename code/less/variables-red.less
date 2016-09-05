@@ -39,10 +39,13 @@
 // --------------------------------------------------
 
 @color_one: @red;
-@color_two: @red;
-@color_three: @red;
-@color_four: @red;
-@color_five: @red;
+@color_two: #590000;
+@color_three: #D2CAAE;
+@color_four: #F7F7F7;
+@color_five: #600000;
+
+@bg_gradient: #ccc8ad;
+@bg_gradient2: #f6f1d0;
 
 // Grays
 // -------------------------
@@ -60,7 +63,7 @@
 @blue:                  #049cdb;
 @blueDark:              #0064cd;
 @green:                 #46a546;
-@red:                   #9d261d;
+@red:                   #84090F;
 @yellow:                #ffc40d;
 @orange:                #f89406;
 @pink:                  #c3325f;
@@ -69,13 +72,13 @@
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        @white;
-@textColor:             @grayDark;
+@bodyBackground:        @bg_gradient2;
+@textColor:             #515151;
 
 
 // Links
 // -------------------------
-@linkColor:             #08c;
+@linkColor:             @color_one;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
@@ -86,12 +89,12 @@
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
 @baseFontSize:          14px;
-@baseFontFamily:        @sansFontFamily;
+@baseFontFamily:        @serifFontFamily;
 @baseLineHeight:        20px;
-@altFontFamily:         @serifFontFamily;
+@altFontFamily:         @sansFontFamily;
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
-@headingsFontWeight:    bold;    // instead of browser default, bold
+@headingsFontWeight:    normal;    // instead of browser default, bold
 @headingsColor:         inherit; // empty to use BS default, @textColor
 
 
@@ -209,7 +212,7 @@
 
 // Wells
 // -------------------------
-@wellBackground:                  #f5f5f5;
+@wellBackground:                  @color_three;
 
 
 // Navbar
@@ -219,11 +222,11 @@
 
 @navbarHeight:                    40px;
 @navbarBackgroundHighlight:       #ffffff;
-@navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
+@navbarBackground:								@color_one;
 @navbarBorder:                    darken(@navbarBackground, 12%);
 
-@navbarText:                      #777;
-@navbarLinkColor:                 #777;
+@navbarText:                      #f4f7d4;
+@navbarLinkColor:                 #f4f7d4;
 @navbarLinkColorHover:            @grayDark;
 @navbarLinkColorActive:           @gray;
 @navbarLinkBackgroundHover:       transparent;
