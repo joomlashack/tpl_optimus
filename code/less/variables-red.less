@@ -20,7 +20,7 @@
 @navbarInnerGradient : false;
 @navbarInverseInnerGradient : false;
 
-@buttonGradient: true;
+@buttonGradient: false;
 
 
 // Dropdown For navbar-inverse
@@ -43,6 +43,7 @@
 @color_three: #D2CAAE;
 @color_four: #F7F7F7;
 @color_five: #600000;
+@color_six: #E1DFD0;
 
 @bg_gradient: #ccc8ad;
 @bg_gradient2: #f6f1d0;
@@ -54,7 +55,7 @@
 @grayDark:              #333;
 @gray:                  #555;
 @grayLight:             #999;
-@grayLighter:           #eee;
+@grayLighter:           @color_four;
 @white:                 #fff;
 
 
@@ -111,7 +112,7 @@
 @paddingMini:           0 6px;   // 22px
 
 @baseBorderRadius:      4px;
-@borderRadiusLarge:     6px;
+@borderRadiusLarge:     1rem;
 @borderRadiusSmall:     3px;
 
 
@@ -124,12 +125,12 @@
 
 // Buttons
 // -------------------------
-@btnBackground:                     @white;
+@btnBackground:                     @grayLighter;
 @btnBackgroundHighlight:            darken(@white, 10%);
 @btnBorder:                         #ccc;
 
 @btnPrimaryBackground:              @linkColor;
-@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
+@btnPrimaryBackgroundHighlight:     darken(@btnPrimaryBackground, 10%);
 
 @btnInfoBackground:                 #5bc0de;
 @btnInfoBackgroundHighlight:        #2f96b4;
@@ -159,16 +160,16 @@
 
 // Dropdowns
 // -------------------------
-@dropdownBackground:            @white;
-@dropdownBorder:                rgba(0,0,0,.2);
+@dropdownBackground:            @color_five;
+@dropdownBorder:                transparent;
 @dropdownDividerTop:            #e5e5e5;
 @dropdownDividerBottom:         @white;
 
-@dropdownLinkColor:             @grayDark;
+@dropdownLinkColor:             @white;
 @dropdownLinkColorHover:        @white;
 @dropdownLinkColorActive:       @white;
 
-@dropdownLinkBackgroundActive:  @linkColor;
+@dropdownLinkBackgroundActive:  @color_five;
 @dropdownLinkBackgroundHover:   @dropdownLinkBackgroundActive;
 
 
@@ -222,15 +223,15 @@
 
 @navbarHeight:                    40px;
 @navbarBackgroundHighlight:       #ffffff;
-@navbarBackground:								@color_two;
+@navbarBackground:								#520000;
 @navbarBorder:                    darken(@navbarBackground, 12%);
 
 @navbarText:                      #f4f7d4;
 @navbarLinkColor:                 #f4f7d4;
-@navbarLinkColorHover:            @grayDark;
-@navbarLinkColorActive:           @gray;
-@navbarLinkBackgroundHover:       transparent;
-@navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
+@navbarLinkColorHover:            @navbarLinkColor;
+@navbarLinkColorActive:           @navbarLinkColor;
+@navbarLinkBackgroundHover:       @color_one;
+@navbarLinkBackgroundActive:      @color_one;
 
 @navbarBrandColor:                @navbarLinkColor;
 
