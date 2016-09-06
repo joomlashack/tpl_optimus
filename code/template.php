@@ -26,14 +26,14 @@ defined('_JEXEC') or die('Restricted access');
 				:
 		?>
 		<!-- toolbar -->
-		<w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="row-fluid" wrapClass="navbar-fixed-top navbar-inverse" type="toolbar" name="toolbar" />
+		<w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="<?php echo $wrightGridMode ?>" wrapClass="navbar-fixed-top navbar-inverse" type="toolbar" name="toolbar" />
 		<?php
 			endif;
 		?>
-		<div class="<?php echo $wrightContainerClass; ?> bg-color bg-color-white">
+		<div class="<?php echo $wrightContainerClass; ?>">
 			<!-- header -->
 			<header id="header" class="m-b-1 p-t-1">
-				<div class="row-fluid clearfix">
+				<div class="<?php echo $wrightGridMode; ?> clearfix">
 					<w:logo name="top" />
 					<div class="clear"></div>
 				</div>
@@ -52,7 +52,7 @@ defined('_JEXEC') or die('Restricted access');
 				if ($this->countModules('featured'))
 					:
 			?>
-			<div id="featured" class="m-b-2">
+			<div id="featured" class="m-b-1">
 				<w:module type="none" name="featured" />
 			</div>
 			<?php
@@ -63,8 +63,8 @@ defined('_JEXEC') or die('Restricted access');
 				if ($this->countModules('grid-top'))
 					:
 			?>
-			<div id="grid-top">
-				<w:module type="row-fluid" name="grid-top" chrome="wrightflexgrid" />
+			<div id="grid-top" class="m-b-1">
+				<w:module type="<?php echo $wrightGridMode; ?>" name="grid-top" chrome="wrightflexgrid" />
 			</div>
 			<?php
 				endif;
@@ -75,12 +75,12 @@ defined('_JEXEC') or die('Restricted access');
 			?>
 			<!-- grid-top2 -->
 			<div id="grid-top2">
-				<w:module type="row-fluid" name="grid-top2" chrome="wrightflexgrid" />
+				<w:module type="<?php echo $wrightGridMode; ?>" name="grid-top2" chrome="wrightflexgrid" />
 			</div>
 			<?php
 				endif;
 			?>
-			<div id="main-content" class="row-fluid p-b-2">
+			<div id="main-content" class="<?php echo $wrightGridMode; ?>">
 				<!-- sidebar1 -->
 				<aside id="sidebar1">
 					<w:module name="sidebar1" />
@@ -92,7 +92,7 @@ defined('_JEXEC') or die('Restricted access');
 							:
 					?>
 					<!-- above-content -->
-					<div id="above-content" class="m-b-2">
+					<div id="above-content">
 						<w:module type="none" name="above-content" />
 					</div>
 					<?php
@@ -116,7 +116,7 @@ defined('_JEXEC') or die('Restricted access');
 							:
 					?>
 					<!-- below-content -->
-					<div id="below-content" class="m-t-2">
+					<div id="below-content" class="m-t-1">
 						<w:module type="none" name="below-content" />
 					</div>
 					<?php
@@ -133,8 +133,8 @@ defined('_JEXEC') or die('Restricted access');
 					:
 			?>
 			<!-- grid-bottom -->
-			<div id="grid-bottom">
-				<w:module type="row-fluid" name="grid-bottom" chrome="wrightflexgrid" />
+			<div id="grid-bottom" class="m-b-1">
+				<w:module type="<?php echo $wrightGridMode; ?>" name="grid-bottom" chrome="wrightflexgrid" />
 			</div>
 			<?php
 				endif;
@@ -145,7 +145,7 @@ defined('_JEXEC') or die('Restricted access');
 			?>
 			<!-- grid-bottom2 -->
 			<div id="grid-bottom2">
-				<w:module type="row-fluid" name="grid-bottom2" chrome="wrightflexgrid" />
+				<w:module type="<?php echo $wrightGridMode; ?>" name="grid-bottom2" chrome="wrightflexgrid" />
 			</div>
 			<?php
 				endif;
@@ -166,19 +166,17 @@ defined('_JEXEC') or die('Restricted access');
 					:
 				?>
 				<!-- bottom-menu -->
-				<div id="bottom-menu" class="<?php echo $wrightContainerClass; ?> bg-color bg-color-five">
-					<w:module name="bottom-menu" />
-				</div>
+				<w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="<?php echo $wrightGridMode ?>" name="bottom-menu" wrapClass="navbar-inverse navbar-transparent" />
 				<?php
 					endif;
 				?>
 
-		   	<div class="<?php echo $wrightContainerClass; ?> footer-content bg-color bg-color-five">
+		   	<div class="<?php echo $wrightContainerClass; ?> footer-content p-t-1">
 			   	<?php
 						if ($this->countModules('footer'))
 						:
 					?>
-					<w:module type="row-fluid" name="footer" chrome="wrightflexgrid" />
+					<w:module type="<?php echo $wrightGridMode; ?>" name="footer" chrome="wrightflexgrid" />
 				 	<?php
 						endif;
 					?>
