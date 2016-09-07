@@ -173,7 +173,6 @@ defined('_JEXEC') or die('Restricted access');
 				 	<?php
 						endif;
 					?>
-					<w:footer />
 				</div>
 				<?php
 					if ($this->countModules('bottom-menu'))
@@ -184,6 +183,7 @@ defined('_JEXEC') or die('Restricted access');
 				<?php
 					endif;
 				?>
+				<w:footer />
 		   </footer>
 		</div>
     <w:module type="none" name="debug" chrome="none" />
