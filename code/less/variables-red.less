@@ -73,7 +73,7 @@
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        @bg_gradient2;
+@bodyBackground:        @color_four;
 @textColor:             #515151;
 
 
@@ -86,15 +86,15 @@
 // Typography
 // -------------------------
 @sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+@serifFontFamily:       "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
-@baseFontSize:          14px;
+@baseFontSize:          15px;
 @baseFontFamily:        @serifFontFamily;
 @baseLineHeight:        20px;
 @altFontFamily:         @sansFontFamily;
 
-@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
+@headingsFontFamily:    @altFontFamily; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    normal;    // instead of browser default, bold
 @headingsColor:         inherit; // empty to use BS default, @textColor
 
@@ -125,9 +125,9 @@
 
 // Buttons
 // -------------------------
-@btnBackground:                     @grayDark;
-@btnBackgroundHighlight:            darken(@white, 10%);
-@btnBorder:                         @grayDark;
+@btnBackground:                     @textColor;
+@btnBackgroundHighlight:            @grayDarker;
+@btnBorder:                         @textColor;
 
 @btnPrimaryBackground:              @linkColor;
 @btnPrimaryBackgroundHighlight:     darken(@btnPrimaryBackground, 10%);
@@ -213,7 +213,7 @@
 
 // Wells
 // -------------------------
-@wellBackground:                  @color_four;
+@wellBackground:                  #eee;
 
 
 // Navbar
@@ -223,29 +223,29 @@
 
 @navbarHeight:                    40px;
 @navbarBackgroundHighlight:       #ffffff;
-@navbarBackground:								#520000;
-@navbarBorder:                    darken(@navbarBackground, 12%);
+@navbarBackground:								#fff;
+@navbarBorder:                    @navbarBackground;
 
-@navbarText:                      #f4f7d4;
-@navbarLinkColor:                 #f4f7d4;
-@navbarLinkColorHover:            @navbarLinkColor;
-@navbarLinkColorActive:           @navbarLinkColor;
-@navbarLinkBackgroundHover:       @color_one;
-@navbarLinkBackgroundActive:      @color_one;
+@navbarText:                      @textColor;
+@navbarLinkColor:                 @textColor;
+@navbarLinkColorHover:            @linkColor;
+@navbarLinkColorActive:           @linkColor;
+@navbarLinkBackgroundHover:       transparent;
+@navbarLinkBackgroundActive:      transparent;
 
 @navbarBrandColor:                @navbarLinkColor;
 
 // Inverted navbar
-@navbarInverseBackground:                #111111;
-@navbarInverseBackgroundHighlight:       #222222;
-@navbarInverseBorder:                    #252525;
+@navbarInverseBackground:                @color_five;
+@navbarInverseBackgroundHighlight:       @color_five;
+@navbarInverseBorder:                    @color_five;
 
-@navbarInverseText:                      @grayLight;
-@navbarInverseLinkColor:                 @grayLight;
-@navbarInverseLinkColorHover:            @white;
+@navbarInverseText:                      @white;
+@navbarInverseLinkColor:                 @white;
+@navbarInverseLinkColorHover:            #f4f7d4;
 @navbarInverseLinkColorActive:           @navbarInverseLinkColorHover;
 @navbarInverseLinkBackgroundHover:       transparent;
-@navbarInverseLinkBackgroundActive:      @navbarInverseBackground;
+@navbarInverseLinkBackgroundActive:      transparent;
 
 @navbarInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
 @navbarInverseSearchBackgroundFocus:     @white;

@@ -30,33 +30,31 @@ defined('_JEXEC') or die('Restricted access');
 		<?php
 			endif;
 		?>
-		<div class="<?php echo $wrightContainerClass; ?> bg-color bg-color-six">
+		<div class="<?php echo $wrightContainerClass; ?>">
 			<!-- header -->
-			<header id="header" class="m-b-1 p-t-1">
-				<div class="row-fluid clearfix">
-					<w:logo name="top" />
-					<div class="clear"></div>
+			<header id="header" class="m-b-3 m-t-3">
+				<div class="row-fluid">
+					<w:logo name="menu" />
 				</div>
 			</header>
-		</div>
-		<div class="<?php echo $wrightContainerClass; ?> z2 relative">
 			<?php
-				if ($this->countModules('menu'))
+				if ($this->countModules('top'))
 					:
 			?>
-			<!-- menu -->
-	   		<w:nav name="menu" />
+			<div class="m-b-3">
+				<w:module type="none" name="top" />
+			</div>
 			<?php
 				endif;
 			?>
 		</div>
-		<div class="<?php echo $wrightContainerClass; ?> bg-color bg-color-white z1 top-negative">
+		<div class="<?php echo $wrightContainerClass; ?>">
 			<!-- featured -->
 			<?php
 				if ($this->countModules('featured'))
 					:
 			?>
-			<div id="featured" class="m-b-3">
+			<div id="featured" class="bg-color bg-color-white m-b-3">
 				<w:module type="none" name="featured" />
 			</div>
 			<?php
@@ -67,7 +65,7 @@ defined('_JEXEC') or die('Restricted access');
 				if ($this->countModules('grid-top'))
 					:
 			?>
-			<div id="grid-top">
+			<div id="grid-top" class="items-bg">
 				<w:module type="row-fluid" name="grid-top" chrome="wrightflexgrid" />
 			</div>
 			<?php
@@ -78,13 +76,13 @@ defined('_JEXEC') or die('Restricted access');
 					:
 			?>
 			<!-- grid-top2 -->
-			<div id="grid-top2">
+			<div id="grid-top2" class="items-bg">
 				<w:module type="row-fluid" name="grid-top2" chrome="wrightflexgrid" />
 			</div>
 			<?php
 				endif;
 			?>
-			<div id="main-content" class="row-fluid p-b-2">
+			<div id="main-content" class="row-fluid m-b-3">
 				<!-- sidebar1 -->
 				<aside id="sidebar1">
 					<w:module name="sidebar1" />
@@ -137,7 +135,7 @@ defined('_JEXEC') or die('Restricted access');
 					:
 			?>
 			<!-- grid-bottom -->
-			<div id="grid-bottom">
+			<div id="grid-bottom" class="items-bg">
 				<w:module type="row-fluid" name="grid-bottom" chrome="wrightflexgrid" />
 			</div>
 			<?php
@@ -148,7 +146,7 @@ defined('_JEXEC') or die('Restricted access');
 					:
 			?>
 			<!-- grid-bottom2 -->
-			<div id="grid-bottom2">
+			<div id="grid-bottom2" class="items-bg">
 				<w:module type="row-fluid" name="grid-bottom2" chrome="wrightflexgrid" />
 			</div>
 			<?php
@@ -164,7 +162,7 @@ defined('_JEXEC') or die('Restricted access');
 				?> class="sticky"<?php
 			endif;
 				?>>
-		   	<div class="<?php echo $wrightContainerClass; ?> footer-content bg-color bg-color-five">
+		   	<div class="<?php echo $wrightContainerClass; ?> footer-content ">
 			   	<?php
 						if ($this->countModules('footer'))
 						:
@@ -173,16 +171,16 @@ defined('_JEXEC') or die('Restricted access');
 				 	<?php
 						endif;
 					?>
+					<?php
+						if ($this->countModules('bottom-menu'))
+						:
+					?>
+					<!-- bottom-menu -->
+					<w:nav containerClass="" rowClass="<?php echo $wrightGridMode ?>" name="bottom-menu" wrapClass="navbar-inverse" />
+					<?php
+						endif;
+					?>
 				</div>
-				<?php
-					if ($this->countModules('bottom-menu'))
-					:
-				?>
-				<!-- bottom-menu -->
-				<w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="<?php echo $wrightGridMode ?>" name="bottom-menu" wrapClass="" />
-				<?php
-					endif;
-				?>
 				<w:footer />
 		   </footer>
 		</div>
