@@ -54,7 +54,7 @@ defined('_JEXEC') or die('Restricted access');
 				if ($this->countModules('featured'))
 					:
 			?>
-			<div id="featured" class="bg-color bg-color-white m-b-3">
+			<div id="featured" class="items-bg">
 				<w:module type="none" name="featured" />
 			</div>
 			<?php
