@@ -74,10 +74,18 @@ form:last-child,
 	.m-b-0;
 }
 
+.pagination {
+	.m-t-2;
+}
+
 .counter {
 	line-height: 30px;
 	margin-left: 5px;
 	margin-bottom: 0;
+}
+
+.nav-tabs>.active>a, .nav-tabs>.active>a:hover, .nav-tabs>.active>a:focus {
+	background-color: white;
 }
 
 div.cat-children h3,
@@ -98,6 +106,8 @@ div.categories-list h3
 
 .navbar {
 	.nav {
+		.m-b-0;
+
 	 	> li {
 	 		> a {
 				// background-color: @color_one;
@@ -119,6 +129,15 @@ div.categories-list h3
 	.box-shadow(none);
 }
 
+.navbar-inverse .navbar-search .search-query {
+	background-color: #fff;
+}
+
+.dropdown-menu .divider {
+	background-color: darken(@dropdownBackground, 10%);
+	border-bottom-color: darken(@dropdownBackground, 10%);
+}
+
 #menu {
 	// .navbar-inner {
 	// 	border-top-right-radius: 0;
@@ -126,7 +145,7 @@ div.categories-list h3
 	// 	.border-radius-bottom;
 	// }
 
-	.nav, .navbar {.m-0;}
+	.navbar {.m-0;}
 }
 
 [class*="module"],
@@ -279,17 +298,24 @@ dl.article-info {
 
 .btn {
 	.box-shadow(none);
-	color: @white;
 	text-shadow: none;
+}
+
+.btn:not(.btn-link) {
+	color: @white;
 
 	.caret {
 		border-top-color: @white;
 		border-bottom-color: @white;
 	}
+
+	&:hover, &:focus {
+		color: white;
+	}
 }
 
 .blog, .blog-featured {
-	.icons {
+	.icons, .item-image {
 		+ * {
 			.clear;
 		}
@@ -299,6 +325,7 @@ dl.article-info {
 .readmore {
 	float: left !important;
 	font-family: @altFontFamily;
+	.m-t-1;
 
 	.btn {
 		background-color: transparent;
