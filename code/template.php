@@ -41,7 +41,7 @@ defined('_JEXEC') or die('Restricted access');
 				if ($this->countModules('top'))
 					:
 			?>
-			<div class="m-b-3">
+			<div class="top-position">
 				<w:module type="none" name="top" />
 			</div>
 			<?php
@@ -94,7 +94,7 @@ defined('_JEXEC') or die('Restricted access');
 							:
 					?>
 					<!-- above-content -->
-					<div id="above-content" class="m-b-3">
+					<div id="above-content">
 						<w:module type="none" name="above-content" />
 					</div>
 					<?php

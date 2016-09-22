@@ -7,7 +7,7 @@ body {
 .bg-color {
 	.box-shadow(0 1px 4px rgba(0,0,0,0.065));
 	.box-sizing(border-box);
-	padding: @paddingLarge;
+	padding: 1rem;
 }
 
 .bg-color-white {
@@ -21,7 +21,7 @@ body {
 		color: @navbarInverseLinkColorHover;
 
 		&:hover, &:focus {
-			color: darken(@navbarInverseLinkColorHover, 10%)
+			color: darken(@navbarInverseLinkColorHover, 10%);
 		}
 	}
 }
@@ -70,11 +70,11 @@ body {
 
 p:last-child,
 form:last-child,
-.pagination {
+.pagination, .pager {
 	.m-b-0;
 }
 
-.pagination {
+.pagination, .pager {
 	.m-t-2;
 }
 
@@ -102,6 +102,12 @@ div.categories-list h3
 			font-family: @altFontFamily;
 		}
 	}
+
+	> li {
+		> a {
+			font-size: @baseFontSize - 1;
+		}
+	}
 }
 
 .navbar {
@@ -110,11 +116,8 @@ div.categories-list h3
 
 	 	> li {
 	 		> a {
-				// background-color: @color_one;
-			.border-radius(@baseBorderRadius);
-	 		// 	.m-r-1;
-	 		// 	padding: @paddingSmall;
-	 		text-shadow: none;
+				.border-radius(0);
+	 			text-shadow: none;
 	 		}
 	 	}
 	}
@@ -133,9 +136,25 @@ div.categories-list h3
 	background-color: #fff;
 }
 
-.dropdown-menu .divider {
-	background-color: darken(@dropdownBackground, 10%);
-	border-bottom-color: darken(@dropdownBackground, 10%);
+.dropdown-menu, .submenu {
+	li a {
+		font-size: @baseFontSize - 3;
+	}
+
+	.divider {
+		background-color: darken(@dropdownBackground, 10%);
+		border-bottom-color: darken(@dropdownBackground, 10%);
+	}
+}
+
+.submenu > li {
+	&:last-child {
+		padding-bottom: .5rem;
+	}
+
+	&:first-child {
+		padding-top: .6rem;
+	}
 }
 
 #menu {
@@ -148,9 +167,24 @@ div.categories-list h3
 	.navbar {.m-0;}
 }
 
-[class*="module"],
 .navbar, .breadcrumb {
-	.m-b-2;
+	margin-bottom: 2rem;
+}
+
+[class*="module"] {
+	margin-bottom: 3rem;
+
+	&:first-child:last-child {
+		margin-bottom: 3rem;
+	}
+}
+
+#below-content {
+	[class*="module"] {
+		&:last-child {
+			.m-b-0;
+		}
+	}
 }
 
 .breadcrumb {
@@ -161,7 +195,9 @@ div.categories-list h3
 		color: @textColor;
 	}
 }
-
+input.search-query {
+	.border-radius(@baseBorderRadius);
+}
 .categories-list, .cat-children {
 	h3 {
 		font-size: 1rem;
@@ -176,6 +212,12 @@ h1, h2, h3, h4, h5, h6,
 .page-header {
 	&:first-child {
 		.m-t-0;
+	}
+}
+
+a {
+	&:hover, &:focus {
+		text-decoration: none;
 	}
 }
 
@@ -235,12 +277,17 @@ h1, h2, h3, h4, h5, h6,
 	.bg-color;
 	.bg-color-white;
 	margin-bottom: 3rem;
+
+	&.hero-unit {
+		background-color: @heroUnitBackground;
+		padding: 60px;
+	}
 }
 
 .well {
 	.bg-color;
 	border: 0;
-	.m-b-2;
+	margin-bottom: 2rem;
 	color: @black;
 }
 
@@ -265,7 +312,7 @@ select {
 .categories-list .collapse > div,
 [class*="blog"] > .category-desc,
 [class*="content-category"] > .category-desc {
-	.m-b-2;
+	margin-bottom: 2rem;
 }
 
 .cat-children {
@@ -290,6 +337,7 @@ select {
 
 dl.article-info {
 	.m-b-1;
+	.p-0;
 
 	dd {
 		margin-right: 5px;
