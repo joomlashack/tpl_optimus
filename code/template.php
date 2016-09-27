@@ -106,7 +106,7 @@ defined('_JEXEC') or die('Restricted access');
 					?>
 					<!-- breadcrumbs -->
 					<div id="breadcrumbs">
-						<w:module name="breadcrumbs" chrome="none" />
+						<w:module name="breadcrumbs" chrome="none" type="none" />
 					</div>
 					<?php
 						endif;
