@@ -116,9 +116,14 @@ form:last-child,
 	margin-bottom: 0;
 }
 
-.nav-tabs>.active>a, .nav-tabs>.active>a:hover, .nav-tabs>.active>a:focus {
+.nav-tabs .open h3 a,
+.nav-tabs .open p a,
+.nav-tabs>.active>a,
+.nav-tabs>.active>a:hover,
+.nav-tabs>.active>a:focus {
 	background-color: white;
 }
+
 
 div.cat-children h3,
 div.categories-list h3
@@ -394,7 +399,14 @@ select {
 .items-row,
 .items-leading > div,
 #archive-items > div,
-.categories-list .collapse > div,
+.categories-list .collapse > div {
+	margin-bottom: 2rem;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
 [class*="blog"] > .category-desc,
 [class*="content-category"] > .category-desc {
 	margin-bottom: 2rem;
