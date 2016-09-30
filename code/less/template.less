@@ -636,14 +636,17 @@ body > ul.autocompleter-choices {
 	display: inline-block;
 }
 
-.input-prepend input, .input-append input, .input-prepend input[class*="span"], .input-append input[class*="span"] {
-	box-sizing: content-box !important;
-	height: 24px !important;
-}
-
 #sidebar1, #sidebar2 {
 	input {
-		max-width: 70%;
+		max-width: 60%;
+	}
+
+	input[type='text'],
+	input[type='password'],
+	input[type='submit'],
+	input[type='button'] {
+		.box-sizing(content-box);
+		height: 24px;
 	}
 
 	> div {
@@ -653,6 +656,7 @@ body > ul.autocompleter-choices {
 		}
 	}
 }
+
 
 #main, #sidebar2, #sidebar1 {
 	margin-bottom: 3rem;
@@ -668,7 +672,6 @@ body > ul.autocompleter-choices {
 	}
 
 	> .btn {
-		line-height: 20px;
 		vertical-align: top;
 	}
 }
@@ -676,12 +679,11 @@ body > ul.autocompleter-choices {
 .search {
 	.form-inline {
 		> .btn {
-			line-height: 20px;
 			vertical-align: top;
 		}
 
 		.inputbox {
-			max-width: 56% !important;
+			max-width: 40% !important;
 		}
 	}
 }
@@ -691,4 +693,8 @@ li {
 	.alert:last-child {
 		.m-b-1;
 	}
+}
+
+.bs-docs-example {
+	font-size: @baseFontSize - 3;
 }
