@@ -396,6 +396,10 @@ a {
 	.row-fluid {
 		padding-bottom: 5rem;
 		padding-top: 5rem;
+
+		@media (min-width: 767px) {
+			display: flex;
+		}
 	}
 
 	[class^="module"]:not(.none):not(.alert):not(.hero-unit) {
