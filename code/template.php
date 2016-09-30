@@ -83,7 +83,7 @@ defined('_JEXEC') or die('Restricted access');
 			<?php
 				endif;
 			?>
-			<div id="main-content" class="row-fluid m-b-3 <?php echo $isBlog; ?>">
+			<div id="main-content" class="row-fluid <?php echo $isBlog; ?>">
 				<!-- sidebar1 -->
 				<aside id="sidebar1">
 					<w:module name="sidebar1" />
