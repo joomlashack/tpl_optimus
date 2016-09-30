@@ -231,7 +231,7 @@ div.categories-list h3
 }
 
 #menu {
-	padding-top: 1rem;
+	padding-top: 2.1rem;
 
 	.navbar {.m-0;}
 }
@@ -397,6 +397,7 @@ select {
 .login,
 .table,
 .items-row,
+.items-more,
 .items-leading > div,
 #archive-items > div,
 .categories-list .collapse > div {
@@ -418,15 +419,17 @@ select {
 	}
 }
 
-.categories-list .collapse > div,
-.items-row {
-	&:last-child {
-		.m-b-0;
-	}
-}
-
 .categories-list .collapse.in {
 	.m-t-2;
+}
+
+.items-row h2 {
+	text-align: center;
+}
+
+.items-row > div {
+	.bg-color;
+	.bg-color-white;
 }
 
 .items-more h3 {
@@ -494,9 +497,11 @@ dl.article-info {
 	}
 }
 
-#main {
-	.bg-color;
-	.bg-color-white;
+.not_blog {
+	#main {
+		.bg-color;
+		.bg-color-white;
+	}
 }
 
 body > ul.autocompleter-choices {
