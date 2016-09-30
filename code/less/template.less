@@ -161,32 +161,62 @@ div.categories-list h3
 	 	}
 	}
 
-	li {
-		ul {
-			//opacity: 0;
-			display: block;
-			max-height: 0;
-			max-width: 0;
-			overflow: hidden;
-			padding: 0;
-			transition: all .6s ease;
+	@media	(min-width: 767px) {
+		li {
+			ul {
+				//opacity: 0;
+				display: block;
+				max-height: 0;
+				max-width: 0;
+				overflow: hidden;
+				padding: 0;
+				transition: all .6s ease;
 
-			li a {
-				padding-bottom: 8px;
-				padding-top: 8px;
+				li a {
+					padding-bottom: 8px;
+					padding-top: 8px;
+				}
+			}
+
+			&:hover ul {
+			//					opacity: 1;
+				max-width: 767px;
+				max-height: 720px;
 			}
 		}
+	}
 
-		&:hover ul {
-		//					opacity: 1;
-			max-width: 767px;
-			max-height: 720px;
+	@media (max-width: 767px) {
+		.dropdown-menu>li>a:hover,
+		.dropdown-menu>li>a:focus,
+		.dropdown-submenu:hover>a,
+		.dropdown-submenu:focus>a {
+			color: @linkColorHover;
+		}
+
+		.dropdown-menu>.active>a,
+		.dropdown-menu>.active>a:hover,
+		.dropdown-menu>.active>a:focus {
+			background-color: transparent;
+			color: @linkColorHover;
 		}
 	}
 
 	.dropdown-menu {
 		.border-radius(0);
 		.box-shadow(none);
+	}
+
+	.btn-navbar {
+		.icon-bar {
+			display: none;
+		}
+
+		&:before {
+			color: @textColor;
+			content: "\f063";
+			font-family: FontAwesome;
+		}
 	}
 }
 
@@ -203,6 +233,7 @@ div.categories-list h3
 .navbar-inverse .navbar-search .search-query {
 	background-color: #fff;
 }
+
 
 .dropdown-menu, .submenu {
 	li a {
@@ -249,6 +280,10 @@ div.categories-list h3
 
 	&:first-child:last-child {
 		margin-bottom: 3rem;
+	}
+
+	> *:last-child {
+		margin-bottom: 0;
 	}
 }
 
@@ -338,13 +373,20 @@ a {
 	}
 
 	[class^="module"]:not(.none):not(.alert):not(.hero-unit) {
-		border-right: 1px solid darken(@color_five, 6%);
-		padding-left: 2rem;
-		padding-right: 2rem;
-		.m-b-0;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 
-		&:last-child {
-			border-right: 0;
+	@media (min-width: 767px) {
+		[class^="module"]:not(.none):not(.alert):not(.hero-unit) {
+			border-right: 1px solid darken(@color_five, 6%);
+			padding-left: 2rem;
+			padding-right: 2rem;
+			.m-b-0;
+
+			&:last-child {
+				border-right: 0;
+			}
 		}
 	}
 }
@@ -410,7 +452,7 @@ pre.prettyprint,
 	}
 }
 
-.blog {
+.blog, #login-form .nav {
 	margin-bottom: 0;
 }
 
@@ -538,3 +580,9 @@ body > ul.autocompleter-choices {
 .wrapper-bottom-menu .nav-collapse {
 	display: inline-block;
 }
+
+.input-prepend input, .input-append input, .input-prepend input[class*="span"], .input-append input[class*="span"] {
+	box-sizing: content-box !important;
+	height: 24px !important;
+}
+
