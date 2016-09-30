@@ -4,18 +4,29 @@
 	}
 }
 
+@media	(max-width: 1200px) and (min-width: 767px) {
+	.span3, .span2, .span1 {
+		[class*="mostread"],
+		[class*="latestnews"] {
+			[class*="icon"] {
+				display: none;
+			}
+		}
+	}
+}
+
 @media (max-width: 1200px) {
 	body {
 		font-size: @baseFontSize - 2;
 		line-height: @baseLineHeight - 2;
 	}
+
 }
 
-@media	(max-width: 979px) and (min-width: 767px) {
-	[class*="mostread"] {
-		.icon {
-			display: none;
-		}
+@media	(max-width: 979px) {
+	.footer-content {
+		font-size: @baseFontSize - 3;
+		line-height: @baseLineHeight - 3;
 	}
 }
 
