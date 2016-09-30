@@ -23,8 +23,12 @@
 		text-align: center;
 	}
 
-	#main {
-		margin-bottom: 3rem;
+	#main  + aside {
+		margin-top: 3rem;
+
+		[class*="module"]:last-child {
+			margin-bottom: 0 !important;
+		}
 	}
 
 	#sidebar2 {
