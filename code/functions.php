@@ -24,6 +24,6 @@ $isBlog = "not_blog";
 // Checks the right layout of the category, depending if it's set on the menu item or if it has to look for the category layout or default com_content layout for blogs
 if ($paramOption == 'com_content')
 {
-	if ($paramView == 'featured' || $paramView == 'category')
+	if ($paramView == 'featured' || $paramLayout == 'blog')
 	$isBlog = "is_blog";
 }
