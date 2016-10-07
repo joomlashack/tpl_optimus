@@ -487,6 +487,8 @@ a {
 }
 
 .hero-unit {
+	.box-shadow(0 1px 4px rgba(0,0,0,0.065));
+
 	> h3 {
 		font-size: 2rem;
 	}
@@ -756,6 +758,10 @@ body > ul.autocompleter-choices {
 	> .moduletable:last-of-type {
 		margin-bottom: 0;
 	}
+
+	> .hero-unit {
+		.box-shadow(none);
+	}
 }
 
 .wrapper-footer {
@@ -802,18 +808,25 @@ li {
 /* Modules
  ========================================================================== */
 
-.module-color,
-.moduletable-color {
+.module-blue,
+.moduletable-blue,
+.module-inverted,
+.moduletable-inverted {
+	color: @white;
 
 	.badge {
 		color: @color_one;
 	}
 }
 
-.module-color,
-.moduletable-color {
-	color: @white;
-	background-color: @color_one !important;
+.module-blue,
+.moduletable-blue {
+	background-color: @blue !important;
+}
+
+.module-inverted,
+.moduletable-inverted {
+	background-color: @grayDark !important;
 }
 
 /* Custom
