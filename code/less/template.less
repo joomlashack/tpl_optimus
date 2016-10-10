@@ -817,8 +817,14 @@ li {
 /* Modules
  ========================================================================== */
 
+.module-color,
+.moduletable-color,
 .module-blue,
 .moduletable-blue,
+.module-green,
+.moduletable-green,
+.module-red,
+.moduletable-red,
 .module-inverted,
 .moduletable-inverted {
 	color: @white;
@@ -833,13 +839,42 @@ li {
 	background-color: @blue !important;
 }
 
+.module-green,
+.moduletable-green {
+	background-color: @green !important;
+}
+
+.module-red,
+.moduletable-red {
+	background-color: @red !important;
+}
+
 .module-inverted,
 .moduletable-inverted {
 	background-color: @grayDark !important;
 }
 
+.module-color,
+.moduletable-color {
+	background-color: @color_one !important;
+}
+
+.module-border-top,
+.moduletable-border-top {
+	border-top: 5px solid @red;
+}
+
+.module-border-bottom,
+.moduletable-border-bottom {
+	border-bottom: 5px solid @red;
+}
+
 /* Custom
  ========================================================================== */
+
+.color {
+	color: @color_one;
+}
 
 .color-red {
 	color: @red;
