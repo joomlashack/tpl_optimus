@@ -333,6 +333,10 @@ div.categories-list h3
 
 .breadcrumb {
 	margin-bottom: 1rem;
+
+	&>li {
+		text-shadow: none;
+	}
 }
 
 [class*="module"] {
@@ -713,8 +717,15 @@ p.readmore {
 }
 
 .is_blog {
-	.breadcrumb {
-		margin-bottom: 2rem;
+
+	#breadcrumbs {
+		margin-bottom: 1.5rem;
+		.bg-color;
+		background: @white;
+
+		.breadcrumb {
+			margin-bottom: 0;
+		}
 	}
 }
 
