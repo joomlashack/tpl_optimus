@@ -102,7 +102,9 @@ a {
 
 p:last-child,
 form:last-child,
-.pagination, .pager {
+.pagination,
+.pager,
+h4:last-child {
 	.m-b-0;
 }
 
@@ -931,4 +933,35 @@ li {
 
 .color-yellow {
 	color: @yellow;
+}
+
+/* Browser specific
+ ========================================================================== */
+
+.is_internet.v_11 {
+
+	.blog-featured {
+
+		.item-image {
+			max-width: none;
+		}
+
+		.items-leading [class*='leading-'],
+		.items-row .item,
+		.items-leading [class*='leading-'] [class*='span'],
+		.items-row .item [class*='span'] {
+			display: block;
+		}
+	}
+}
+
+.is_ipad.v_7 {
+
+	.blog-featured .items-leading {
+
+		.pull-right.item-image,
+		.pull-left.item-image {
+			margin: 0 !important;
+		}
+	}
 }
