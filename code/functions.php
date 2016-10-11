@@ -13,11 +13,11 @@ defined('_JEXEC') or die('Restricted access');
 $app = JFactory::getApplication();
 $input = $app->input;
 
-$paramOption = $input->getVar('option', '');
-$paramView = $input->getVar('view', '');
-$paramLayout = $input->getVar('layout', 'default');
-$paramItemid = $input->getVar('Itemid', '');
-$paramId = $input->getVar('id', '');
+$paramOption = $input->getCmd('option', '');
+$paramView = $input->getCmd('view', '');
+$paramLayout = $input->getCmd('layout', 'default');
+$paramItemid = $input->getCmd('Itemid', '');
+$paramId = $input->getCmd('id', '');
 
 $isBlog = "not_blog";
 
