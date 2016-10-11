@@ -501,6 +501,10 @@ a {
 	}
 }
 
+.badge {
+	text-shadow: none;
+}
+
 .hero-unit {
 	.box-shadow(@box_shadow);
 
@@ -843,43 +847,63 @@ li {
 	color: @white;
 
 	.badge {
-		color: @color_one;
+		background: @white;
 	}
 }
 
 .module-blue,
 .moduletable-blue {
 	background-color: @blue !important;
+
+	.badge {
+		color: @blue;
+	}
 }
 
 .module-green,
 .moduletable-green {
 	background-color: @green !important;
+
+	.badge {
+		color: @green;
+	}
 }
 
 .module-red,
 .moduletable-red {
-	background-color: @red !important;
+	background-color: #f5003d !important;
+
+	.badge {
+		color: #f5003d;
+	}
 }
 
 .module-inverted,
 .moduletable-inverted {
 	background-color: @grayDark !important;
+
+	.badge {
+		color: @grayDark;
+	}
 }
 
 .module-color,
 .moduletable-color {
 	background-color: @color_one !important;
+
+	.badge {
+		color: @color_one;
+	}
 }
 
 .module-border-top,
 .moduletable-border-top {
-	border-top: 5px solid @red;
+	border-top: 5px solid @color_one;
 }
 
 .module-border-bottom,
 .moduletable-border-bottom {
-	border-bottom: 5px solid @red;
+	border-bottom: 5px solid @color_one;
 }
 
 /* Custom
