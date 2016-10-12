@@ -942,7 +942,7 @@ li {
 
 	.blog-featured {
 
-		.item-image {
+		/*.item-image {
 			max-width: none;
 		}
 
@@ -951,6 +951,14 @@ li {
 		.items-leading [class*='leading-'] [class*='span'],
 		.items-row .item [class*='span'] {
 			display: block;
+		}*/
+
+		[class*="span"] > .item-image {
+
+			&.pull-left,
+			&.pull-right {
+				float: none !important;
+			}
 		}
 	}
 }

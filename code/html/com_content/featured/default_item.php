@@ -20,28 +20,32 @@ $images = json_decode($this->item->images);
 if ($images->image_intro != '' and $images->float_intro == 'right')
 {
 	$this->item->wrightElementsStructure = Array(
-        "div.span6",
-        "title",
-        "icons",
-        "article-info",
-        "content",
-        "/div",
-        "div.span6",
-        "image",
+        "div.row-fluid",
+            "div.span6",
+                "title",
+                "icons",
+                "article-info",
+                "content",
+            "/div",
+            "div.span6",
+                "image",
+            "/div",
         "/div",
 	);
 }
 elseif ($images->image_intro != '' and $images->float_intro == 'left')
 {
     $this->item->wrightElementsStructure = Array(
-        "div.span6",
-        "image",
-        "/div",
-        "div.span6",
-        "title",
-        "icons",
-        "article-info",
-        "content",
+        "div.row-fluid",
+            "div.span6",
+                "image",
+            "/div",
+            "div.span6",
+                "title",
+                "icons",
+                "article-info",
+                "content",
+            "/div",
         "/div",
     );
 }
