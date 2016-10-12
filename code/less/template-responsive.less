@@ -1,0 +1,161 @@
+@media (min-width: 1200px) {
+	.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+	    width: 960px;
+	}
+}
+
+@media	(max-width: 1200px) and (min-width: 767px) {
+	.span3, .span2, .span1 {
+		[class*="mostread"],
+		[class*="latestnews"] {
+			[class*="icon"] {
+				display: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	body {
+		font-size: @baseFontSize - 2;
+		line-height: @baseLineHeight - 2;
+	}
+
+}
+
+@media (min-width: 980px) {
+	#header {
+
+		.navbar .navbar-inner {
+
+			.nav {
+				float: right;
+			}
+		}
+	}
+}
+
+@media	(max-width: 979px) {
+	.footer-content {
+		font-size: @baseFontSize - 3;
+		line-height: @baseLineHeight - 3;
+	}
+}
+
+@media	(max-width: 767px) {
+	.nav-tabs>li:last-child>a, .nav-tabs>.active:last-child>a {
+		border-bottom-color: @tableBorder;
+	}
+
+	.filters, .word{
+		.btn:last-child {
+			margin-top: 1rem;
+		}
+	}
+
+	.item-suburb, .item-phone{
+		display: none;
+	}
+
+	#main  + aside {
+		margin-top: 3rem;
+
+		[class*="module"]:last-child {
+			margin-bottom: 0 !important;
+		}
+	}
+
+	#sidebar2 {
+		> div {
+			margin-bottom: 0
+		}
+	}
+
+	.text-center-phone {
+		text-align: center;
+	}
+
+	.text-left-phone {
+		text-align: left;
+	}
+
+	.text-right-phone {
+		text-align: right;
+	}
+
+	.blog-featured {
+
+		.pull-right {
+
+			&.item-image {
+				margin: 1.5rem -1.5rem -1.5rem !important;
+			}
+		}
+
+		.pull-left {
+
+			&.item-image {
+				margin: -1.5rem -1.5rem 1.5rem !important;
+			}
+		}
+
+		.items-leading {
+
+			.pull-right {
+
+				&.item-image {
+					margin: 1.5rem -1.5rem -1.5rem !important;
+				}
+			}
+
+			.pull-left {
+
+				&.item-image {
+					margin: -1.5rem -1.5rem 1.5rem !important;
+				}
+			}
+		}
+	}
+
+	.jss-slider .jss-alignment-left {
+
+		.jss-title,
+		.jss-description {
+			width: 400px !important;
+		}
+	}
+
+	#header {
+
+		#logo {
+			margin-bottom: 20px;
+			max-width: 250px;
+		}
+	}
+}
+
+@media (max-width: 680px) {
+
+	.jss-slider .jss-alignment-left {
+
+		.jss-title,
+		.jss-description {
+			width: 300px !important;
+		}
+
+		.jss-description,
+		.jss-navigation-buttons {
+			display: none !important;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+
+	.jss-slider .jss-alignment-left {
+
+		.jss-title * {
+			font-size: 14px !important;
+		}
+	}
+}

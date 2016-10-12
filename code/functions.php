@@ -10,34 +10,20 @@
 // Restrict Access to within Joomla
 defined('_JEXEC') or die('Restricted access');
 
-$width          = $this->params->get("defaultWidth", "fixed1024");
-$font           = $this->params->get("typeFace", "sanserif");
+$app = JFactory::getApplication();
+$input = $app->input;
 
-// WrightTemplate class, for special settings on Wright
-class WrightTemplate extends WrightTemplateBase {
-	public $suffixes = true;  // allows stacked suffixes
-}
+$paramOption = $input->getCmd('option', '');
+$paramView = $input->getCmd('view', '');
+$paramLayout = $input->getCmd('layout', 'default');
+$paramItemid = $input->getCmd('Itemid', '');
+$paramId = $input->getCmd('id', '');
 
-$opwidth = '960px';
-// fluid parameter
-$user = JFactory::getUser();
-if (!is_null(JRequest::getVar('opwidth', '')))
+$isBlog = "not_blog";
+
+// Checks the right layout of the category, depending if it's set on the menu item or if it has to look for the category layout or default com_content layout for blogs
+if ($paramOption == 'com_content')
 {
-	$opwidth = JRequest::getVar('opwidth');
-	if ($opwidth == '960px' || $opwidth == '800px' || $opwidth == 'fluid') {
-		$user->setParam('opwidth', $opwidth);
-		$user->save(true);
-	}
-}
-$opwidth = ($user->getParam('opwidth',''));
-if ($opwidth == '') {
-	$opwidth =  $this->params->get('opwidth','960px' );
-}
-
-if ($opwidth == '960px') {
-	$opwidth = '12';
-}
-
-if ($opwidth == '800px') {
-	$opwidth = '800';
+	if ($paramView == 'featured' || $paramLayout == 'blog')
+	$isBlog = "is_blog";
 }
