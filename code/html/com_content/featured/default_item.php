@@ -19,19 +19,23 @@ $images = json_decode($this->item->images);
 
 if ($images->image_intro != '' and $images->float_intro == 'right')
 {
-	$this->item->wrightElementsStructure = Array(
+    $this->item->wrightElementsStructure = Array(
         "div.row-fluid",
             "div.span6",
                 "title",
                 "icons",
                 "article-info",
+                "legendtop",
                 "content",
+                "legendbottom",
+                "article-info-below",
+                "article-info-split",
             "/div",
             "div.span6",
                 "image",
             "/div",
         "/div",
-	);
+    );
 }
 elseif ($images->image_intro != '' and $images->float_intro == 'left')
 {
@@ -44,7 +48,11 @@ elseif ($images->image_intro != '' and $images->float_intro == 'left')
                 "title",
                 "icons",
                 "article-info",
+                "legendtop",
                 "content",
+                "legendbottom",
+                "article-info-below",
+                "article-info-split",
             "/div",
         "/div",
     );
@@ -56,7 +64,11 @@ else
         "title",
         "icons",
         "article-info",
+        "legendtop",
         "content",
+        "legendbottom",
+        "article-info-below",
+        "article-info-split",
     );
 }
 
