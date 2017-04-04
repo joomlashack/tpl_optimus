@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700';
 @import "/../wright/build/libraries/bootstrap/less/utilities";
 
 a {
@@ -200,6 +201,7 @@ div.categories-list h3
 }
 
 .navbar {
+
 	.nav {
 		.m-b-0;
 
@@ -260,14 +262,24 @@ div.categories-list h3
 	}
 
 	.btn-navbar {
+		background: rgba(0,0,0,0.6);
+
 		.icon-bar {
-			display: none;
+			.box-shadow(none);
+			background: @white;
 		}
 
-		&:before {
-			color: @textColor;
-			content: "\f063";
-			font-family: FontAwesome;
+		&:hover,
+		&:focus,
+		&:active,
+		&.active,
+		.disabled,
+		[disabled] {
+			background: rgba(0,0,0,0.4);
+
+			.icon-bar {
+				background: @white;
+			}
 		}
 	}
 }
@@ -321,6 +333,11 @@ div.categories-list h3
 
 		.dropdown-menu {
 			border: none;
+		}
+
+		.btn {
+			margin-bottom: 5px;
+			margin-top: 7px;
 		}
 	}
 

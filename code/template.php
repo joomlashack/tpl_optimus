@@ -19,7 +19,6 @@ defined('_JEXEC') or die('Restricted access');
 <html>
 	<head>
 		<w:head />
-		<link href="//fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
 	</head>
 	<body class="<?php echo $wrightBodyClass ?>">
 		<?php
