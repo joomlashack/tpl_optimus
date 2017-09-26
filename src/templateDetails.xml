@@ -126,7 +126,7 @@
 		</fields>
 	</config>
 
-	<media destination="tpl_js_civic" folder="media">
+	<media destination="tpl_js_optimus" folder="media">
         <folder>css</folder>
         <folder>js</folder>
         <folder>images</folder>
